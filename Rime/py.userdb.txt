@@ -1,0 +1,12 @@
+# Rime user dictionary
+#@/db_name	py.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	34
+#@/user_id	Rime
+he 	和	c=1 d=1 t=34
+wan quan 	完全	c=5 d=4.50842 t=34
+wo ye 	我也	c=1 d=0.970446 t=34
+wu 	无	c=23 d=21.1693 t=34
+zai 	在	c=2 d=1.83272 t=34
+zhong wu 	中午	c=2 d=1.86437 t=34

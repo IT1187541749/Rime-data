@@ -1,0 +1,9 @@
+# Rime user dictionary
+#@/db_name	unicode.userdb
+#@/db_type	userdb
+#@/rime_version	1.5.3
+#@/tick	5
+#@/user_id	Rime
+513f 	儿	c=1 d=1 t=5
+8206 	舆	c=2 d=1.98506 t=5
+8207 	與	c=1 d=1 t=5
