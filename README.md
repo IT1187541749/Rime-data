@@ -15,7 +15,7 @@
 
 ## 数据来源
 
-	* [06版五笔字型超大字符集编码](https://github.com/CNMan/UnicodeCJK-WuBi06)
+	* [06版五笔字型超大字符集编码]https://github.com/CNMan/UnicodeCJK-WuBi06
   
   * 拆分表来源于熊怀东先生
   
