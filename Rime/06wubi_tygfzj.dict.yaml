@@ -2,7 +2,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-05-27
+# 2020-06-07
 ---
 name: 06wubi_tygfzj
 version: "2.0"
@@ -4607,7 +4607,7 @@ encoder:
 踩	khe	3453	kes
 蹊	khed	18	ked
 蹈	khee	82	kee
-啃	kheg	1105	keg
+啃	kheg	1105
 跏	khek	11	kek
 踩	khes	3453	kes
 践	khf	154	kfy
@@ -4692,16 +4692,16 @@ encoder:
 躐	khvn	11	kvn
 踺	khvp	11	kvp
 趴	khw	680	kwy
-啮	khwb	57	kwb
+啮	khwb	57
 跄	khwb	13	kwb
 跗	khwf	13	kwf
 跺	khws	157	kws
 蹬	khwu	391	kwu
 趴	khwy	680	kwy
-嘴	khx	4583	kxh
+嘴	khx	4583
 跸	khxf	11	kxf
-嘴	khxh	4583	kxh
-呲	khxn	65	kxn
+嘴	khxh	4583
+呲	khxn	65
 𧿹	khxy	9
 卟	khy	139
 蹁	khya	11	kya
@@ -9956,6 +9956,7 @@ encoder:
 姗	vmm	125
 姗	vmmg	125
 刀	vn	5409
+妞	vnf	1474
 妞	vnfg	1474
 娜	vng	1998
 娜	vngb	1998

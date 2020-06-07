@@ -2,7 +2,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-05-27
+# 2020-06-07
 ---
 name: 06wubi_ci
 version: "2.0"
@@ -11838,11 +11838,11 @@ encoder:
 躪	khay	9	kay
 㗔	khay	9
 䠰	khay	9	kay
-嚙	khb	9	kbh
+嚙	khb	9
 躡	khbb	9	kbb
 蹑	khbc	29	kbc
 踙	khbc	9	kbc
-嚙	khbh	9	kbh
+嚙	khbh	9
 䠫	khbi	9	kbi
 踂	khbn	9	kbn
 跥	khbs	9	kbs
@@ -11879,13 +11879,13 @@ encoder:
 跶	khdp	15	kdp
 蹶	khdw	28	kdw
 跋	khdy	88	kdy
-噦	khdy	9	kdy
+噦	khdy	9
 䠞	khdy	9	kdy
 踩	khe	3453	kes
 蹊	khed	18	ked
 蹈	khee	82	kee
 䟹	khef	9	kef
-啃	kheg	1105	keg
+啃	kheg	1105
 跀	kheg	9	keg
 跙	kheg	9	keg
 跏	khek	11	kek
@@ -11953,7 +11953,7 @@ encoder:
 䠡	khhg	9	khg
 踄	khhh	9	khh
 跕	khhk	9	khk
-嚬	khhm	9	khm
+嚬	khhm	9
 䠕	khhs	9	khs
 跐	khhx	11	khx
 躣	khhy	9	khy
@@ -12022,7 +12022,7 @@ encoder:
 跜	khnx	9	knx
 躍	khny	10	kny
 踱	kho	151	koc
-噛	khob	9	kob
+噛	khob	9
 踱	khoc	151	koc
 躔	khof	19	kof
 躕	khof	9	kof
@@ -12145,7 +12145,7 @@ encoder:
 趴	khw	680	kwy
 踚	khwa	9	kwa
 䠯	khwa	9	kwa
-啮	khwb	57	kwb
+啮	khwb	57
 跄	khwb	13	kwb
 䠬	khwb	9	kwb
 跉	khwc	9	kwc
@@ -12170,16 +12170,16 @@ encoder:
 踓	khwy	9	kwy
 㖵	khwy	9
 䟮	khwy	9	kwy
-嘴	khx	4583	kxh
+嘴	khx	4583
 跸	khxf	11	kxf
 躖	khxg	9	kxg
-嘴	khxh	4583	kxh
-㗪	khxi	9	kxi
+嘴	khxh	4583
+㗪	khxi	9
 蹞	khxm	9	kxm
 躀	khxm	9	kxm
-呲	khxn	65	kxn
+呲	khxn	65
 䠪	khxn	9	kxn
-喍	khxs	9	kxs
+喍	khxs	9
 卟	khy	139
 蹁	khya	11	kya
 躞	khyc	13	kyc
@@ -27189,6 +27189,7 @@ encoder:
 㐇	vnb	9
 㜟	vnbt	9
 婮	vndg	9
+妞	vnf	1474
 妞	vnfg	1474
 㚨	vnfh	9
 娜	vng	1998
