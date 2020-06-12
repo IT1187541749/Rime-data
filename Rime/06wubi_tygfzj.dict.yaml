@@ -2,7 +2,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-07
+# 2020-06-12
 ---
 name: 06wubi_tygfzj
 version: "2.0"
@@ -4584,8 +4584,8 @@ encoder:
 距	khan	4448	kan
 跷	khaq	64	kaq
 蹀	khas	11	kas
-唬	khaw	124
 蹒	khaw	11	kaw
+唬	khaw	124
 躏	khay	11	kay
 蹑	khbc	29	kbc
 趿	khby	14	kby
@@ -4692,8 +4692,8 @@ encoder:
 躐	khvn	11	kvn
 踺	khvp	11	kvp
 趴	khw	680	kwy
-啮	khwb	57
 跄	khwb	13	kwb
+啮	khwb	57
 跗	khwf	13	kwf
 跺	khws	157	kws
 蹬	khwu	391	kwu
@@ -6515,9 +6515,9 @@ encoder:
 袪	pufc	13	pfc
 褂	pufh	70	pfh
 袆	pufh	15	pfh
-宰	pufj	836
 褚	pufj	195	pfj
 襦	pufj	22	pfj
+宰	pufj	836
 衬	pufy	338	pfy
 袜	pug	258	pgs
 裱	puge	75	pge
@@ -6894,8 +6894,8 @@ encoder:
 鲱	qghd	11	qhd
 钲	qghg	12
 鲇	qghk	19	qhk
-钙	qghn	1165
 鲈	qghn	28	qhn
+钙	qghn	1165
 鲿	qgic	15	qic
 𨱇	qgiy	15
 鲁	qgj	2347	qjf
@@ -6986,8 +6986,8 @@ encoder:
 鲚	qgyj	11	qyj
 鲛	qgyr	35	qyr
 鲂	qgyt	12	qyt
-钰	qgyy	356
 鳑	qgyy	15	qyy
+钰	qgyy	356
 外	qh	20471
 铍	qhcy	27
 钼	qhg	163
@@ -7289,8 +7289,8 @@ encoder:
 猿	qtfe	213	qfe
 锸	qtfe	11
 锤	qtfg	581
-钎	qtfh	49
 犴	qtfh	11	qfh
+钎	qtfh	49
 猪	qtfj	15935	qfj
 锆	qtfk	58
 铤	qtfp	13
@@ -7792,61 +7792,61 @@ encoder:
 缺	rmnw	3991
 摧	rmw	182
 摧	rmwy	182
-气	rn	9442
+气	rn	9442	rnb
 抿	rna	142
 搌	rnae	11
 抿	rnan	142
-气	rnb	9442
+气	rnb	9442	rnb
 掘	rnbm	402
-氖	rnbr	48
+氖	rnbr	48	rbr
 撖	rnbt	11
-氢	rnc	493
-氢	rnca	493
+氢	rnc	493	rca
+氢	rnca	493	rca
 据	rnd	13756
 据	rndg	13756
-氪	rndq	22
+氪	rndq	22	rdq
 扭	rnf	854
 扭	rnfg	854
 握	rng	1081
 挪	rngb	688
-氰	rnge	111
+氰	rnge	111	rge
 握	rngf	1081
-氩	rngg	36
-氘	rnjj	20
-氲	rnjl	20
-氚	rnkj	18
-氤	rnl	13
-氤	rnld	13
-氙	rnm	11
-氙	rnmj	11
+氩	rngg	36	rgg
+氘	rnjj	20	rjj
+氲	rnjl	20	rjl
+氚	rnkj	18	rkj
+氤	rnl	13	rld
+氤	rnld	13	rld
+氙	rnm	11	rmj
+氙	rnmj	11	rmj
 扎	rnn	1873
 癿	rnn	9
 撰	rnnw	252
-氮	rnoo	516
-氨	rnp	413
-氨	rnpv	413
+氮	rnoo	516	roo
+氨	rnp	413	rpv
+氨	rnpv	413	rpv
 所	rnr	44055
 所	rnrh	44055
 扬	rnrt	1930
 拨	rnt	1684
 鿫	rntd	9
-氕	rntr	11
-氡	rntu	50
+氕	rntr	11	rtr
+氡	rntu	50	rtu
 拨	rnty	1684
-氧	rnu	762
+氧	rnu	762	rug
 摒	rnua	56
-氧	rnug	762
-氯	rnv	411
-氯	rnvi	411
-氛	rnw	35
-氛	rnwv	35
+氧	rnug	762	rug
+氯	rnv	411	rvi
+氯	rnvi	411	rvi
+氛	rnw	35	rwv
+氛	rnwv	35	rwv
 擢	rnwy	34
 抉	rnwy	19
-氟	rnx	409
-氟	rnxj	409
+氟	rnx	409	rxj
+氟	rnxj	409	rxj
 拟	rny	2833
 拟	rnyw	2833
-氦	rnyw	75
+氦	rnyw	75	ryw
 扩	ro	659
 摭	roao	15
 掂	roh	379
