@@ -1,6 +1,6 @@
 patch:
   #↓候選字型,用来显示拆分字根.
-  "style/font_face": "五笔字根字体"
+  "style/font_face": "TH-Tshyn-P0"
   #↓候選字號,候选字体大小.
   "style/font_point": 16
   #↓候选窗配色(主题皮肤).
