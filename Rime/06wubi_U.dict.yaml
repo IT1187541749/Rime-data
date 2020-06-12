@@ -2,7 +2,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-07
+# 2020-06-12
 ---
 name: 06wubi_U
 version: "2.0"
@@ -2724,16 +2724,16 @@ encoder:
 怼	cfn	16
 怼	cfnu	16
 对	cfy	279642
-马	cg	12498	cgd
-驱	cga	570	car
+马	cg	12498
+驱	cga	570
 骁	cgaq	119	caq
 驱	cgar	570	car
 骐	cgaw	106	caw
-骤	cgb	190	cbi
+骤	cgb	190
 䯅	cgbc	15	cbc
 骤	cgbi	190	cbi
 驰	cgbn	454	cbn
-骚	cgc	1022	ccj
+骚	cgc	1022
 骖	cgce	15	cce
 驿	cgcg	217	ccg
 骉	cgcg	15	ccg
@@ -2741,54 +2741,54 @@ encoder:
 骀	cgck	29	cck
 骏	cgct	469	cct
 驭	cgcy	87	ccy
-马	cgd	12498	cgd
+马	cgd	12498
 骑	cgdk	2295	cdk
 驮	cgdy	148	cdy
 驵	cgeg	11	ceg
 骦	cgfh	15	cfh
-骊	cgg	124	cgy
+骊	cgg	124
 骊	cggy	124	cgy
 驲	cgjg	15	cjg
 骒	cgjs	11	cjs
-驶	cgk	287	ckr
+驶	cgk	287
 驯	cgkh	87	ckh
 驶	cgkr	287	ckr
 䯄	cgkw	15	ckw
-骡	cgl	66	cli
+骡	cgl	66
 骃	cgld	15	cld
 驷	cglg	43	clg
 骡	cgli	66	cli
-骋	cgm	56	cmn
+骋	cgm	56
 骋	cgmn	56	cmn
 骣	cgnb	11	cnb
-驼	cgp	200	cpx
+驼	cgp	200
 骔	cgpi	15	cpi
 䯃	cgpv	15	cpv
 驼	cgpx	200	cpx
-驹	cgq	137	cqk
+驹	cgq	137
 驹	cgqk	137	cqk
 骝	cgql	19	cql
 驺	cgqv	23	cqv
-驳	cgr	263	crr
+驳	cgr	263
 驳	cgrr	263	crr
 骠	cgsi	38	csi
-骄	cgt	193	ctj
+骄	cgt	193
 骄	cgtj	193	ctj
 骆	cgtk	508	ctk
 骢	cgtn	32	ctn
-骥	cgu	147	cuw
+骥	cgu	147
 骈	cgua	39	cua
 骍	cguf	15	cuf
 骥	cguw	147	cuw
 骎	cgvc	15	cvc
 骕	cgvj	15	cvj
-验	cgw	720	cwg
+验	cgw	720
 骙	cgwd	15	cwd
 骅	cgwf	109	cwf
 驸	cgwf	14	cwf
 验	cgwg	720	cwg
 骓	cgwy	25	cwy
-骗	cgy	5243	cya
+骗	cgy	5243
 骗	cgya	5243	cya
 骧	cgye	34	cye
 驻	cgyg	2132	cyg
@@ -2885,7 +2885,7 @@ encoder:
 䨁	cnhy	9
 厶	cny	89
 龴	cny	9
-驅	coa	10	cak
+驅	coa	10
 駴	coaa	9	caa
 駥	coad	9	cad
 䮬	coad	9	cad
@@ -2903,7 +2903,7 @@ encoder:
 騏	coaw	9	caw
 䮲	coaw	9	caw
 驩	coay	9	cay
-驟	cob	10	cbi
+驟	cob	10
 䯀	cobb	8	cbb
 䮛	cobf	9	cbf
 駬	cobg	9	cbg
@@ -2911,7 +2911,7 @@ encoder:
 驟	cobi	10	cbi
 馳	cobn	10	cbn
 馺	coby	9	cby
-騷	coc	10	ccj
+騷	coc	10
 䮁	coca	9	cca
 䮕	cocc	9	ccc
 騃	cocd	9	ccd
@@ -2928,7 +2928,7 @@ encoder:
 䯂	cocs	9	ccs
 駿	coct	10	cct
 馭	cocy	9	ccy
-騎	cod	24	cdk
+騎	cod	24
 騞	codd	9	cdd
 䮆	codf	9	cdf
 駓	codg	9	cdg
@@ -2976,14 +2976,14 @@ encoder:
 驪	cogx	9	cgx
 䮅	cogy	9	cgy
 䮒	cogy	9	cgy
-驢	coh	10	chl
+驢	coh	10
 駊	cohc	8	chc
 騑	cohd	9	chd
 䮓	cohf	9	chf
 驉	cohg	9	chg
 驢	cohl	10	chl
 䮹	cohy	9	chy
-馬	coi	52	coi
+馬	coi	52
 騨	coil	9	cil
 駫	coiq	8	ciq
 駻	cojf	9	cjf
@@ -2995,14 +2995,14 @@ encoder:
 騍	cojs	9	cjs
 騴	cojv	9	cjv
 騉	cojx	9	cjx
-駛	cok	10	ckr
+駛	cok	10
 䣖	cokc	9	ckc
 駽	coke	9	cke
 馴	cokh	10	ckh
 馽	cokh	9	ckh
 驒	cokl	9	ckl
 駛	cokr	10	ckr
-騾	col	9	cli
+騾	col	9
 駰	cold	9	cld
 驛	colf	9	clf
 駟	colg	9	clg
@@ -3010,7 +3010,7 @@ encoder:
 䮷	colj	9	clj
 騦	coln	9	cln
 䮫	colv	8	clv
-騁	com	9	cmn
+騁	com	9
 駚	comd	8	cmd
 䮩	come	9	cme
 䮗	comf	9	cmf
@@ -3035,7 +3035,7 @@ encoder:
 驜	cooi	9	coi
 䮽	cooo	9	coo
 騼	coox	8	cox
-駝	cop	10	cpx
+駝	cop	10
 䮟	copc	9	cpc
 䮨	copf	9	cpf
 䮿	coph	9	cph
@@ -3046,7 +3046,7 @@ encoder:
 馾	copq	9	cpq
 駝	copx	10	cpx
 䮤	copy	9	cpy
-駒	coq	9	cqk
+駒	coq	9
 駠	coqb	9	cqb
 䭹	coqb	9	cqb
 駣	coqi	9	cqi
@@ -3060,7 +3060,7 @@ encoder:
 䮪	coqs	9	cqs
 騶	coqt	9	cqt
 馰	coqy	9	cqy
-駁	cor	10	crr
+駁	cor	10
 騩	corc	9	crc
 駈	corg	9	crg
 騜	corg	9	crg
@@ -3071,13 +3071,13 @@ encoder:
 駁	corr	10	crr
 騣	cort	9	crt
 䭿	corw	8	crw
-驃	cos	9	csi
+驃	cos	9
 驔	cosf	9	csf
 驃	cosi	9	csi
 䮮	cost	9	csq
 騕	cosv	9	csv
 騋	cosw	9	csw
-驕	cot	10	ctk
+驕	cot	10
 馲	cota	9	cta
 駞	cotb	8	ctb
 䮉	cote	9	cte
@@ -3112,7 +3112,7 @@ encoder:
 驌	covj	9	cvj
 駋	covk	9	cvk
 騝	covp	9	cvp
-驗	cow	41	cww
+驗	cow	41
 駖	cowc	9	cwc
 驋	cowc	8	cwc
 騤	cowd	9	cwd
@@ -3133,7 +3133,7 @@ encoder:
 験	coww	9	cww
 騅	cowy	9	cwy
 䭵	cowy	9	cwy
-駐	coy	10	cyg
+駐	coy	10
 騙	coya	11	cya
 䮰	coyd	8	cyd
 駺	coye	9	cye
@@ -11806,7 +11806,7 @@ encoder:
 嗉	kgxi	11
 咦	kgxw	593
 中	kh	243213
-距	kha	4448	kan
+距	kha	4448
 踐	khaa	10	kaa
 嚱	khaa	9
 䠜	khab	9	kab
@@ -11847,7 +11847,7 @@ encoder:
 踂	khbn	9	kbn
 跥	khbs	9	kbs
 趿	khby	14	kby
-踊	khc	21	kch
+踊	khc	21
 䟾	khcc	9	kcc
 踴	khce	10	kce
 䠁	khcf	9	kcf
@@ -11860,7 +11860,7 @@ encoder:
 䟥	khct	9	kct
 㕜	khcu	9
 䟕	khcy	9	kcy
-跨	khd	2090	kdn
+跨	khd	2090
 啡	khdd	70
 蹖	khde	9	kde
 䟴	khde	9	kde
@@ -11881,7 +11881,7 @@ encoder:
 跋	khdy	88	kdy
 噦	khdy	9
 䠞	khdy	9	kdy
-踩	khe	3453	kes
+踩	khe	3453
 蹊	khed	18	ked
 蹈	khee	82	kee
 䟹	khef	9	kef
@@ -11891,9 +11891,9 @@ encoder:
 跏	khek	11	kek
 䠛	khem	9	kem
 踩	khes	3453	kes
-践	khf	154	kfy
-躊	khf	9	kff
-⻊	khf	9	khf
+践	khf	154
+躊	khf	9
+⻊	khf	9
 踋	khfb	9	kfb
 踍	khfb	9	kfb
 跂	khfc	9	kfc
@@ -11942,7 +11942,7 @@ encoder:
 䟠	khgy	9	kgy
 䟵	khgy	9	kgy
 䠃	khgy	9	kgy
-趾	khh	171	khg
+趾	khh	171
 跛	khhc	59	khc
 踧	khhc	9	khc
 躩	khhc	9	khc
@@ -11961,7 +11961,7 @@ encoder:
 䟔	khhy	9	khy
 䠐	khhy	9	khy
 䠩	khhy	9	khy
-踏	khi	815	kij
+踏	khi	815
 蹐	khie	11	kie
 踃	khie	9	kie
 䠌	khie	9	kie
@@ -11969,7 +11969,7 @@ encoder:
 踏	khij	815	kij
 䠀	khik	9	kik
 䟞	khit	9	kit
-踢	khj	3745	kjr
+踢	khj	3745
 啅	khjf	9
 蹕	khjf	9	kjf
 踶	khjh	11	kjh
@@ -11991,7 +11991,7 @@ encoder:
 躅	khlj	11	klj
 蹥	khlp	9	klp
 䠅	khlt	9	klt
-蹦	khm	660	kme
+蹦	khm	660
 蹦	khme	660	kme
 跚	khmg	48	kmg
 䟖	khmh	9	kmh
@@ -12021,7 +12021,7 @@ encoder:
 䠣	khnw	9	knw
 跜	khnx	9	knx
 躍	khny	10	kny
-踱	kho	151	koc
+踱	kho	151
 噛	khob	9
 踱	khoc	151	koc
 躔	khof	19	kof
@@ -12031,8 +12031,8 @@ encoder:
 蹠	khoo	9	koo
 蹼	khow	20	kow
 蹗	khox	9	kox
-踪	khp	305	kpi
-躥	khp	9	kpn
+踪	khp	305
+躥	khp	9
 踠	khpb	9	kpb
 蹿	khph	166	kph
 踪	khpi	305	kpi
@@ -12042,7 +12042,7 @@ encoder:
 䠉	khpn	9	kpn
 跎	khpx	11	kpx
 䠚	khpy	9	kpy
-跑	khq	21815	kqn
+跑	khq	21815
 䟗	khqa	9	kqa
 䟸	khqa	9	kqa
 跪	khqb	532	kqb
@@ -12059,7 +12059,7 @@ encoder:
 趵	khqy	11	kqy
 䟡	khqy	9	kqy
 䠨	khqy	9	kqy
-跌	khr	8772	krw
+跌	khr	8772
 䠋	khrf	9	krf
 䟬	khrg	9	krg
 踲	khrh	9	krh
@@ -12073,7 +12073,7 @@ encoder:
 跌	khrw	8772	krw
 蹏	khrw	9	krw
 跅	khry	9	kry
-躚	khs	9	ksp
+躚	khs	9
 蹅	khsg	11	ksg
 跴	khsg	9	ksg
 䟓	khsh	9	ksh
@@ -12081,8 +12081,8 @@ encoder:
 蹮	khsn	9	ksn
 躚	khsp	9	ksp
 䟣	khsy	9	ksy
-跃	kht	657	ktd
-蹤	kht	10	kth
+跃	kht	657
+蹤	kht	10
 䟦	khtc	9	ktc
 跃	khtd	657	ktd
 䟯	khtd	9	ktd
@@ -12112,7 +12112,7 @@ encoder:
 䠘	khtx	9	ktx
 踽	khty	11	kty
 䠗	khty	9	kty
-足	khu	3449	khu
+足	khu	3449
 蹉	khua	15	kua
 跰	khua	9	kua
 踯	khub	11	kub
@@ -12135,14 +12135,14 @@ encoder:
 䠥	khut	9	kut
 踥	khuv	9	kuv
 躙	khuy	9	kuy
-跟	khv	74632	kve
+跟	khv	74632
 跟	khve	74632	kve
 䟿	khvi	9	kvi
 䠈	khvi	9	kvi
 躐	khvn	11	kvn
 踺	khvp	11	kvp
 蹆	khvp	9	kvp
-趴	khw	680	kwy
+趴	khw	680
 踚	khwa	9	kwa
 䠯	khwa	9	kwa
 啮	khwb	57
@@ -17234,7 +17234,7 @@ encoder:
 覾	ptoq	9
 宷	ptou	9
 实	pu	3087
-襪	pua	10	pay
+襪	pua	10
 裓	puaa	9	paa
 䙁	puaa	9	paa
 襼	puac	9	pac
@@ -17260,7 +17260,7 @@ encoder:
 袦	pubm	9	pbm
 衪	pubn	9	pbn
 衱	puby	9	pby
-衩	puc	16	pcy
+衩	puc	16
 裰	pucc	11	pcc
 襂	puce	9	pce
 䘞	pucg	15	pcg
@@ -17289,7 +17289,7 @@ encoder:
 䙠	pudw	9	pdw
 袚	pudy	9	pdy
 䙘	pudy	9	pdy
-衫	pue	970	pet
+衫	pue	970
 褑	puec	9	pec
 寵	pued	10
 䙎	pued	9	ped
@@ -17298,7 +17298,7 @@ encoder:
 䘽	pueq	9	peq
 襷	puer	9	per
 衫	puet	970	pet
-衬	puf	338	pfy
+衬	puf	338
 袪	pufc	13	pfc
 衼	pufc	9	pfc
 䙥	pufc	9	pfc
@@ -17319,8 +17319,8 @@ encoder:
 衬	pufy	338	pfy
 褹	pufy	9	pfy
 襶	pufy	9	pfy
-袜	pug	258	pgs
-補	pug	22	pgy
+袜	pug	258
+補	pug	22
 䙣	pugd	9	pgd
 裱	puge	75	pge
 衧	pugf	9	pgf
@@ -17340,7 +17340,7 @@ encoder:
 襹	pugx	9	pgx
 補	pugy	22	pgy
 裲	pugy	9	pgy
-被	puh	138128	phc
+被	puh	138128
 被	puhc	138128	phc
 裶	puhd	9	phd
 褃	puhe	9	phe
@@ -17349,12 +17349,12 @@ encoder:
 裭	puhw	9	phw
 䘣	puhx	9	phx
 补	puhy	7071	phy
-裆	pui	114	piv
-襠	pui	9	pil
+裆	pui	114
+襠	pui	9
 䘯	puie	9	pie
 襠	puil	9	pil
 裆	puiv	114	piv
-裸	puj	795	pjs
+裸	puj	795
 襊	pujc	9	pjc
 䙨	puje	9	pje
 裡	pujf	109	pjf
@@ -17379,7 +17379,7 @@ encoder:
 䙌	pukm	15	pkm
 䙡	pukm	8	pkm
 襙	puks	9	pks
-襬	pul	9	plx
+襬	pul	9
 䙓	pulc	15	plc
 裀	puld	9	pld
 襗	pulf	9	plf
@@ -17391,7 +17391,7 @@ encoder:
 裍	puls	9	pls
 褸	pulv	9	plv
 襬	pulx	9	plx
-袖	pum	607	pmg
+袖	pum	607
 䘧	pumd	9	pmd
 襛	pume	9	pme
 䙖	pume	9	pme
@@ -17405,7 +17405,7 @@ encoder:
 䙬	pumv	9	pmv
 衲	pumw	26	pmw
 袇	pumy	9	pmy
-褶	pun	102	pnr
+褶	pun	102
 裾	pund	38	pnd
 䙙	pung	9	png
 褘	punh	9	pnh
@@ -17418,8 +17418,8 @@ encoder:
 襈	punw	9	pnw
 䘦	punx	9	pnx
 袯	puny	15	pny
-裤	puo	892	pol
-褲	puo	10	pol
+裤	puo	892
+褲	puo	10
 襨	puof	9	pof
 褯	puoh	9	poh
 裤	puol	892	pol
@@ -17439,7 +17439,7 @@ encoder:
 䘢	pups	9	pps
 袕	pupw	9	ppw
 袉	pupx	9	ppx
-袍	puq	317	pqn
+袍	puq	317
 衹	puqa	9	pqa
 襐	puqe	9	pqe
 䘳	puqg	9	pqg
@@ -17451,14 +17451,14 @@ encoder:
 袀	puqu	9	pqu
 袛	puqy	9	pqy
 襜	puqy	9	pqy
-裨	pur	11	prf
+裨	pur	11
 裨	purf	11	prf
 袙	purg	9	prg
 䙉	purh	9	prh
 袾	puri	9	pri
 褫	purw	11	prw
 袟	purw	9	prw
-襟	pus	165	psi
+襟	pus	165
 䘴	pusc	9	psc
 襟	pusi	165	psi
 褾	pusi	9	psi
@@ -17468,8 +17468,8 @@ encoder:
 襻	pusr	11	psr
 䙅	pusv	9	psv
 䘤	pusy	9	psy
-袄	put	299	ptd
-襖	put	9	ptd
+袄	put	299
+襖	put	9
 袘	putb	9	ptb
 袄	putd	299	ptd
 襖	putd	9	ptd
@@ -17491,7 +17491,7 @@ encoder:
 裄	puts	9	pts
 複	putt	10	ptt
 裑	putt	9	ptt
-襯	puu	10	puq
+襯	puu	10
 褨	puua	9	pua
 裷	puub	9	pub
 襱	puud	9	pud
@@ -17510,7 +17510,7 @@ encoder:
 裞	puuq	9	puq
 襒	puut	9	put
 䙫	puuw	9	puw
-初	puv	4757	pvt
+初	puv	4757
 寝	puvc	381
 䘲	puvc	9	pvc
 裉	puve	11	pve
@@ -17521,7 +17521,7 @@ encoder:
 袽	puvk	9	pvk
 褪	puvp	201	pvp
 初	puvt	4757	pvt
-裕	puw	647	pwk
+裕	puw	647
 衳	puwc	9	pwc
 袊	puwc	9	pwc
 襏	puwc	9	pwc
@@ -17565,7 +17565,7 @@ encoder:
 䘪	puyq	9	pyq
 䘨	puyr	9	pyr
 袨	puyx	9	pyx
-衤	puyy	9	pyny
+衤	puyy	9	puyy
 䘸	puyy	9	pyy
 䙰	puyy	9	pyy
 安	pv	11597
@@ -17780,8 +17780,8 @@ encoder:
 䙾	pxhq	9
 迱	pxpv	9
 寲	pxth	9
-社	py	2966	pfg
-祺	pya	272	paw
+社	py	2966
+祺	pya	272
 祴	pyaa	9	paa
 䄏	pyad	9	pad
 禥	pyaf	9	paf
@@ -17790,14 +17790,14 @@ encoder:
 禖	pyas	9	pas
 祺	pyaw	272	paw
 䄀	pyay	9	pay
-祁	pyb	431	pbh
+祁	pyb	431
 祁	pybh	431	pbh
 祂	pybn	10	pbn
 礽	pybt	9	pbt
 䄌	pycc	9	pcc
 祃	pycg	15	pcg
 禡	pyco	9	pco
-祷	pyd	58	pdf
+祷	pyd	58
 禊	pydd	11	pdd
 祳	pyde	9	pde
 䄝	pyde	9	pde
@@ -17809,10 +17809,10 @@ encoder:
 䄋	pydn	9	pdn
 祓	pydy	33	pdy
 禲	pydy	9	pdy
-祖	pye	1615	peg
+祖	pye	1615
 禐	pyec	9	pec
 祖	pyeg	1615	peg
-社	pyf	2966	pfg
+社	pyf	2966
 㝘	pyf	9
 祛	pyfc	336	pfc
 䃽	pyfc	9	pfc
@@ -17831,7 +17831,7 @@ encoder:
 禛	pyfw	9	pfw
 䃿	pyfw	9	pfw
 䄥	pyfw	9	pfw
-福	pyg	3902	pgl
+福	pyg	3902
 祆	pygd	61	pgd
 宔	pygf	9
 祬	pygf	9	pgf
@@ -17841,14 +17841,14 @@ encoder:
 䄤	pygm	9	pgm
 禰	pygr	9	pgr
 䄈	pygu	9	pgu
-視	pyh	50	phq
+視	pyh	50
 祉	pyhg	47	phg
 祯	pyhm	191	phm
 禎	pyhm	10	phm
 視	pyhq	50	phq
 䃼	pyhy	9	phy
 䄕	pyil	9	pil
-神	pyj	9418	pjh
+神	pyj	9418
 䄗	pyjg	9	pjg
 神	pyjh	9418	pjh
 禔	pyjh	9	pjh
@@ -17858,7 +17858,7 @@ encoder:
 禓	pyjr	9	pjr
 祼	pyjs	36	pjs
 禑	pyjy	9	pjy
-祝	pyk	4031	pkq
+祝	pyk	4031
 祦	pykd	9	pkd
 䄇	pykg	9	pkg
 祌	pykh	9	pkh
@@ -17873,8 +17873,8 @@ encoder:
 禝	pylt	9	plt
 䄛	pylv	9	plv
 禩	pylw	9	plw
-视	pym	2625	pmq
-禮	pym	18	pmu
+视	pym	2625
+禮	pym	18
 䄃	pymd	9	pmd
 禯	pyme	9	pme
 䄂	pymg	9	pmg
@@ -17882,7 +17882,7 @@ encoder:
 禂	pymk	9	pmk
 视	pymq	2625	pmq
 禮	pymu	18	pmu
-礼	pyn	2255	pnn
+礼	pyn	2255
 冖	pyn	9
 祤	pyng	9	png
 禕	pynh	9	pnh
@@ -17895,7 +17895,7 @@ encoder:
 禷	pyom	9	pom
 禈	pypl	9	ppl
 䄙	pypw	9	ppw
-祗	pyq	68	pqy
+祗	pyq	68
 祇	pyqa	10	pqa
 祪	pyqb	9	pqb
 祢	pyqi	89	pqi
@@ -17905,7 +17905,7 @@ encoder:
 祗	pyqy	68	pqy
 礿	pyqy	9	pqy
 䄡	pyqy	9	pqy
-祈	pyr	284	prh
+祈	pyr	284
 㝑	pyr	9
 禆	pyrf	9	prf
 䄓	pyrg	9	prg
@@ -17915,7 +17915,7 @@ encoder:
 禠	pyrw	9	prw
 禋	pysf	9	psf
 禫	pysf	9	psf
-祚	pyt	84	ptf
+祚	pyt	84
 㓃	pyta	9
 祅	pytd	9	ptd
 䄆	pytd	9	ptd
@@ -17926,7 +17926,7 @@ encoder:
 禶	pytm	9	ptm
 䄉	pyty	9	pty
 䄔	pyty	9	pty
-祥	pyu	1863	pug
+祥	pyu	1863
 禙	pyue	9	pue
 祥	pyug	1863	pug
 禉	pyug	9	pug
@@ -17936,7 +17936,7 @@ encoder:
 祱	pyuq	9	puq
 祶	pyut	9	put
 禌	pyux	9	pux
-禄	pyv	543	pvi
+禄	pyv	543
 祲	pyvc	11	pvc
 㝗	pyve	9
 禄	pyvi	543	pvi
@@ -17952,7 +17952,7 @@ encoder:
 䄒	pywn	9	pwn
 㝔	pywr	9
 宍	pywu	9
-祿	pyx	10	pxi
+祿	pyx	10
 禒	pyxe	9	pxe
 祿	pyxi	10	pxi
 䃾	pyxx	9	pxx
@@ -17966,7 +17966,7 @@ encoder:
 禞	pyyk	9	pyk
 宀	pyyn	83
 祊	pyyt	9	pyt
-礻	pyyy	97	pyny
+礻	pyyy	97	pyyy
 䄘	pyyy	9	pyy
 错	qa	22088
 錢	qaa	50
@@ -18411,7 +18411,7 @@ encoder:
 鳋	qgcj	11	qcj
 鲐	qgck	11	qck
 鲃	qgcn	15	qcn
-鱿	qgd	17	qdy
+鱿	qgd	17
 鲔	qgde	11	qde
 銒	qgdf	9
 䲠	qgdj	15	qdj
@@ -18432,7 +18432,7 @@ encoder:
 匍	qgey	11
 鋪	qgey	10
 錶	qgey	10
-鱼	qgf	9175	qgf
+鱼	qgf	9175
 鲑	qgff	24	qff
 錏	qgfg	9
 釪	qgfh	9
@@ -18463,7 +18463,7 @@ encoder:
 鲿	qgic	15	qic
 䲤	qgig	9	qig
 銶	qgiy	9
-鲁	qgj	2347	qjf
+鲁	qgj	2347
 鳗	qgjc	60	qjc
 䦄	qgje	9
 鲁	qgjf	2347	qjf
@@ -18479,7 +18479,7 @@ encoder:
 鳎	qgjn	14	qjn
 鏸	qgjn	9
 鲲	qgjx	79	qjx
-鳄	qgk	83	qkn
+鳄	qgk	83
 铻	qgkg	15
 鋙	qgkg	9
 镉	qgkh	127
@@ -18491,7 +18491,7 @@ encoder:
 鳄	qgkn	83	qkn
 鋀	qgku	9
 鏉	qgkw	8
-鳃	qgl	88	qln
+鳃	qgl	88
 鍊	qgl	10
 鲴	qgld	11	qld
 鳂	qgle	15	qle
@@ -18513,23 +18513,23 @@ encoder:
 鳛	qgnr	15	qnr
 钺	qgny	75
 鉞	qgny	9
-鳞	qgo	222	qoh
+鳞	qgo	222
 鋄	qgoc	9
 铔	qgog	15
 鳞	qgoh	222	qoh
 鳙	qgoh	19	qoh
 錽	qgot	8
 铼	qgoy	15
-鲩	qgp	11	qpq
+鲩	qgp	11
 鲩	qgpq	11	qpq
-鲍	qgq	607	qqn
+鲍	qgq	607
 䲟	qgqb	15	qqb
 鲍	qgqn	607	qqn
 鲌	qgrg	15	qrg
 鳇	qgrg	11	qrg
 鳈	qgri	15	qri
 鲘	qgrk	15	qrk
-鳔	qgs	11	qsi
+鳔	qgs	11
 鳔	qgsi	11	qsi
 鲄	qgsk	15	qsk
 鲊	qgtf	15	qtf
@@ -18539,7 +18539,7 @@ encoder:
 鲦	qgts	11	qts
 鳆	qgtt	11	qtt
 稣	qgty	18	qty
-鲜	qgu	1571	qug
+鲜	qgu	1571
 铗	qgud	19
 鳉	qguf	15	quf
 鳟	qguf	11	quf
@@ -18549,7 +18549,7 @@ encoder:
 䲞	qgug	15	qug
 鳝	qguk	64	quk
 鳒	qguo	15	quo
-鲫	qgv	42	qvb
+鲫	qgv	42
 鋞	qgva	9
 鲫	qgvb	42	qvb
 鲟	qgvf	29	qvf
@@ -18557,14 +18557,14 @@ encoder:
 鲻	qgvl	22	qvl
 鍿	qgvl	9
 鱽	qgvt	15	qvt
-鲋	qgw	13	qwf
+鲋	qgw	13
 䲝	qgwb	15	qwb
 鲙	qgwc	15	qwc
 鲋	qgwf	13	qwf
 鲶	qgwn	17	qwn
 鑈	qgwr	9
 銕	qgxw	9
-鲸	qgy	206	qyi
+鲸	qgy	206
 鳊	qgya	11	qya
 鳣	qgyg	15	qyg
 鲸	qgyi	206	qyi
@@ -19056,7 +19056,7 @@ encoder:
 鱫	qoet	9	qet
 鮾	qoev	9	qev
 鱮	qoew	9	qew
-鱈	qof	9	qfv
+鱈	qof	9
 魼	qofc	9	qfc
 鮭	qoff	9	qff
 鯥	qoff	9	qff
@@ -19115,7 +19115,7 @@ encoder:
 鱺	qogx	9	qgx
 鯄	qogy	9	qgy
 鯆	qogy	9	qgy
-鱸	qoh	9	qhl
+鱸	qoh	9
 鮍	qohc	8	qhc
 䱙	qohc	8	qhc
 鯡	qohd	9	qhd
@@ -19133,7 +19133,7 @@ encoder:
 鱨	qoij	9	qij
 魦	qoit	9	qit
 鯋	qoit	9	qit
-魯	qoj	10	qjf
+魯	qoj	10
 鰻	qojc	9	qjc
 魯	qojf	10	qjf
 鯉	qojf	9	qjf
@@ -19154,8 +19154,8 @@ encoder:
 鱓	qokl	9	qkl
 鰐	qokn	9	qkn
 鱢	qoks	9	qks
-鰱	qol	10	qlp
-鰓	qol	9	qln
+鰱	qol	10
+鰓	qol	9
 鯝	qold	8	qld
 鱞	qole	9	qle
 鰃	qole	8	qle
@@ -19201,7 +19201,7 @@ encoder:
 鏕	qonx	9
 麁	qonx	9
 䥝	qonx	9
-鱗	qoo	9	qoh
+鱗	qoo	9
 鐒	qooe	9
 䲏	qooe	9	qoe
 鱗	qooh	9	qoh
@@ -19213,7 +19213,7 @@ encoder:
 錟	qooy	9
 鯳	qooy	9	qoy
 䱊	qooy	9	qoy
-鯇	qop	9	qpq
+鯇	qop	9
 鰘	qopf	9	qpf
 鰚	qopg	9	qpg
 鰰	qoph	9	qph
@@ -19224,7 +19224,7 @@ encoder:
 鯇	qopq	9	qpq
 鮟	qopv	8	qpv
 鮀	qopx	9	qpx
-鮑	qoq	9	qqn
+鮑	qoq	9
 鮠	qoqb	9	qqb
 鮣	qoqb	8	qqb
 鱌	qoqe	9	qqe
@@ -19299,7 +19299,7 @@ encoder:
 鱵	qoty	9	qty
 䰻	qoty	9	qty
 炙	qou	127
-魚	qou	30	qou
+魚	qou	30
 鮩	qoua	9	qua
 䱹	qoua	9	qua
 䱧	qoub	8	qub
@@ -19601,8 +19601,8 @@ encoder:
 鈢	qsy	9
 鉥	qsyy	9
 儿	qt	15408
-猎	qta	377	qaj
-獲	qta	10	qac
+猎	qta	377
+獲	qta	10
 㹽	qtaa	8	qaa
 獲	qtac	10	qac
 狨	qtad	11	qad
@@ -19620,7 +19620,7 @@ encoder:
 獚	qtaw	9	qaw
 獾	qtay	35	qay
 㺇	qtay	9	qay
-犯	qtb	2350	qbn
+犯	qtb	2350
 㺦	qtbg	9	qbg
 卯	qtbh	177
 狲	qtbi	11	qbi
@@ -19671,7 +19671,7 @@ encoder:
 狵	qtdy	9	qdy
 鉃	qtdy	9
 㺂	qtdy	9	qdy
-狙	qte	96	qeg
+狙	qte	96
 猨	qtec	9	qec
 獀	qtec	9	qec
 狙	qteg	96	qeg
@@ -19682,7 +19682,7 @@ encoder:
 㺔	qteo	9	qeo
 猊	qteq	12	qeq
 㺞	qtew	9	qew
-猪	qtf	15935	qfj
+猪	qtf	15935
 鑽	qtf	10
 㹲	qtfb	9	qfb
 铥	qtfc	15
@@ -19715,7 +19715,7 @@ encoder:
 犲	qtft	9	qft
 狫	qtfx	9	qfx
 㺢	qtfy	9	qfy
-狂	qtg	4205	qgg
+狂	qtg	4205
 㹵	qtga	9	qga
 狭	qtgd	135	qgd
 猜	qtge	3859	qge
@@ -19766,7 +19766,7 @@ encoder:
 㹺	qtij	9	qij
 㹰	qtiq	9	qiq
 猀	qtit	9	qit
-独	qtj	2124	qjy
+独	qtj	2124
 獌	qtjc	9	qjc
 狸	qtjf	117	qjf
 猂	qtjf	9	qjf
@@ -19792,7 +19792,7 @@ encoder:
 㺧	qtkk	9	qkk
 㺗	qtkl	9	qkl
 玁	qtkt	9	qkt
-獨	qtl	55	qlj
+獨	qtl	55
 猥	qtle	31	qle
 猬	qtle	12	qle
 獧	qtle	9	qle
@@ -19804,7 +19804,7 @@ encoder:
 㺏	qtlv	8	qlv
 鎞	qtlx	9
 玀	qtly	9	qly
-猾	qtm	19	qme
+猾	qtm	19
 鐭	qtmd	9
 㹧	qtmd	9	qmd
 猾	qtme	19	qme
@@ -19841,7 +19841,7 @@ encoder:
 狔	qtnx	9	qnx
 夕	qtny	663
 㺟	qtny	9	qny
-狄	qto	530	qoy
+狄	qto	530
 獜	qtoh	9	qoh
 㺎	qtoh	9	qoh
 鐇	qtol	9
@@ -19855,8 +19855,8 @@ encoder:
 狄	qtoy	530	qoy
 锹	qtoy	51
 鍬	qtoy	9
-狞	qtp	24	qps
-獰	qtp	9	qps
+狞	qtp	24
+獰	qtp	9
 狩	qtpf	58	qpf
 猔	qtpi	9	qpi
 㺙	qtpm	9	qpm
@@ -19867,7 +19867,7 @@ encoder:
 狖	qtpw	9	qpw
 猽	qtpw	9	qpw
 㺠	qtpy	9	qpy
-狗	qtq	10200	qqk
+狗	qtq	10200
 㹝	qtqa	9	qqa
 㺅	qtqd	9	qqd
 獬	qtqg	12	qqg
@@ -19882,7 +19882,7 @@ encoder:
 㹼	qtqo	9	qqo
 犳	qtqy	9	qqy
 㺥	qtqy	9	qqy
-狐	qtr	617	qry
+狐	qtr	617
 䥏	qtrb	9
 猈	qtrf	9	qrf
 獆	qtrf	9	qrf
@@ -19915,10 +19915,10 @@ encoder:
 獯	qtto	11	qto
 狿	qttp	9	qtp
 㹶	qttp	9	qtp
-犭	qttt	47	qtnt
+犭	qttt	47	qttt
 㹣	qttu	9	qtu
 㹻	qttv	9	qtv
-猶	qtu	10	qug
+猶	qtu	10
 獇	qtuc	9	quc
 獐	qtuf	22	quf
 獞	qtuf	9	quf
@@ -19931,7 +19931,7 @@ encoder:
 猐	qtuq	9	quq
 獙	qtut	9	qut
 鉖	qtuy	9
-狠	qtv	3506	qve
+狠	qtv	3506
 卿	qtvb	950
 狠	qtve	3506	qve
 錗	qtvg	9
@@ -19941,7 +19941,7 @@ encoder:
 㺁	qtvr	9	qvr
 㺐	qtvs	9	qvs
 犱	qtvy	9	qvy
-猴	qtw	904	qwd
+猴	qtw	904
 狯	qtwc	11	qwc
 狑	qtwc	9	qwc
 猴	qtwd	904	qwd
@@ -19962,7 +19962,7 @@ encoder:
 㹯	qtws	9	qws
 獫	qtww	9	qww
 猚	qtwy	9	qwy
-狒	qtx	14	qxj
+狒	qtx	14
 狕	qtxe	9	qxe
 猭	qtxe	9	qxe
 狴	qtxf	11	qxf
@@ -19970,7 +19970,7 @@ encoder:
 狒	qtxj	14	qxj
 獼	qtxr	9	qxr
 鋂	qtxy	9
-狼	qty	4237	qye
+狼	qty	4237
 鉌	qty	9
 猵	qtya	9	qya
 狼	qtye	4237	qye
@@ -21044,108 +21044,108 @@ encoder:
 皠	rmwy	9
 罆	rmxm	9
 䍊	rmyr	9
-气	rn	9442
+气	rn	9442	rnb
 抿	rna	142
 㩔	rnac	9
 搌	rnae	11
 㨉	rnaj	9
 抿	rnan	142
-气	rnb	9442
+气	rnb	9442	rnb
 掘	rnbm	402
-氖	rnbr	48
+氖	rnbr	48	rbr
 撖	rnbt	11
-氢	rnc	493
-氢	rnca	493
+氢	rnc	493	rca
+氢	rnca	493	rca
 据	rnd	13756
 戶	rnd	10
 据	rndg	13756
-氪	rndq	22
-㔕	rnet	9
+氪	rndq	22	rdq
+㔕	rnet	9	ret
 扭	rnf	854
 扭	rnfg	854
 扟	rnfh	9
 握	rng	1081
 挧	rng	9
 䎅	rng	9
-氫	rnga	9
+氫	rnga	9	rga
 挪	rngb	688
-氰	rnge	111
+氰	rnge	111	rge
 握	rngf	1081
-氩	rngg	36
+氩	rngg	36	rgg
 搄	rngg	15
 揯	rngg	9
-氬	rngg	9
-氭	rngi	8
-氞	rngw	9
-㪂	rnhc	9
+氬	rngg	9	rgg
+氭	rngi	8	rgi
+氞	rngw	9	rgw
+㪂	rnhc	9	rhc
 揟	rnhe	9
 摪	rnhf	9
 㧃	rnhh	9
-㲶	rnho	9
+㲶	rnho	9	rho
 㨝	rnie	9
-㲵	rnie	9
+㲵	rnie	9	rie
 摨	rnig	9
-氜	rnjd	9
-刏	rnjh	9
-氠	rnjh	9
-氘	rnjj	20
-氲	rnjl	20
-氱	rnjr	9
+氜	rnjd	9	rjd
+刏	rnjh	9	rjh
+氠	rnjh	9	rjh
+氘	rnjj	20	rjj
+氲	rnjl	20	rjl
+氱	rnjr	9	rjr
 擗	rnkf	9
-㲴	rnkh	9
-氚	rnkj	18
-㲷	rnkl	9
-氤	rnl	13
-氤	rnld	13
-氳	rnll	9
-氙	rnm	11
-氙	rnmj	11
-氝	rnmw	9
+㲴	rnkh	9	rkh
+氚	rnkj	18	rkj
+㲷	rnkl	9	rkl
+氤	rnl	13	rld
+氤	rnld	13	rld
+氳	rnll	9	rll
+氙	rnm	11	rmj
+氙	rnmj	11	rmj
+氝	rnmw	9	rmw
 扎	rnn	1873
 癿	rnn	9
 挶	rnnk	9
-忥	rnnu	9
+忥	rnnu	9	rnu
 撰	rnnw	252
-氣	rno	71
-氮	rnoo	516
-氣	rnou	71
-氨	rnp	413
+氣	rno	71	rou
+氮	rnoo	516	roo
+氣	rnou	71	rou
+氨	rnp	413	rpv
 㩣	rnpl	9
-氨	rnpv	413
-㰟	rnqw	9
+氨	rnpv	413	rpv
+㰟	rnqw	9	rqw
 所	rnr	44055
 摺	rnrg	31
 所	rnrh	44055
-気	rnri	9
+気	rnri	9	rri
 乺	rnrn	9
 扬	rnrt	1930
-氥	rnsf	9
+氥	rnsf	9	rsf
 拨	rnt	1684
-捤	rntn	9
-氕	rntr	11
+捤	rntn	9	rtn
+氕	rntr	11	rtr
 㧙	rntt	9
-氡	rntu	50
+氡	rntu	50	rtu
 拨	rnty	1684
-氧	rnu	762
+氧	rnu	762	rug
 㣻	rnu	9
 摒	rnua	56
 搱	rnuf	9
-氧	rnug	762
-氯	rnv	411
-氯	rnvi	411
-氛	rnw	35
+氧	rnug	762	rug
+氯	rnv	411	rvi
+氯	rnvi	411	rvi
+氛	rnw	35	rwv
 摎	rnwe	9
-氛	rnwv	35
+氛	rnwv	35	rwv
 擢	rnwy	34
 抉	rnwy	19
-氟	rnx	409
+氟	rnx	409	rxj
 紥	rnxi	9
-氟	rnxj	409
+氟	rnxj	409	rxj
 抳	rnxn	9
 拟	rny	2833
 抋	rny	9
 拟	rnyw	2833
-氦	rnyw	75
+氦	rnyw	75	ryw
 択	rnyy	9
 扩	ro	659
 擴	roa	10
@@ -28886,7 +28886,7 @@ encoder:
 僟	wxxy	9
 㑄	wxy	9
 信	wy	113120
-餞	wya	9	waa
+餞	wya	9
 餞	wyaa	9	waa
 饃	wyad	9	wad
 䭊	wyad	9	wad
@@ -28901,7 +28901,7 @@ encoder:
 䭟	wyas	9	was
 饊	wyat	8	wat
 餝	wyay	9	way
-餌	wyb	10	wbg
+餌	wyb	10
 餌	wybg	10	wbg
 飿	wybm	8	wbm
 隽	wybr	110
@@ -28976,7 +28976,7 @@ encoder:
 凡	wyi	4520
 饄	wyif	9	wif
 饓	wyis	9	wis
-蝕	wyj	10	wjy
+蝕	wyj	10
 饅	wyjc	10	wjc
 饆	wyjf	9	wjf
 㑪	wyjg	9
@@ -29001,7 +29001,7 @@ encoder:
 䭤	wykp	9	wkp
 停	wyks	5939
 僦	wyky	45
-餵	wyl	10	wle
+餵	wyl	10
 䭅	wyld	9	wld
 餵	wyle	10	wle
 䭞	wylf	9	wlf
@@ -29069,7 +29069,7 @@ encoder:
 餫	wypl	9	wpl
 館	wypn	27	wpn
 䭢	wyps	9	wps
-飲	wyq	10	wqw
+飲	wyq	10
 飹	wyqb	9	wqb
 餡	wyqe	9	wqe
 㒅	wyqe	9
@@ -29085,7 +29085,7 @@ encoder:
 饞	wyqy	9	wqy
 䬫	wyqy	9	wqy
 仪	wyr	1797
-飯	wyr	11	wrc
+飯	wyr	11
 禽	wyrc	318
 飯	wyrc	11	wrc
 餽	wyrc	9	wrc
@@ -29119,7 +29119,7 @@ encoder:
 餧	wytv	9	wtv
 餓	wyty	10	wty
 倣	wyty	9
-飠	wyty	8	wtyy
+飠	wyty	8	wyty
 傍	wyu	514
 亽	wyu	9
 餅	wyua	10	wua
@@ -29183,13 +29183,13 @@ encoder:
 雥	wywy	9
 雦	wywy	9
 飤	wywy	9	wwy
-饑	wyx	9	wxy
+饑	wyx	9
 餯	wyxe	9	wxe
 傗	wyxl	9
 伭	wyxy	9
 饑	wyxy	9	wxy
 㒕	wyxy	9
-餃	wyy	10	wyr
+餃	wyy	10
 伩	wyy	9
 䭏	wyya	9	wya
 饟	wyye	9	wye
@@ -46540,8 +46540,8 @@ encoder:
 𣰠	ghhn	1
 𢌫	ghhp	1
 𤴓	ghi	1
-𝍳	ghi	1
-𝍴	ghi	1
+𝍳	ghk	1
+𝍴	ghd	1
 𪴹	ghic	1
 𬆃	ghih	1
 𣦎	ghik	1
