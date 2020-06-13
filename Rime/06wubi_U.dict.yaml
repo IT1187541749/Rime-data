@@ -2,7 +2,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-12
+# 2020-06-13
 ---
 name: 06wubi_U
 version: "2.0"
@@ -5665,190 +5665,190 @@ encoder:
 坘	fgxg	9
 塐	fgxi	9
 䨑	fgxw	9
-起	fh	29383
+起	fh	29383	fnv
 墟	fha	110
 㚀	fhaa	9
 壉	fhae	9
 㙤	fhaf	9
 墟	fhag	110
-趞	fhaj	9
+趞	fhaj	9	faj
 壚	fhal	9
-䞪	fhar	9
-趪	fhaw	9
+䞪	fhar	9	far
+趪	fhaw	9	faw
 㙈	fhaw	9
-䞖	fhay	9
-䟒	fhay	9
-趣	fhb	584
-趣	fhbc	584
-趉	fhbm	9
+䞖	fhay	9	fay
+䟒	fhay	9	fay
+趣	fhb	584	fbc
+趣	fhbc	584	fbc
+趉	fhbm	9	fbm
 坡	fhc	1135
-䞵	fhcc	9
-䞻	fhce	9
-䟃	fhce	8
-䞭	fhct	9
+䞵	fhcc	9	fcc
+䞻	fhce	9	fce
+䟃	fhce	8	fce
+䞭	fhct	9	fct
 坡	fhcy	1135
 霏	fhd	119
 霏	fhdd	119
-䞠	fhdd	9
-䞥	fhde	9
-䞜	fhdh	9
-䟐	fhdh	8
+䞠	fhdd	9	fdd
+䞥	fhde	9	fde
+䞜	fhdh	9	fdh
+䟐	fhdh	8	fdh
 韯	fhdy	9
-趄	fhe	11
-䞯	fheb	9
-赲	fhee	9
-趄	fheg	11
+趄	fhe	11	feg
+䞯	fheb	9	feb
+赲	fhee	9	fee
+趄	fheg	11	feg
 直	fhf	5038
 㱏	fhf	9
-䞚	fhfc	9
-䞨	fhff	9
+䞚	fhfc	9	ffc
+䞨	fhff	9	fff
 矗	fhfh	51
-䞽	fhfi	9
-赶	fhfk	3694
-趌	fhfk	9
-䞸	fhfk	9
-䟎	fhfm	9
-䞰	fhfo	9
-趬	fhfq	9
-䞗	fhft	9
-䟈	fhfy	9
-䟌	fhfy	9
+䞽	fhfi	9	ffi
+赶	fhfk	3694	ffk
+趌	fhfk	9	ffk
+䞸	fhfk	9	ffk
+䟎	fhfm	9	ffm
+䞰	fhfo	9	ffo
+趬	fhfq	9	ffq
+䞗	fhft	9	fft
+䟈	fhfy	9	ffy
+䟌	fhfy	9	ffy
 址	fhg	251
 埱	fhgc	9
 圵	fhgg	9
+䞙	fhgh	9	fgh
 垰	fhgh	9
-䞙	fhgh	9
-趚	fhgi	9
-趔	fhgj	17
-䟄	fhgm	9
-䞛	fhgn	9
-趰	fhgr	9
-越	fhgy	14156
-䞝	fhgy	9
-赴	fhh	2178
-䟊	fhhe	9
-趠	fhhf	9
-赴	fhhi	2178
-趈	fhhk	9
+趚	fhgi	9	fgi
+趔	fhgj	17	fgj
+䟄	fhgm	9	fgm
+䞛	fhgn	9	fgn
+趰	fhgr	9	fgr
+越	fhgy	14156	fgy
+䞝	fhgy	9	fgy
+赴	fhh	2178	fhi
+䟊	fhhe	9	fhe
+趠	fhhf	9	fhf
+赴	fhhi	2178	fhi
+趈	fhhk	9	fhk
 埗	fhht	9
-趟	fhi	1603
-趙	fhie	19
-趟	fhik	1603
-赻	fhit	9
-趕	fhj	16
-䟂	fhjc	9
-趕	fhjf	16
-䟆	fhjf	8
-䞡	fhjg	9
-趧	fhjh	9
-䞶	fhjr	9
+趟	fhi	1603	fik
+趙	fhie	19	fie
+趟	fhik	1603	fik
+赻	fhit	9	fit
+趕	fhj	16	fjf
+䟂	fhjc	9	fjc
+趕	fhjf	16	fjf
+䟆	fhjf	8	fjf
+䞡	fhjg	9	fjg
+趧	fhjh	9	fjh
+䞶	fhjr	9	fjr
 坫	fhkg	11
-趗	fhkh	9
-趮	fhks	9
+趗	fhkh	9	fkh
+趮	fhks	9	fks
 嗭	fhkx	9
 㼭	fhky	9
 盐	fhl	2175
 盐	fhlf	2175
-䟉	fhlj	9
+䟉	fhlj	9	flj
 塷	fhlo	9
-趩	fhlw	9
-赸	fhmk	9
-䞴	fhmk	9
+趩	fhlw	9	flw
+赸	fhmk	9	fmk
+䞴	fhmk	9	fmk
 武	fhn	3161
-趐	fhnd	9
+趐	fhnd	9	fnd
 鹉	fhng	11
 垇	fhng	9
-赳	fhnh	26
+赳	fhnh	26	fnh
+䞷	fhnm	9	fnm
 䝾	fhnm	9
-䞷	fhnm	9
+趘	fhnn	9	fnn
 悳	fhnn	9
-趘	fhnn	9
 䵺	fhnn	9
 鵡	fhno	9
 垆	fhnt	16
 惪	fhnu	9
-起	fhnv	29383
+起	fhnv	29383	fnv
+赽	fhnw	9	fnw
 虣	fhnw	9
-赽	fhnw	9
 武	fhny	3161
-趯	fhny	9
-趤	fhpd	9
-趋	fhq	643
-趨	fhq	10
-赿	fhqa	9
+趯	fhny	9	fny
+趤	fhpd	9	fpd
+趋	fhq	643	fqv
+趨	fhq	10	fqt
+赿	fhqa	9	fqa
 䨘	fhqb	9
-趛	fhqd	9
-趂	fhqi	9
-趒	fhqi	9
-䞤	fhqk	9
+趛	fhqd	9	fqd
+趂	fhqi	9	fqi
+趒	fhqi	9	fqi
+䞤	fhqk	9	fqk
 垷	fhqn	9
-趜	fhqo	9
-趍	fhqq	9
+趜	fhqo	9	fqo
+趍	fhqq	9	fqq
 䨳	fhqq	9
-趨	fhqt	10
-赹	fhqu	9
-趋	fhqv	643
-赼	fhqw	9
-趆	fhqy	9
-䟋	fhqy	9
-赵	fhr	6376
-䞟	fhrd	9
-䞹	fhrg	9
-䞺	fhrh	9
-赵	fhri	6376
-趎	fhri	9
-赾	fhrk	9
-䞧	fhrk	9
-䟏	fhrs	9
-趃	fhrw	9
-䞾	fhrw	9
-䞣	fhry	9
-䞬	fhtb	9
-趏	fhtd	9
-䞢	fhtf	9
-趫	fhtk	9
-䞦	fhtk	9
-趱	fhtm	12
-趲	fhtm	9
-䞘	fhtn	9
-趀	fhtt	9
-䞲	fhty	9
-䟍	fhty	9
-走	fhu	48130
-䟀	fhua	9
-趇	fhud	9
+趨	fhqt	10	fqt
+赹	fhqu	9	fqu
+趋	fhqv	643	fqv
+赼	fhqw	9	fqw
+趆	fhqy	9	fqy
+䟋	fhqy	9	fqy
+赵	fhr	6376	fri
+䞟	fhrd	9	frd
+䞹	fhrg	9	frg
+䞺	fhrh	9	frh
+赵	fhri	6376	fri
+趎	fhri	9	fri
+赾	fhrk	9	frk
+䞧	fhrk	9	frk
+䟏	fhrs	9	frs
+趃	fhrw	9	frw
+䞾	fhrw	9	frw
+䞣	fhry	9	fry
+䞬	fhtb	9	ftb
+趏	fhtd	9	ftd
+䞢	fhtf	9	ftf
+趫	fhtk	9	ftk
+䞦	fhtk	9	ftk
+趱	fhtm	12	ftm
+趲	fhtm	9	ftm
+䞘	fhtn	9	ftn
+趀	fhtt	9	ftt
+䞲	fhty	9	fty
+䟍	fhty	9	fty
+走	fhu	48130	fhu
+䟀	fhua	9	fua
+趇	fhud	9	fud
 﨣	fhuf	9
-趥	fhug	9
-趦	fhuk	9
-䞳	fhuk	9
-趑	fhuw	57
-超	fhv	9875
-趢	fhvi	9
-超	fhvk	9875
-䞫	fhvk	9
-䟁	fhvs	9
+趥	fhug	9	fug
+趦	fhuk	9	fuk
+䞳	fhuk	9	fuk
+趑	fhuw	57	fuw
+超	fhv	9875	fvk
+趢	fhvi	9	fvi
+超	fhvk	9875	fvk
+䞫	fhvk	9	fvk
+䟁	fhvs	9	fvs
 真	fhw	65153
-䟑	fhwa	9
-趁	fhwe	1684
-趖	fhwf	9
-䞩	fhwk	9
-䞱	fhwk	9
+䟑	fhwa	9	fwa
+趁	fhwe	1684	fwe
+趖	fhwf	9	fwf
+䞩	fhwk	9	fwk
+䞱	fhwk	9	fwk
 颠	fhwm	740
 顛	fhwm	10
-赺	fhwn	9
-趝	fhwn	9
+赺	fhwn	9	fwn
+趝	fhwn	9	fwn
 㥲	fhwn	9
-趭	fhwo	9
+趭	fhwo	9	fwo
 鷏	fhwo	9
-趓	fhws	9
-䞮	fhws	9
+趓	fhws	9	fws
+䞮	fhws	9	fws
 真	fhwu	65153
 㒹	fhww	9
+趡	fhwy	9	fwy
 埧	fhwy	9
-趡	fhwy	9
-䞼	fhxe	9
-䞞	fhxj	9
-䟇	fhxy	9
+䞼	fhxe	9	fxe
+䞞	fhxj	9	fxj
+䟇	fhxy	9	fxy
 圤	fhy	9
 㱐	fhyi	9
 示	fi	642
@@ -14245,8 +14245,8 @@ encoder:
 巖	mkkt	9
 巗	mkkt	8
 過	mkp	544
-迥	mkpd	403
 過	mkpd	544
+迥	mkpd	403
 㢠	mkpd	9
 贶	mkqn	11
 岲	mkqn	9

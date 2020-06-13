@@ -2,7 +2,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-12
+# 2020-06-13
 ---
 name: 06wubi_tygfzj
 version: "2.0"
@@ -2114,49 +2114,49 @@ encoder:
 垭	fgog	39
 坪	fgu	752
 坪	fguf	752
-起	fh	29383
+起	fh	29383	fnv
 墟	fha	110
 墟	fhag	110
-趣	fhb	584
-趣	fhbc	584
+趣	fhb	584	fbc
+趣	fhbc	584	fbc
 坡	fhc	1135
 坡	fhcy	1135
 霏	fhd	119
 霏	fhdd	119
-趄	fhe	11
-趄	fheg	11
+趄	fhe	11	feg
+趄	fheg	11	feg
 直	fhf	5038
 矗	fhfh	51
-赶	fhfk	3694
+赶	fhfk	3694	ffk
 址	fhg	251
-趔	fhgj	17
-越	fhgy	14156
-赴	fhh	2178
-赴	fhhi	2178
+趔	fhgj	17	fgj
+越	fhgy	14156	fgy
+赴	fhh	2178	fhi
+赴	fhhi	2178	fhi
 埗	fhht	9
-趟	fhi	1603
-趟	fhik	1603
+趟	fhi	1603	fik
+趟	fhik	1603	fik
 坫	fhkg	11
 盐	fhl	2175
 盐	fhlf	2175
 武	fhn	3161
 鹉	fhng	11
-赳	fhnh	26
+赳	fhnh	26	fnh
 垆	fhnt	16
-起	fhnv	29383
+起	fhnv	29383	fnv
 武	fhny	3161
-趯	fhny	9
-趋	fhq	643
-趋	fhqv	643
-赵	fhr	6376
-赵	fhri	6376
-趱	fhtm	12
-走	fhu	48130
-趑	fhuw	57
-超	fhv	9875
-超	fhvk	9875
+趯	fhny	9	fny
+趋	fhq	643	fqv
+趋	fhqv	643	fqv
+赵	fhr	6376	fri
+赵	fhri	6376	fri
+趱	fhtm	12	ftm
+走	fhu	48130	fhu
+趑	fhuw	57	fuw
+超	fhv	9875	fvk
+超	fhvk	9875	fvk
 真	fhw	65153
-趁	fhwe	1684
+趁	fhwe	1684	fwe
 颠	fhwm	740
 真	fhwu	65153
 示	fi	642
@@ -4584,8 +4584,8 @@ encoder:
 距	khan	4448	kan
 跷	khaq	64	kaq
 蹀	khas	11	kas
-蹒	khaw	11	kaw
 唬	khaw	124
+蹒	khaw	11	kaw
 躏	khay	11	kay
 蹑	khbc	29	kbc
 趿	khby	14	kby
@@ -4692,8 +4692,8 @@ encoder:
 躐	khvn	11	kvn
 踺	khvp	11	kvp
 趴	khw	680	kwy
-跄	khwb	13	kwb
 啮	khwb	57
+跄	khwb	13	kwb
 跗	khwf	13	kwf
 跺	khws	157	kws
 蹬	khwu	391	kwu
@@ -6515,9 +6515,9 @@ encoder:
 袪	pufc	13	pfc
 褂	pufh	70	pfh
 袆	pufh	15	pfh
+宰	pufj	836
 褚	pufj	195	pfj
 襦	pufj	22	pfj
-宰	pufj	836
 衬	pufy	338	pfy
 袜	pug	258	pgs
 裱	puge	75	pge
@@ -6894,8 +6894,8 @@ encoder:
 鲱	qghd	11	qhd
 钲	qghg	12
 鲇	qghk	19	qhk
-鲈	qghn	28	qhn
 钙	qghn	1165
+鲈	qghn	28	qhn
 鲿	qgic	15	qic
 𨱇	qgiy	15
 鲁	qgj	2347	qjf
@@ -6986,8 +6986,8 @@ encoder:
 鲚	qgyj	11	qyj
 鲛	qgyr	35	qyr
 鲂	qgyt	12	qyt
-鳑	qgyy	15	qyy
 钰	qgyy	356
+鳑	qgyy	15	qyy
 外	qh	20471
 铍	qhcy	27
 钼	qhg	163
@@ -7289,8 +7289,8 @@ encoder:
 猿	qtfe	213	qfe
 锸	qtfe	11
 锤	qtfg	581
-犴	qtfh	11	qfh
 钎	qtfh	49
+犴	qtfh	11	qfh
 猪	qtfj	15935	qfj
 锆	qtfk	58
 铤	qtfp	13
