@@ -29,6 +29,9 @@
   * 必须安装字体并运行注册表脚本文件才能正常使用.
 
 
+## [新世纪五笔字型资源库](https://06wb.github.io/)
+
+
 ## 数据来源
 
   * 06版五笔字型超大字符集编码:https://github.com/CNMan/UnicodeCJK-WuBi06
@@ -49,9 +52,6 @@
   * 王码五笔发明人王永民先生
   
   * CNMan
-
-
-## [新世纪五笔字型资源库](https://06wb.github.io/)
 
 
 ## 交流群组
