@@ -309,7 +309,7 @@
 \u573a	fnrt	场	ch+ang	f-10 n-36 r-01 t-00	1 2 1 5 3	0x0000		309
 \u6743	scy	权	q+uan	s-10 c-10 y-00	1 2 3 4 4	0x0006		310
 \u5b89	pvf	安	+an	p-13 v-10 f-00	4 4 5 5 1	0x0006	pvr	311
-\u4e07	gqe	万	w+an m+o	g-01 q-28 e-00	1 5 3	0x0006	dnv	312
+\u4e07	gqv	万	w+an m+o	g-01 q-28 v-00	1 5 3	0x0006	dnv	312
 \u672f	syi	术	sh+u zh+u	s-10 y-01 i-00	1 2 3 4 4	0x0006		313
 \u8bc1	yghg	证	zh+eng	y-11 g-01 h-13 g-00	4 5 1 2 1	0x0004		314
 \u8eab	tmdt	身	sh+en	t-01 m-16 d-01 t-01	3 2 5 1 3	0x0004		315
@@ -1518,7 +1518,7 @@
 \u67f3	sqtb	柳	l+iu	s-10 q-13 t-01 b-22	1 2 3 4 2	0x0004		1518
 \u6696	jegc	暖	n+uan	j-10 e-02 g-01 c-10	6 6 3 4 4	0x0000	jefc jegc	1519
 \u7ade	ukqb	竞	j+ing	u-10 k-10 q-19 b-00	4 1 4 3 5	0x0000		1520
-\u94fe	qlpy	链	l+ian	q-11 l-18 p-11 y-00	3 1 1 1 4	0x0004		1521
+\u94fe	qlph	链	l+ian	q-11 l-18 p-11 h-00	3 1 1 1 4	0x0004		1521
 \u50ac	wmwy	催	c+ui	w-11 m-10 w-11 y-17	3 2 2 5 1	0x0004		1522
 \u4ef2	wkhh	仲	zh+ong	w-11 k-10 h-01 h-00	3 2 6 2	0x0000		1523
 \u70c2	oudg	烂	l+an	o-10 u-03 d-01 g-00	4 3 3 4 1	0x0004	oudg oufg	1524
@@ -1962,7 +1962,7 @@
 \u72b9	qtdy	犹	y+ou	q-30 t-00 d-17 y-01	3 5 3 1 4	0x0000	qtdn qtgy	1962
 \u7984	pyvi	禄	l+u	p-15 y-00 v-16 i-12	4 5 2 4 4	0x0004		1963
 \u9a70	cgbn	驰	ch+i	c-20 g-02 b-17 n-00	5 5 1 5 5	0x0000	cbn	1964
-\u83b2	alpu	莲	l+ian	a-12 l-18 p-11 u-00	1 2 2 1 4	0x0004		1965
+\u83b2	alpj	莲	l+ian	a-12 l-18 p-11 j-00	1 2 2 1 4	0x0004		1965
 \u5339	aqv	匹	p+i y+a	a-17 q-19 v-00	1 3 5 5	0x0004	gqnv	1966
 \u5f99	thhy	徙	x+i	t-14 h-13 h-14 y-00	3 3 2 2 4	0x0004		1967
 \u8bec	yaww	诬	w+u	y-11 a-10 w-10 w-10	4 5 1 2 1	0x0004		1968
@@ -4086,7 +4086,7 @@
 \u64de	rovt	擞	s+ou	r-13 o-14 v-10 t-15	1 2 1 4 4	0x0000		4086
 \u70ab	oyxy	炫	x+uan	o-10 y-13 x-10 y-00	4 3 3 4 4	0x0004		4087
 \u60ee	nulh	惮	d+an	n-20 u-03 l-20 h-00	4 4 2 4 2	0x0000	nujf	4088
-\u6d9f	ilpy	涟	l+ian	i-01 l-18 p-11 y-00	4 4 1 1 4	0x0004		4089
+\u6d9f	ilph	涟	l+ian	i-01 l-18 p-11 h-00	4 4 1 1 4	0x0004		4089
 \u5ce6	yomj	峦	l+uan	y-13 o-13 m-10 j-00	4 1 2 2 2	0x0004		4090
 \u78d0	tewd	磐	p+an	t-01 e-26 w-16 d-14	3 3 5 4 6	0x0000	temd	4091
 \u8146	emaw	腆	t+ian	e-10 m-21 a-15 w-13	3 5 1 1 4	0x0004		4092
@@ -6585,7 +6585,7 @@
 \u5c66	ntov	屦	j+u	n-17 t-14 o-14 v-10	5 1 3 3 1	0x0000		6585
 \u740a	gahb	琊	y+a	g-10 a-23 h-02 b-12	1 1 2 1 2	0x0000		6586
 \u73e7	gqiy	珧	y+ao	g-10 q-19 i-16 y-00	1 1 2 1 4	0x0000	giqn	6587
-\u740f	glpy	琏	l+ian	g-10 l-18 p-11 y-00	1 1 2 1 4	0x0004		6588
+\u740f	glph	琏	l+ian	g-10 l-18 p-11 h-00	1 1 2 1 4	0x0004		6588
 \u66db	jtgo	曛	x+un	j-10 t-01 g-01 o-01	6 6 3 1 4	0x0000		6589
 \u66dc	jnwy	曜	y+ao	j-10 n-22 w-11 y-17	6 6 5 4 1	0x0000		6590
 \u66e9	jyke	曩	n+ang	j-10 y-13 k-10 e-18	6 6 4 1 4	0x0000		6591
@@ -6698,7 +6698,7 @@
 \u7b2b	ttnt	笫	z+i	t-12 t-01 n-47 t-01	3 1 4 3 3	0x0000		6698
 \u7b2e	tthf	笮	z+e z+uo	t-12 t-13 h-01 f-01	3 1 4 3 1	0x0000		6699
 \u7b33	tekf	笳	j+ia	t-12 e-17 k-10 f-00	3 1 4 3 6	0x0004	tlkf	6700
-\u7b3e	tepu	笾	b+ian	t-12 e-17 p-11 u-00	3 1 4 3 4	0x0000	tlpu	6701
+\u7b3e	tepr	笾	b+ian	t-12 e-17 p-11 r-00	3 1 4 3 4	0x0000	tlpu	6701
 \u7ba6	tgmu	箦	z+e	t-12 g-11 m-12 u-00	3 1 4 3 4	0x0000		6702
 \u7b9d	traf	箝	q+ian	t-12 r-13 a-12 f-01	3 1 4 3 1	0x0000		6703
 \u7bda	tahd	篚	f+ei	t-12 a-17 h-01 d-01	3 1 4 3 5	0x0000	tadd	6704
@@ -7150,7 +7150,7 @@
 \u50c3	waqh	僃	b+ei	w-11 a-12 q-14 h-01	3 2 1 2 2	0x0000		7150
 \u50c4	wsfi	僄	b+iao p+iao	w-11 s-13 f-01 i-17	3 2 1 2 4	0x0000		7151
 \u50c5	wakg	僅	j+in	w-11 a-14 k-10 g-11	3 2 1 2 1	0x0004		7152
-\u50c6	wlpy	僆	l+ian	w-11 l-19 p-11 y-00	3 2 1 6 4	0x0000		7153
+\u50c6	wlph	僆	l+ian	w-11 l-19 p-11 h-00	3 2 1 6 4	0x0000		7153
 \u50c7	wnwe	僇	l+u	w-11 n-22 w-10 e-01	3 2 5 4 3	0x0000		7154
 \u50c8	wjlc	僈	m+an	w-11 j-10 l-14 c-10	3 2 6 6 4	0x0000		7155
 \u50c9	wgkw	僉	q+ian	w-10 g-01 k-10 w-10	3 4 1 6 4	0x0000		7156
@@ -7892,7 +7892,7 @@
 \u55f4	kufc	嗴	q+iang	k-10 u-12 f-01 c-13	6 4 3 1 4	0x0000		7892
 \u55f6	kjaf	嗶	b+i	k-10 j-10 a-15 f-13	6 6 6 1 2	0x0000		7893
 \u55f8	gqtk	嗸	+ao	g-11 q-28 t-15 k-10	1 1 2 1 6	0x0000		7894
-\u55f9	klpy	嗹	l+ian	k-10 l-19 p-11 y-00	6 1 6 6 4	0x0000		7895
+\u55f9	klph	嗹	l+ian	k-10 l-19 p-11 h-00	6 1 6 6 4	0x0000		7895
 \u55fa	kmwy	嗺	s+ui z+ui	k-10 m-10 w-11 y-17	6 2 5 2 1	0x0000		7896
 \u55fb	koao	嗻	zh+e zh+u	k-10 o-16 a-14 o-01	6 4 1 3 4	0x0000		7897
 \u55fc	kajd	嗼	m+o	k-10 a-12 j-10 d-10	6 1 2 2 4	0x0000		7898
@@ -9825,7 +9825,7 @@
 \u6164	fpwn	慤	q+ue	f-11 p-14 w-16 n-19	1 2 1 4 4	0x0000		9825
 \u6165	ntfp	慥	z+ao	n-20 t-01 f-10 p-11	4 4 2 3 4	0x0000		9826
 \u6166	giyn	慦	j+iu	g-01 i-11 y-01 n-19	1 2 4 1 4	0x0000		9827
-\u6169	nlpy	慩	l+ian	n-20 l-19 p-11 y-00	4 4 2 1 4	0x0000		9828
+\u6169	nlph	慩	l+ian	n-20 l-19 p-11 h-00	4 4 2 1 4	0x0000		9828
 \u616a	nakk	慪	+ou	n-20 a-17 k-10 k-10	4 4 2 1 5	0x0000		9829
 \u616b	twwn	慫	s+ong	t-14 w-10 w-10 n-19	3 3 2 3 4	0x0000		9830
 \u616c	nakg	慬	j+in q+in	n-20 a-14 k-10 g-11	4 4 2 1 1	0x0000		9831
@@ -10278,7 +10278,7 @@
 \u6455	raqh	摕	d+i t+u zh+i	r-13 a-14 q-19 h-01	1 2 1 1 2	0x0000		10278
 \u6456	rwfi	摖	ch+a q+i	r-13 w-15 f-01 i-17	1 2 1 3 4	0x0000		10279
 \u6457	rgkw	摗	s+ong s+ou	r-13 g-01 k-10 w-10	1 2 1 1 4	0x0000		10280
-\u6459	rlpy	摙	l+ian	r-13 l-19 p-11 y-00	1 2 1 1 4	0x0000		10281
+\u6459	rlph	摙	l+ian	r-13 l-19 p-11 h-00	1 2 1 1 4	0x0000		10281
 \u645a	ripf	摚	ch+eng	r-13 i-18 p-14 f-10	1 2 1 2 1	0x0000		10282
 \u645b	ryrc	摛	ch+i	r-13 y-13 r-85 c-13	1 2 1 4 4	0x0000		10283
 \u645c	rxfm	摜	g+uan	r-13 x-25 f-13 m-13	1 2 1 5 4	0x0000		10284
@@ -11010,7 +11010,7 @@
 \u68bc	sdtf	梼	t+ao	s-10 d-01 t-01 f-17	1 2 3 4 4	0x0000		11010
 \u68bd	sfny	梽	zh+i	s-10 f-11 n-19 y-00	1 2 3 4 4	0x0000		11011
 \u68be	sgoy	梾	l+ai	s-10 g-01 o-14 y-00	1 2 3 4 4	0x0000		11012
-\u68bf	slpy	梿	l+ian	s-10 l-18 p-11 y-00	1 2 3 4 4	0x0000		11013
+\u68bf	slph	梿	l+ian	s-10 l-18 p-11 h-00	1 2 3 4 4	0x0000		11013
 \u68c1	sukq	棁	r+ui t+uo zh+uo	s-10 u-03 k-10 q-19	1 2 3 4 5	0x0000		11014
 \u68c3	tqts	棃	l+i	t-10 q-14 t-01 s-10	3 1 2 3 4	0x0000		11015
 \u68c4	ycgs	棄	q+i	y-13 c-13 g-01 s-10	4 1 5 4 4	0x0004		11016
@@ -11223,7 +11223,7 @@
 \u69e1	sccs	槡	s+ang	s-10 c-10 c-10 s-10	1 2 3 4 4	0x0000		11223
 \u69e2	snrg	槢	d+ie x+i	s-10 n-22 r-10 g-00	1 2 3 4 6	0x0000		11224
 \u69e3	spdk	槣	g+ui j+i	s-10 p-13 d-10 k-10	1 2 3 4 2	0x0000		11225
-\u69e4	slpy	槤	l+ian	s-10 l-19 p-11 y-00	1 2 3 4 4	0x0000		11226
+\u69e4	slph	槤	l+ian	s-10 l-19 p-11 h-00	1 2 3 4 4	0x0000		11226
 \u69e5	sdhv	槥	h+ui	s-10 d-01 h-01 v-14	1 2 3 4 1	0x0000		11227
 \u69e6	sovh	槦	y+ong	s-10 o-16 v-15 h-01	1 2 3 4 2	0x0000		11228
 \u69e7	lrsu	槧	q+ian	l-19 r-14 s-10 u-00	1 6 6 1 4	0x0000		11229
@@ -12122,7 +12122,7 @@
 \u6f1f	iipf	漟	t+ang	i-01 i-18 p-14 f-10	4 4 1 2 1	0x0000		12122
 \u6f21	itjr	漡	sh+ang t+ang	i-01 t-13 j-10 r-01	4 4 1 3 3	0x0000		12123
 \u6f22	iakw	漢	h+an	i-01 a-14 k-10 w-10	4 4 1 1 4	0x0000		12124
-\u6f23	ilpy	漣	l+ian	i-01 l-19 p-11 y-00	4 4 1 1 4	0x0004		12125
+\u6f23	ilph	漣	l+ian	i-01 l-19 p-11 h-00	4 4 1 1 4	0x0004		12125
 \u6f25	ipwf	漥	w+a	i-01 p-13 w-13 f-10	4 4 1 4 1	0x0000		12126
 \u6f26	fiti	漦	ch+i t+ai	f-01 i-23 t-15 i-10	1 1 2 3 4	0x0000		12127
 \u6f27	ifjn	漧	g+an	i-01 f-13 j-10 n-01	4 4 1 1 5	0x0000		12128
@@ -13138,7 +13138,7 @@
 \u7485	gvjs	璅	s+uo z+ao	g-10 v-01 j-10 s-10	1 1 2 1 4	0x0000		13138
 \u7486	gnwe	璆	q+iu	g-10 n-22 w-10 e-01	1 1 2 1 3	0x0000		13139
 \u7488	ggqt	璈	+ao	g-10 g-11 q-28 t-15	1 1 2 1 4	0x0000		13140
-\u7489	glpy	璉	l+ian	g-10 l-19 p-11 y-00	1 1 2 1 4	0x0000		13141
+\u7489	glph	璉	l+ian	g-10 l-19 p-11 h-00	1 1 2 1 4	0x0000		13141
 \u748a	gamy	璊	m+en	g-10 a-14 m-14 y-01	1 1 2 1 4	0x0000		13142
 \u748c	gpgw	璌	y+in	g-10 p-13 g-01 w-13	1 1 2 1 4	0x0000		13143
 \u748d	gagf	璍	h+ua	g-10 a-12 g-01 f-13	1 1 2 1 2	0x0000		13144
@@ -14920,7 +14920,7 @@
 \u7e37	xlvg	縷	l+v	x-13 l-21 v-10 g-00	5 5 4 4 1	0x0004		14920
 \u7e38	xajd	縸	m+o m+u	x-13 a-12 j-10 d-10	5 5 4 4 4	0x0000		14921
 \u7e39	xsfi	縹	p+iao	x-13 s-13 f-01 i-17	5 5 4 4 4	0x0000		14922
-\u7e3a	xlpy	縺	l+ian	x-13 l-19 p-11 y-00	5 5 4 4 4	0x0000		14923
+\u7e3a	xlph	縺	l+ian	x-13 l-19 p-11 h-00	5 5 4 4 4	0x0000		14923
 \u7e3c	xyth	縼	x+uan	x-13 y-16 t-13 h-14	5 5 4 4 4	0x0000		14924
 \u7e3d	xtln	總	z+ong	x-13 t-01 l-12 n-19	5 5 4 4 4	0x0006		14925
 \u7e3e	xgmy	績	j+i	x-13 g-11 m-13 y-00	5 5 4 4 4	0x0004		14926
@@ -15154,7 +15154,7 @@
 \u7fed	nwnd	翭	h+ou	n-22 w-11 n-16 d-10	5 4 1 5 4	0x0000		15154
 \u7fef	nykk	翯	h+ao h+e	n-22 y-13 k-10 k-10	5 4 1 5 6	0x0000		15155
 \u7ff2	sfin	翲	p+iao	s-13 f-01 i-17 n-22	1 2 5 2 1	0x0000		15156
-\u7ff4	nlpy	翴	l+ian	n-22 l-19 p-11 y-00	5 4 1 5 4	0x0000		15157
+\u7ff4	nlph	翴	l+ian	n-22 l-19 p-11 h-00	5 4 1 5 4	0x0000		15157
 \u7ff5	nwvo	翵	h+ou q+u	n-22 w-11 v-14 o-01	5 4 1 5 4	0x0000		15158
 \u7ff6	rifn	翶	+ao	r-10 i-16 f-13 n-22	3 6 6 4 1	0x0000		15159
 \u7ff7	oqan	翷	l+in	o-14 q-18 a-23 n-22	4 3 1 2 1	0x0000		15160
@@ -15715,7 +15715,7 @@
 \u83e2	arqn	菢	b+ao	a-12 r-13 q-14 n-13	1 2 2 1 5	0x0000		15715
 \u83e3	aahc	菣	q+in	a-12 a-17 h-01 c-10	1 2 2 1 4	0x0000		15716
 \u83e4	audb	菤	j+uan	a-12 u-12 d-10 b-15	1 2 2 4 5	0x0000		15717
-\u83e6	arpu	菦	q+in	a-12 r-14 p-11 u-00	1 2 2 3 4	0x0000		15718
+\u83e6	arpj	菦	q+in	a-12 r-14 p-11 j-00	1 2 2 3 4	0x0000		15718
 \u83e7	aoqy	菧	d+i	a-12 o-16 q-13 y-01	1 2 2 4 4	0x0000		15719
 \u83e8	auvf	菨	j+ie sh+a	a-12 u-10 v-10 f-00	1 2 2 4 1	0x0000		15720
 \u83eb	agkg	菫	j+in	a-12 g-01 k-10 g-11	1 2 2 1 1	0x0000		15721
@@ -15895,7 +15895,7 @@
 \u84ea	acep	蓪	t+ong	a-12 c-12 e-12 p-11	1 2 2 5 4	0x0000		15895
 \u84eb	agep	蓫	ch+u zh+u	a-12 g-01 e-16 p-11	1 2 2 1 4	0x0000		15896
 \u84ed	aodn	蓭	+an	a-12 o-16 d-10 n-40	1 2 2 4 5	0x0000		15897
-\u84ee	alpu	蓮	l+ian	a-12 l-19 p-11 u-00	1 2 2 1 4	0x0000		15898
+\u84ee	alpj	蓮	l+ian	a-12 l-19 p-11 j-00	1 2 2 1 4	0x0000		15898
 \u84ef	atwh	蓯	c+ong	a-12 t-14 w-10 h-14	1 2 2 3 4	0x0000		15899
 \u84f1	aiua	蓱	p+ing	a-12 i-01 u-12 a-13	1 2 2 4 2	0x0000		15900
 \u84f2	aakk	蓲	x+u	a-12 a-17 k-10 k-10	1 2 2 1 5	0x0000		15901
@@ -17139,7 +17139,7 @@
 \u8b2d	yuev	謭	j+ian	y-12 u-12 e-12 v-11	4 1 1 1 3	0x0000		17139
 \u8b2e	ygmy	謮	z+e	y-12 g-11 m-13 y-00	4 1 1 1 4	0x0000		17140
 \u8b2f	yhag	謯	j+ie zh+a z+u	y-12 h-19 a-18 g-01	4 1 1 1 1	0x0000		17141
-\u8b30	ylpy	謰	l+ian	y-12 l-19 p-11 y-00	4 1 1 1 4	0x0000		17142
+\u8b30	ylph	謰	l+ian	y-12 l-19 p-11 h-00	4 1 1 1 4	0x0000		17142
 \u8b31	ylvg	謱	l+ou l+v	y-12 l-21 v-10 g-00	4 1 1 1 1	0x0000		17143
 \u8b32	ycce	謲	c+an ch+en s+an z+ao	y-12 c-13 c-13 e-01	4 1 1 1 3	0x0000		17144
 \u8b33	yakk	謳	+ou	y-12 a-17 k-10 k-10	4 1 1 1 5	0x0000		17145
@@ -17839,7 +17839,7 @@
 \u8f48	lvjs	轈	ch+ao	l-19 v-01 j-10 s-10	1 6 6 1 4	0x0000		17839
 \u8f49	lgjf	轉	zh+uan zh+uai	l-19 g-01 j-10 f-17	1 6 6 1 4	0x0004		17840
 \u8f4a	ldhv	轊	w+ei	l-19 d-01 h-01 v-14	1 6 6 1 1	0x0000		17841
-\u8f4b	llpy	轋	h+un x+uan	l-19 l-19 p-11 y-00	1 6 6 1 4	0x0000		17842
+\u8f4b	llph	轋	h+un x+uan	l-19 l-19 p-11 h-00	1 6 6 1 4	0x0000		17842
 \u8f4c	lfvg	轌	x+ue	l-19 f-16 v-14 g-00	1 6 6 1 1	0x0000		17843
 \u8f4d	lyct	轍	zh+e	l-19 y-13 c-13 t-15	1 6 6 1 4	0x0004		17844
 \u8f4e	ltdk	轎	j+iao	l-19 t-01 d-10 k-10	1 6 6 1 6	0x0006		17845
@@ -18692,7 +18692,7 @@
 \u93c5	qwhe	鏅	x+iu	q-12 w-11 h-01 e-12	3 4 1 1 1	0x0000		18692
 \u93c6	qxfm	鏆	g+uan	q-12 x-25 f-13 m-13	3 4 1 1 4	0x0000		18693
 \u93c7	qyth	鏇	x+uan	q-12 y-16 t-13 h-14	3 4 1 1 4	0x0000		18694
-\u93c8	qlpy	鏈	l+ian	q-12 l-19 p-11 y-00	3 4 1 1 4	0x0004		18695
+\u93c8	qlph	鏈	l+ian	q-12 l-19 p-11 h-00	3 4 1 1 4	0x0004		18695
 \u93c9	qgkw	鏉	sh+ou s+ou	q-12 g-01 k-10 w-10	3 4 1 1 4	0x0000		18696
 \u93cb	qamy	鏋	m+an	q-12 a-14 m-14 y-01	3 4 1 1 4	0x0000		18697
 \u93cc	qajd	鏌	m+o	q-12 a-12 j-10 d-10	3 4 1 1 4	0x0000		18698
@@ -21785,7 +21785,7 @@
 \u3712	veah	㜒		v-10 e-30 a-13 h-00		0x0000		21785
 \u3713	vawk	㜓		v-10 a-12 w-10 k-10		0x0000		21786
 \u3714	vukq	㜔		v-10 u-10 k-10 q-19		0x0000		21787
-\u3715	vlpy	㜕		v-10 l-19 p-11 y-00		0x0000		21788
+\u3715	vlph	㜕		v-10 l-19 p-11 h-00		0x0000		21788
 \u3716	vgmj	㜖		v-10 g-01 m-21 j-10		0x0000		21789
 \u3717	vcce	㜗		v-10 c-13 c-13 e-01		0x0000		21790
 \u3718	vhag	㜘		v-10 h-19 a-18 g-01		0x0000		21791
@@ -24277,7 +24277,7 @@
 \u40d8	dahf	䃘		d-14 a-17 h-01 f-10		0x0000		24277
 \u40d9	donx	䃙		d-14 o-16 n-15 x-17		0x0000		24278
 \u40da	dytd	䃚		d-14 y-16 t-13 d-10		0x0000		24279
-\u40db	dlpy	䃛		d-14 l-19 p-11 y-00		0x0000		24280
+\u40db	dlph	䃛		d-14 l-19 p-11 h-00		0x0000		24280
 \u40dc	atdd	䃜		a-17 t-13 d-10 d-14		0x0000		24281
 \u40dd	dftt	䃝		d-14 f-10 t-01 t-15		0x0000		24282
 \u40de	ykbd	䃞		y-13 k-10 b-11 d-14		0x0000		24283
@@ -26631,7 +26631,7 @@
 \u4a21	fbib	䨡		f-16 b-16 i-16 b-18		0x0000		26631
 \u4a22	fadn	䨢		f-16 a-12 d-01 n-41		0x0000		26632
 \u4a23	fakf	䨣		f-16 a-14 k-10 f-13		0x0000		26633
-\u4a24	fmpu	䨤		f-16 m-11 p-11 u-00		0x0000		26634
+\u4a24	fmpf	䨤		f-16 m-11 p-11 f-00		0x0000		26634
 \u4a25	fwyc	䨥		f-16 w-11 y-17 c-10		0x0000		26635
 \u4a26	fyuy	䨦		f-16 y-13 u-03 y-16		0x0000		26636
 \u4a27	fuwc	䨧		f-16 u-10 w-10 c-12		0x0000		26637
