@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-15
+# 2020-06-18
 ---
 name: 06wubi_U
 version: "2.0"
@@ -1104,10 +1104,10 @@ encoder:
 䒐	alpc	9
 瞢	alph	11
 䠢	alph	9
+莲	alpj	1431
+蓮	alpj	10
 顭	alpm	9
 夢	alpq	42
-莲	alpu	1431
-蓮	alpu	10
 薨	alpx	30
 甍	alpy	11
 萝	alq	329
@@ -1511,7 +1511,7 @@ encoder:
 䔘	armg	9
 蒛	armw	9
 芞	arnb	9
-菦	arpu	9
+菦	arpj	9
 欧	arq	3041
 蒐	arqc	10
 鸥	arqg	208
@@ -3874,7 +3874,7 @@ encoder:
 靣	dlkf	9
 硘	dlkg	9
 礧	dlll	9
-䃛	dlpy	9
+䃛	dlph	9
 硱	dlsy	9
 碅	dlty	9
 磥	dlxi	9
@@ -6096,7 +6096,7 @@ encoder:
 坰	fmkg	9
 垲	fmnn	11
 貮	fmny	9
-䨤	fmpu	9
+䨤	fmpf	9
 献	fmu	966
 南	fmuf	7350
 堈	fmum	9
@@ -7314,8 +7314,8 @@ encoder:
 㻁	glkg	9
 瓃	glll	9
 琏	glp	67
-琏	glpy	67
-璉	glpy	9
+琏	glph	67
+璉	glph	9
 㻿	glqj	9
 㻒	glty	9
 㻲	glvg	9
@@ -7513,7 +7513,7 @@ encoder:
 殑	gqdq	9
 殝	gqdt	9
 殎	gqdw	9
-万	gqe	25941
+万	gqv	25941
 殍	gqeb	14
 殂	gqeg	14
 㱚	gqeg	9
@@ -9475,8 +9475,8 @@ encoder:
 㴓	ilny	9
 涟	ilp	100
 漣	ilp	9
-涟	ilpy	100
-漣	ilpy	9
+涟	ilph	100
+漣	ilph	9
 濁	ilq	10
 濁	ilqj	10
 渐	ilr	1037
@@ -12347,7 +12347,7 @@ encoder:
 唓	klh	8
 嚃	klip	9
 嘪	klmy	9
-嗹	klpy	9
+嗹	klph	9
 噣	klqj	9
 啰	klqy	15
 㖥	klty	9
@@ -13290,7 +13290,7 @@ encoder:
 䴎	lllo	9
 櫐	llls	9
 罳	llnu	9
-轋	llpy	9
+轋	llph	9
 轀	llwl	9
 圐	llye	9
 轴	lm	1287
@@ -15316,8 +15316,8 @@ encoder:
 㥵	nlge	9
 恛	nlkg	9
 愢	nlny	9
-慩	nlpy	9
-翴	nlpy	9
+慩	nlph	9
+翴	nlph	9
 惭	nlr	69
 慚	nlr	10
 惭	nlrh	69
@@ -18804,8 +18804,8 @@ encoder:
 鍶	qlny	9
 链	qlp	1411
 鏈	qlp	10
-链	qlpy	1411
-鏈	qlpy	10
+链	qlph	1411
+鏈	qlph	10
 锣	qlq	114
 镯	qlqj	50
 鐲	qlqj	9
@@ -20958,7 +20958,7 @@ encoder:
 㩸	rllg	9
 攂	rlll	9
 揌	rlny	9
-摙	rlpy	9
+摙	rlph	9
 擉	rlqj	9
 斶	rlqj	9
 摲	rlrh	9
@@ -22599,8 +22599,8 @@ encoder:
 欙	slli	9
 櫑	slll	9
 楒	slny	9
-梿	slpy	15
-槤	slpy	9
+梿	slph	15
+槤	slph	9
 㯮	slqj	9
 椤	slqy	46
 梱	sls	9
@@ -23775,7 +23775,7 @@ encoder:
 䑿	tepj	9
 䒄	tepl	9
 䒇	tepl	9
-笾	tepu	11
+笾	tepr	11
 舵	tepx	132
 鸼	teqg	15
 䑬	teqi	9
@@ -27147,7 +27147,7 @@ encoder:
 㓯	vljh	9
 㜥	vlmy	9
 媤	vlny	9
-㜕	vlpy	9
+㜕	vlph	9
 㜛	vlqw	9
 巤	vlrn	9
 邋	vlrp	33
@@ -28192,7 +28192,7 @@ encoder:
 儽	wlli	9
 儡	wlll	11
 偲	wlny	11
-僆	wlpy	9
+僆	wlph	9
 㒔	wlqj	9
 㑩	wlqy	15
 㑼	wltk	9
@@ -29701,7 +29701,7 @@ encoder:
 纝	xlli	9
 缌	xlny	11
 緦	xlny	9
-縺	xlpy	9
+縺	xlph	9
 㢴	xlry	9
 綑	xlsy	9
 縷	xlv	9
@@ -30810,7 +30810,7 @@ encoder:
 稟	ylkt	9
 讄	ylll	9
 諰	ylny	9
-謰	ylpy	9
+謰	ylph	9
 畝	ylq	9
 畝	ylqy	9
 謱	ylvg	9
@@ -33917,7 +33917,7 @@ encoder:
 𧀧	alpt	1
 𧀆	alpu	1
 𧄼	alpu	1
-蓮	alpu	1
+蓮	alpj	1
 𤔻	alpy	1
 𦰋	alqb	1
 𥊄	alqh	1
@@ -34797,9 +34797,9 @@ encoder:
 𦽿	asmu	1
 𦷢	asnu	1
 𦲓	asou	1
+𦶅	aspf	1
 𨔋	aspi	1
 𨔘	aspi	1
-𦶅	aspu	1
 𦵂	asqb	1
 𦰻	asqw	1
 𠥂	asqy	1
@@ -39344,8 +39344,8 @@ encoder:
 𢚧	dhnu	1
 𦣽	dhnv	1
 𦤿	dhpf	1
+𥒔	dhpg	1
 𠁇	dhpg	1
-𥒔	dhpy	1
 𩑋	dhqb	1
 𫛜	dhqg	15
 𪠉	dhqh	1
@@ -41418,10 +41418,10 @@ encoder:
 𬛿	ehnn	1
 𨑔	ehnv	1
 𦗶	ehpb	1
+𦚺	ehpg	1
 𨒗	ehpk	1
 𫶋	ehpm	1
 𬜀	ehpt	1
-𦚺	ehpy	1
 𬎽	ehqh	1
 𡖰	ehqq	1
 𣂠	ehrh	1
@@ -41622,7 +41622,7 @@ encoder:
 𦢏	elll	1
 𩰥	eloc	1
 𤔵	eloo	1
-𦟪	elpy	1
+𦟪	elph	1
 𫆪	elqt	1
 𬂂	elqy	1
 𥝅	elrc	1
@@ -44379,8 +44379,8 @@ encoder:
 𤱑	flnw	1
 𠄰	flou	1
 𮦟	flou	1
+𪤎	flph	1
 𡕃	flpu	1
-𪤎	flpy	1
 𡍐	flqh	1
 𫭽	flqy	1
 𡐛	flrh	1
@@ -45816,7 +45816,7 @@ encoder:
 𡉴	fynt	1
 𡍣	fyoc	15
 𪣼	fyod	1
-𬰊	fypu	1
+𬰊	fypf	1
 𪤋	fyrc	1
 𭪃	fysu	1
 𮌳	fyte	1
@@ -46511,6 +46511,7 @@ encoder:
 𤥷	ghcf	1
 𭺌	ghcm	1
 𝍶	ghd	1
+𝍴	ghd	1
 𢀯	ghda	1
 𤤃	ghdg	1
 𨕆	ghep	1
@@ -46541,13 +46542,12 @@ encoder:
 𣰠	ghhn	1
 𢌫	ghhp	1
 𤴓	ghi	1
-𝍳	ghk	1
-𝍴	ghd	1
 𪴹	ghic	1
 𬆃	ghih	1
 𣦎	ghik	1
 𠀥	ghjg	1
 𣅯	ghjg	1
+𝍳	ghk	1
 𠮴	ghkf	1
 𠀿	ghkw	1
 𦟆	ghle	1
@@ -47121,8 +47121,8 @@ encoder:
 𢙂	glnu	1
 𭻩	glog	1
 𭻴	gloo	1
-𬍻	glpy	1
-璉	glpy	1
+𬍻	glph	1
+璉	glph	1
 𭹭	glqt	1
 𭹜	glqy	1
 𤥳	glsy	1
@@ -47269,8 +47269,8 @@ encoder:
 𠄢	gmng	1
 𮋍	gmnn	1
 𨘜	gmop	1
-𤨲	gmpi	1
 𨖊	gmpi	1
+𤨲	gmpi	1
 𠱩	gmqk	1
 𪻣	gmqk	1
 𠀑	gmqv	1
@@ -48065,8 +48065,8 @@ encoder:
 𭺎	gtns	1
 𤧐	gtoy	1
 𭹏	gtoy	1
-𪎏	gtpi	1
 𮞒	gtpi	1
+𪎏	gtpi	1
 𤪔	gtpn	1
 𬹉	gtpq	1
 𫜒	gtpx	15
@@ -49488,13 +49488,13 @@ encoder:
 𢌨	hhpd	1
 𨓗	hhpd	1
 𨕐	hhpd	1
+𥆊	hhpg	1
 𥋫	hhph	1
 𥌑	hhph	1
 𨔀	hhpi	1
 𥋬	hhpm	1
 𥋁	hhpn	1
 𥋡	hhpx	1
-𥆊	hhpy	1
 𥌂	hhpy	1
 𧠛	hhqn	1
 𥋥	hhqy	1
@@ -49760,7 +49760,7 @@ encoder:
 𤪰	hloy	1
 𪉠	hloy	1
 𫜉	hloy	1
-𥊩	hlpy	1
+𥊩	hlph	1
 𥋛	hlqj	1
 𥊡	hlqw	1
 𬸸	hlra	1
@@ -50243,7 +50243,7 @@ encoder:
 𭿚	hrnk	1
 𭾾	hrnr	1
 𭿛	hrny	1
-𥇐	hrpy	1
+𥇐	hrph	1
 𥆒	hrqn	1
 𪾯	hrqw	1
 𥉭	hrrk	1
@@ -51709,7 +51709,7 @@ encoder:
 𣴵	ilng	1
 𪶑	ilnt	1
 𢣣	ilpn	1
-漣	ilpy	1
+漣	ilph	1
 𤅴	ilqo	1
 𣼴	ilqw	1
 𪶒	ilqy	15
@@ -51806,7 +51806,7 @@ encoder:
 𭰁	imnn	1
 𭳂	imov	1
 𣴽	imoy	1
-𣶻	impy	1
+𣶻	impg	1
 𭱬	imqt	1
 𤄧	imqy	1
 𤀖	imrc	1
@@ -52241,7 +52241,7 @@ encoder:
 𭰑	irnr	1
 𭰬	irnx	1
 𣲖	irny	1
-𣷯	irpy	1
+𣷯	irph	1
 𤁔	irqf	1
 𣴟	irqn	1
 𤄛	irqy	1
@@ -53959,8 +53959,8 @@ encoder:
 𧋡	jlnf	1
 𧍤	jlny	1
 𧒞	jloe	1
-𧐖	jlpy	1
-𭧒	jlpy	1
+𧐖	jlph	1
+𭧒	jlph	1
 𠠡	jlqj	1
 𭦗	jlqr	1
 𪰺	jlqt	1
@@ -54376,7 +54376,7 @@ encoder:
 𧎵	jrno	1
 𫋈	jrny	1
 𨔹	jrpd	1
-𫋅	jrpy	1
+𫋅	jrph	1
 𣉨	jrqc	1
 𣆿	jrqn	1
 𭦡	jrqw	1
@@ -55346,7 +55346,7 @@ encoder:
 𡃳	kemw	1
 𦐽	keng	1
 𫫰	keph	1
-𫩸	kepy	1
+𫩸	kept	1
 𠾠	keqk	1
 𠷤	keqn	1
 𠹕	keqy	1
@@ -56870,8 +56870,8 @@ encoder:
 𠵣	klnn	1
 𠿥	kloe	1
 𠷝	kloy	1
+𪡏	klph	15
 𫬭	klpk	1
-𪡏	klpy	15
 𮋽	klrb	1
 𠼗	klrh	1
 𫪚	klrh	1
@@ -57359,10 +57359,10 @@ encoder:
 𠼎	kroy	1
 𫪷	kroy	1
 𭓇	krpb	1
+𫪼	krpg	1
+𠶌	krph	1
 𫪶	krpn	1
 𠽄	krps	1
-𠶌	krpy	1
-𫪼	krpy	1
 𠲐	krqa	1
 𠳑	krqb	1
 𠺌	krqc	1
@@ -61264,7 +61264,7 @@ encoder:
 𪨦	mrnn	1
 𮊔	mrny	1
 𦌓	mron	1
-𡹢	mrpu	1
+𡹢	mrpj	1
 𧸨	mrpy	1
 𡾛	mrqa	1
 𧷛	mrqc	1
@@ -62665,7 +62665,7 @@ encoder:
 𥌙	nhol	1
 𥋜	nhpc	1
 𫐹	nhpd	1
-𡱦	nhpi	1
+𡱦	nhpv	1
 𥌏	nhpw	1
 𧰍	nhqc	1
 𭔬	nhqf	1
@@ -64974,7 +64974,7 @@ encoder:
 𥻏	olny	1
 𪹦	olou	1
 𥼑	oloy	1
-𬊿	olpy	1
+𬊿	olph	1
 𤐋	olqo	1
 𬊜	olqy	1
 𤍖	olrh	1
@@ -65960,7 +65960,7 @@ encoder:
 𤏰	oumt	1
 𫃐	ouny	1
 𬖟	ouny	1
-𢉊	oupi	1
+𢉊	oupd	1
 𥻓	ouqk	1
 𥼻	ouqm	1
 𥽅	ourf	1
@@ -71162,8 +71162,8 @@ encoder:
 𤭶	qrny	1
 𨥝	qrny	1
 𨑥	qrpe	1
+𮡻	qrph	1
 𮢐	qrph	1
-𮡻	qrpy	1
 𨪈	qrqc	1
 𨍂	qrql	1
 𢛦	qrqn	1
@@ -72746,8 +72746,8 @@ encoder:
 𫝺	renn	1
 𢰏	repb	1
 𤿃	repf	1
+𫼯	rept	1
 𢳻	repy	1
-𫼯	repy	1
 𤾇	reqb	1
 𢲰	reqj	1
 𤾆	reqn	1
@@ -73414,8 +73414,8 @@ encoder:
 𢮊	rlnn	1
 𢰌	rlny	1
 𪮏	rlny	1
+𫽁	rlph	1
 𤾒	rlpw	1
-𫽁	rlpy	1
 𫽋	rlqy	1
 𭡏	rlqy	1
 𪮻	rlrj	1
@@ -74863,7 +74863,7 @@ encoder:
 𫾠	ryoo	1
 𫼬	ryoy	1
 𨓓	rype	1
-𢳘	rypy	1
+𢳘	rypg	1
 𤽕	ryqb	1
 𭢟	ryqe	1
 𪉄	ryqg	15
@@ -76114,9 +76114,9 @@ encoder:
 𣑹	smmh	1
 𣙋	smmm	1
 𫿻	smmr	1
-𣙩	smpi	1
+𣔴	smpg	1
 𨖒	smpi	1
-𣔴	smpy	1
+𣙩	smpi	1
 𪲤	smqb	1
 𣙌	smqg	1
 𣗏	smth	1
@@ -76411,11 +76411,11 @@ encoder:
 𣒻	srnf	1
 𣏙	srnn	1
 𣏱	srnn	1
+𣖐	srpg	1
+𣔅	srph	1
+𬂹	srph	1
 𮞝	srpk	1
-𣔅	srpy	1
-𣖐	srpy	1
 𣞌	srpy	1
-𬂹	srpy	1
 𥖸	srqd	1
 𣘛	srqq	1
 𣔙	srqw	1
@@ -82148,7 +82148,7 @@ encoder:
 𫂯	tyny	1
 𮅝	tyny	1
 𠓯	typa	1
-𥳅	typu	1
+𥳅	typf	1
 𮅂	tyqb	1
 𠓲	tyqs	1
 𣔕	tyqs	1
@@ -82687,7 +82687,7 @@ encoder:
 𧟛	uene	1
 𭘐	uenw	1
 𤋌	ueou	1
-𤶒	uepi	1
+𤶒	uepe	1
 𤻅	uept	1
 𤺎	ueqo	1
 𤷅	ueqv	1
@@ -83687,7 +83687,7 @@ encoder:
 𬏽	ulmi	1
 𤸛	ulni	1
 𮫲	uloj	1
-𤹨	ulpi	1
+𤹨	ulpk	1
 𫛴	ulqg	15
 𭼐	ulsi	1
 𠘏	ulss	1
@@ -84114,8 +84114,8 @@ encoder:
 𬔫	uslm	1
 𤵦	usnv	1
 𤈀	usou	1
+𮤛	uspd	1
 𪪰	uspd	1
-𮤛	uspi	1
 𨐻	usre	1
 𭏻	usrf	1
 𪬴	usrn	1
@@ -86668,8 +86668,8 @@ encoder:
 𮞋	wfpd	1
 𠏴	wfph	1
 𠐑	wfph	1
-𠋲	wfpi	1
 𨒕	wfpi	1
+𠋲	wfpi	1
 𨑮	wfpk	1
 𨑷	wfpk	1
 𬲄	wfpk	1
@@ -87342,7 +87342,7 @@ encoder:
 𠇚	wlj	1
 𬿄	wljn	1
 𠑭	wlll	1
-𫢪	wlpy	1
+𫢪	wlph	1
 𫣑	wlqw	1
 𠌲	wlrh	1
 𠔋	wlru	1
@@ -90181,7 +90181,7 @@ encoder:
 𦈅	xllg	1
 𦇄	xlll	1
 𦂮	xloy	1
-𦈐	xlpy	15
+𦈐	xlph	15
 𦆂	xlqj	1
 𨞉	xlrb	1
 𡍯	xlrf	1
@@ -90484,8 +90484,8 @@ encoder:
 𥾨	xrnn	1
 𥾱	xrnn	1
 𥾭	xrny	1
+𦂸	xrpg	1
 𦇭	xrpp	1
-𦂸	xrpy	1
 𦀸	xrqn	1
 𦄓	xrqq	1
 𬗗	xrrh	1
@@ -91665,7 +91665,7 @@ encoder:
 𬤕	yjng	1
 𮘁	yjnn	1
 𧩍	yjnw	1
-𧨓	yjpy	1
+𧨓	yjpg	1
 𩡑	yjqj	1
 謁	yjqn	1
 謁	yjqn	1
@@ -92003,7 +92003,7 @@ encoder:
 𠅤	ylnu	1
 𫍰	ylny	15
 𧬴	yloe	1
-𬣽	ylpy	1
+𬣽	ylph	1
 𣖈	ylqs	1
 𣢿	ylqw	1
 𬽕	ylre	1

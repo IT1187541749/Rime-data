@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-15
+# 2020-06-18
 ---
 name: 06wubi_tygfzj
 version: "2.0"
@@ -408,7 +408,7 @@ encoder:
 葸	alnu	13
 莲	alp	1431
 瞢	alph	11
-莲	alpu	1431
+莲	alpj	1431
 薨	alpx	30
 甍	alpy	11
 萝	alq	329
@@ -2724,7 +2724,7 @@ encoder:
 柬	gli	105
 柬	glii	105
 琏	glp	67
-琏	glpy	67
+琏	glph	67
 现	gm	70270
 遭	gma	3873
 曹	gmaj	2791
@@ -2812,7 +2812,7 @@ encoder:
 殛	gqbg	29
 殆	gqc	69
 殆	gqck	69
-万	gqe	25941
+万	gqv	25941
 殍	gqeb	14
 殂	gqeg	14
 劢	gqet	85
@@ -3557,7 +3557,7 @@ encoder:
 洄	ilk	24
 洄	ilkg	24
 涟	ilp	100
-涟	ilpy	100
+涟	ilph	100
 渐	ilr	1037
 渐	ilrh	1037
 泅	ilw	50
@@ -7072,7 +7072,7 @@ encoder:
 钾	qlh	484
 锶	qlny	48
 链	qlp	1411
-链	qlpy	1411
+链	qlph	1411
 锣	qlq	114
 镯	qlqj	50
 锣	qlqy	114
@@ -8397,7 +8397,7 @@ encoder:
 楞	sl	506
 柙	slh	11
 楒	slny	9
-梿	slpy	15
+梿	slph	15
 椤	slqy	46
 楞	sly	506
 鿝	slyr	9
@@ -8788,7 +8788,7 @@ encoder:
 舰	temq	620
 艉	tenn	11
 舵	tep	132
-笾	tepu	11
+笾	tepr	11
 舵	tepx	132
 鸼	teqg	15
 务	ter	885

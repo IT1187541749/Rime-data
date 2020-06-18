@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-15
+# 2020-06-18
 ---
 name: 06wubi_ci
 version: "2.0"
@@ -1104,10 +1104,10 @@ encoder:
 䒐	alpc	9
 瞢	alph	11
 䠢	alph	9
+莲	alpj	1431
+蓮	alpj	10
 顭	alpm	9
 夢	alpq	42
-莲	alpu	1431
-蓮	alpu	10
 薨	alpx	30
 甍	alpy	11
 萝	alq	329
@@ -1511,7 +1511,7 @@ encoder:
 䔘	armg	9
 蒛	armw	9
 芞	arnb	9
-菦	arpu	9
+菦	arpj	9
 欧	arq	3041
 蒐	arqc	10
 鸥	arqg	208
@@ -3874,7 +3874,7 @@ encoder:
 靣	dlkf	9
 硘	dlkg	9
 礧	dlll	9
-䃛	dlpy	9
+䃛	dlph	9
 硱	dlsy	9
 碅	dlty	9
 磥	dlxi	9
@@ -6096,7 +6096,7 @@ encoder:
 坰	fmkg	9
 垲	fmnn	11
 貮	fmny	9
-䨤	fmpu	9
+䨤	fmpf	9
 献	fmu	966
 南	fmuf	7350
 堈	fmum	9
@@ -7314,8 +7314,8 @@ encoder:
 㻁	glkg	9
 瓃	glll	9
 琏	glp	67
-琏	glpy	67
-璉	glpy	9
+琏	glph	67
+璉	glph	9
 㻿	glqj	9
 㻒	glty	9
 㻲	glvg	9
@@ -7513,7 +7513,7 @@ encoder:
 殑	gqdq	9
 殝	gqdt	9
 殎	gqdw	9
-万	gqe	25941
+万	gqv	25941
 殍	gqeb	14
 殂	gqeg	14
 㱚	gqeg	9
@@ -9475,8 +9475,8 @@ encoder:
 㴓	ilny	9
 涟	ilp	100
 漣	ilp	9
-涟	ilpy	100
-漣	ilpy	9
+涟	ilph	100
+漣	ilph	9
 濁	ilq	10
 濁	ilqj	10
 渐	ilr	1037
@@ -12347,7 +12347,7 @@ encoder:
 唓	klh	8
 嚃	klip	9
 嘪	klmy	9
-嗹	klpy	9
+嗹	klph	9
 噣	klqj	9
 啰	klqy	15
 㖥	klty	9
@@ -13290,7 +13290,7 @@ encoder:
 䴎	lllo	9
 櫐	llls	9
 罳	llnu	9
-轋	llpy	9
+轋	llph	9
 轀	llwl	9
 圐	llye	9
 轴	lm	1287
@@ -15316,8 +15316,8 @@ encoder:
 㥵	nlge	9
 恛	nlkg	9
 愢	nlny	9
-慩	nlpy	9
-翴	nlpy	9
+慩	nlph	9
+翴	nlph	9
 惭	nlr	69
 慚	nlr	10
 惭	nlrh	69
@@ -18804,8 +18804,8 @@ encoder:
 鍶	qlny	9
 链	qlp	1411
 鏈	qlp	10
-链	qlpy	1411
-鏈	qlpy	10
+链	qlph	1411
+鏈	qlph	10
 锣	qlq	114
 镯	qlqj	50
 鐲	qlqj	9
@@ -20958,7 +20958,7 @@ encoder:
 㩸	rllg	9
 攂	rlll	9
 揌	rlny	9
-摙	rlpy	9
+摙	rlph	9
 擉	rlqj	9
 斶	rlqj	9
 摲	rlrh	9
@@ -22599,8 +22599,8 @@ encoder:
 欙	slli	9
 櫑	slll	9
 楒	slny	9
-梿	slpy	15
-槤	slpy	9
+梿	slph	15
+槤	slph	9
 㯮	slqj	9
 椤	slqy	46
 梱	sls	9
@@ -23775,7 +23775,7 @@ encoder:
 䑿	tepj	9
 䒄	tepl	9
 䒇	tepl	9
-笾	tepu	11
+笾	tepr	11
 舵	tepx	132
 鸼	teqg	15
 䑬	teqi	9
@@ -27147,7 +27147,7 @@ encoder:
 㓯	vljh	9
 㜥	vlmy	9
 媤	vlny	9
-㜕	vlpy	9
+㜕	vlph	9
 㜛	vlqw	9
 巤	vlrn	9
 邋	vlrp	33
@@ -28192,7 +28192,7 @@ encoder:
 儽	wlli	9
 儡	wlll	11
 偲	wlny	11
-僆	wlpy	9
+僆	wlph	9
 㒔	wlqj	9
 㑩	wlqy	15
 㑼	wltk	9
@@ -29701,7 +29701,7 @@ encoder:
 纝	xlli	9
 缌	xlny	11
 緦	xlny	9
-縺	xlpy	9
+縺	xlph	9
 㢴	xlry	9
 綑	xlsy	9
 縷	xlv	9
@@ -30810,7 +30810,7 @@ encoder:
 稟	ylkt	9
 讄	ylll	9
 諰	ylny	9
-謰	ylpy	9
+謰	ylph	9
 畝	ylq	9
 畝	ylqy	9
 謱	ylvg	9
