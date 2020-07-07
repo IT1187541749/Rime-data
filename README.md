@@ -63,7 +63,9 @@
   
   * 方案配置原始数据来于源98五笔资源库:http://98wb.ys168.com/
   
-  *  五笔字根字体中的汉字部分来源于天珩全字库P0与P2,中华书局宋体字库来源于籍合网:http://www.ancientbooks.cn/helpcore?font
+  * 五笔字根字体中的汉字部分来源于天珩全字库P0与P2:http://cheonhyeong.com/
+  
+  * 中华书局宋体字库来源于籍合网:http://www.ancientbooks.cn/helpcore?font
   
   * 如需正版王码五笔输入法可到下面的王码五笔官方网站下载,支持正版从我做起.
   
