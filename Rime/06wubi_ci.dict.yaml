@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-06-18
+# 2020-07-11
 ---
 name: 06wubi_ci
 version: "2.0"
@@ -27746,8 +27746,8 @@ encoder:
 俠	wdww	11
 伏	wdy	826
 㐲	wdy	9
+仗	wdyy	941
 伏	wdyy	826
-仗	wdyy	541
 㑀	wdyy	9
 佣	we	103
 㒚	wean	9
