@@ -188,3 +188,4 @@
 \u40db	䃛	dlph	dlph	188
 \u4a24	䨤	fmpf	fmpf	189
 \u4e07	万	gqe	gqv	190
+\u3ce4	㳤	iuay	iyai	191
