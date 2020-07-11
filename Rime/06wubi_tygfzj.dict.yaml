@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-07-11
+# 2020-07-12
 ---
 name: 06wubi_tygfzj
 version: "2.0"
@@ -1053,7 +1053,7 @@ encoder:
 怼	cfn	16
 怼	cfnu	16
 对	cfy	279642
-马	cg	12498	cgd
+马	cg	12498
 驱	cga	570	car
 骁	cgaq	119	caq
 驱	cgar	570	car
@@ -1069,7 +1069,7 @@ encoder:
 骀	cgck	29	cck
 骏	cgct	469	cct
 驭	cgcy	87	ccy
-马	cgd	12498	cgd
+马	cgd	12498
 𬴃	cgdd	9
 𬳵	cgdg	9
 𫘪	cgdi	15
@@ -2812,7 +2812,6 @@ encoder:
 殛	gqbg	29
 殆	gqc	69
 殆	gqck	69
-万	gqv	25941
 殍	gqeb	14
 殂	gqeg	14
 劢	gqet	85
@@ -2859,6 +2858,7 @@ encoder:
 獒	gqty	136
 殚	gqu	30
 殚	gqul	30
+万	gqv	25941
 兀	gqv	164
 琤	gqvh	11
 殓	gqw	39
@@ -4682,7 +4682,7 @@ encoder:
 跣	khtq	11	ktq
 踒	khtv	9	ktv
 踽	khty	11	kty
-足	khu	3449	khu
+足	khu	3449
 蹉	khua	15	kua
 踯	khub	11	kub
 蹲	khuf	680	kuf
@@ -6874,7 +6874,7 @@ encoder:
 鲵	qgeq	19	qeq
 铺	qgey	1930
 匍	qgey	11
-鱼	qgf	9175	qgf
+鱼	qgf	9175
 鲑	qgff	24	qff
 鳍	qgfj	133	qfj
 鲒	qgfk	11	qfk
