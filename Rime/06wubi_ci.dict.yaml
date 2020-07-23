@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-07-12
+# 2020-07-23
 ---
 name: 06wubi_ci
 version: "2.0"
@@ -570,14 +570,7 @@ encoder:
 藘	ahan	9
 蘧	ahap	16
 萀	ahaw	9
-菲	ahd	1773
-菲	ahdd	1773
-匪	ahdd	395
-韮	ahdg	9
 繤	ahdi	9
-㔈	ahdj	9
-蕜	ahdn	9
-䕁	ahds	9
 薉	ahdy	9
 芷	ahf	306
 苜	ahf	19
@@ -758,17 +751,24 @@ encoder:
 蓽	ajaf	9
 蕞	ajbc	26
 莫	ajd	4509
+菲	ajd	1773
 鄚	ajdb	9
+菲	ajdd	1773
+匪	ajdd	395
 募	ajde	300
 墓	ajdf	943
 蓦	ajdg	30
+韮	ajdg	9
 幕	ajdh	654
 暮	ajdj	473
+㔈	ajdj	9
 蟇	ajdj	9
 慕	ajdn	728
+蕜	ajdn	9
 驀	ajdo	9
 㱳	ajdq	9
 摹	ajdr	112
+䕁	ajds	9
 莫	ajdu	4509
 謩	ajdy	9
 萌	aje	1004
@@ -2269,7 +2269,6 @@ encoder:
 芔	bhbh	9
 陂	bhc	39
 陂	bhcy	39
-陫	bhdd	9
 耻	bhg	389
 阯	bhg	9
 㞢	bhgd	9
@@ -2310,6 +2309,7 @@ encoder:
 孙	biy	5484
 阥	biy	9
 阳	bj	6013
+陫	bjdd	9
 陧	bjfg	11
 䧉	bjfg	9
 阳	bjg	6013
@@ -2979,7 +2979,6 @@ encoder:
 䮒	cogy	9	cgy
 驢	coh	10	chl
 駊	cohc	8	chc
-騑	cohd	9	chd
 䮓	cohf	9	chf
 驉	cohg	9	chg
 驢	cohl	10	chl
@@ -2987,6 +2986,7 @@ encoder:
 馬	coi	52
 騨	coil	9	cil
 駫	coiq	8	ciq
+騑	cojd	9	cjd
 駻	cojf	9	cjf
 驆	cojf	9	cjf
 馹	cojg	9	cjg
@@ -3544,10 +3544,10 @@ encoder:
 厧	dfhw	9
 磌	dfhw	9
 碔	dfhy	9
-䃱	dfhy	9
 奈	dfi	828
 奈	dfiu	828
 夲	dfj	9
+䃱	dfjy	9
 厈	dfk	9
 㕑	dfkf	9
 硈	dfkg	9
@@ -3654,7 +3654,6 @@ encoder:
 破	dhc	7313
 破	dhcy	7313
 慧	dhd	1573
-厞	dhdd	9
 砉	dhdf	11
 剨	dhdj	9
 奡	dhdj	9
@@ -3805,6 +3804,7 @@ encoder:
 百	dj	4588
 厚	djb	3079
 厚	djbd	3079
+厞	djdd	9
 皕	djdj	9
 壓	dje	26
 魘	djec	9
@@ -3901,12 +3901,12 @@ encoder:
 䩊	dmjb	9
 䩅	dmjc	9
 䰭	dmjc	9
-面	dmjd	13022
 耎	dmjd	9
 勔	dmje	9
 耏	dmje	9
 耐	dmjf	2491
 䩆	dmjf	9
+面	dmjg	13022
 鸸	dmjg	25
 䩍	dmji	9
 而	dmjj	135908
@@ -4725,8 +4725,6 @@ encoder:
 叟	ehcu	112
 䏢	ehcy	9
 䝛	ehcy	9
-腓	ehd	46
-腓	ehdd	46
 胩	ehgh	11
 貜	ehhc	9
 臞	ehhy	9
@@ -4754,6 +4752,8 @@ encoder:
 䏚	eitt	9
 膌	eiwe	9
 胆	ej	1035
+腓	ejd	46
+腓	ejdd	46
 貍	ejf	9
 㸓	ejf	9
 貍	ejfg	9
@@ -5688,13 +5688,10 @@ encoder:
 䟃	fhce	8	fce
 䞭	fhct	9	fct
 坡	fhcy	1135
-霏	fhd	119
-霏	fhdd	119
 䞠	fhdd	9	fdd
 䞥	fhde	9	fde
 䞜	fhdh	9	fdh
 䟐	fhdh	8	fdh
-韯	fhdy	9
 趄	fhe	11	feg
 䞯	fheb	9	feb
 赲	fhee	9	fee
@@ -5899,6 +5896,9 @@ encoder:
 霔	fiyg	9
 霶	fiyy	9
 进	fj	24648
+霏	fjd	119
+霏	fjdd	119
+韯	fjdy	9
 朝	fjf	3764
 戟	fjfa	166
 壜	fjfc	9
@@ -6024,8 +6024,8 @@ encoder:
 蟚	fkuj	9
 鼜	fkuj	9
 䶁	fkuj	9
+嘉	fkuk	4100
 喜	fkuk	3558
-嘉	fkuk	2100
 嚭	fkuk	9
 囍	fkuk	9
 鼛	fkuk	9
@@ -6848,18 +6848,18 @@ encoder:
 瑊	gdgy	9
 环	gdh	3091
 珔	gdhb	9
-㪪	gdhc	9
-䨿	gdhd	9
 㺽	gdhg	9
-䪞	gdhg	9
 玤	gdhh	9
 㻰	gdhv	9
 环	gdhy	3091
 天	gdi	44055
 沗	gdiu	9
 蚕	gdj	308
+㪪	gdjc	9
+䨿	gdjd	9
 奣	gdje	9
 昋	gdjf	9
+䪞	gdjg	9
 䗞	gdjj	9
 䘉	gdjj	9
 蚕	gdju	308
@@ -7075,7 +7075,6 @@ encoder:
 玻	ghcy	183
 㺳	ghcy	9
 正	ghd	20523
-琲	ghdd	9
 頙	ghdm	9
 㒫	ghfq	9
 焉	ghg	601
@@ -7138,6 +7137,7 @@ encoder:
 㻫	gjaf	9
 畱	gjal	9
 丣	gjan	9
+琲	gjdd	9
 理	gjf	7822
 理	gjfg	7822
 亘	gjg	63
@@ -8116,7 +8116,6 @@ encoder:
 睃	hcwt	11
 䁊	hcyh	9
 䀑	hcyy	9
-非	hd	17475
 矋	hday	9
 睚	hdf	11
 䀼	hdfe	9
@@ -8130,33 +8129,7 @@ encoder:
 歲	hdgy	21
 歳	hdgy	9
 䁍	hdgy	9
-辈	hdh	421
-輩	hdh	11
-非	hdhd	17475
-奜	hdhd	9
-裴	hdhe	717
-餥	hdhe	9
-韭	hdhg	56
-㹃	hdhg	9
 盽	hdhh	9
-蜚	hdhj	18
-剕	hdhj	11
-辈	hdhl	421
-輩	hdhl	11
-䪤	hdhl	9
-䩀	hdhm	9
-䫍	hdhm	9
-悲	hdhn	983
-翡	hdhn	121
-靟	hdhn	9
-㐟	hdhn	9
-䨽	hdhn	9
-䩁	hdhn	9
-棐	hdhs	9
-婓	hdhv	9
-斐	hdhy	334
-猆	hdhy	9
-㻗	hdhy	9
 䁆	hdjn	9
 頉	hdmy	9
 㮂	hdsu	9
@@ -9065,7 +9038,6 @@ encoder:
 汁	ifh	1193
 淔	ifhg	9
 滇	ifhw	278
-瀐	ifhy	9
 沬	ifiy	9
 沶	ifiy	9
 潮	ifj	1394
@@ -9075,6 +9047,7 @@ encoder:
 汫	ifjh	9
 瀚	ifjn	229
 漧	ifjn	9
+瀐	ifjy	9
 洁	ifk	1187
 澎	ifke	108
 溒	ifke	9
@@ -9250,7 +9223,6 @@ encoder:
 㨇	ihcr	9
 婆	ihcv	1035
 波	ihcy	5395
-渄	ihdd	9
 湨	ihdy	11
 濊	ihdy	9
 泪	ihg	2586
@@ -9344,6 +9316,7 @@ encoder:
 渱	ijag	9
 瀑	ijai	194
 㵊	ijbc	9
+渄	ijdd	9
 沓	ijf	98
 溡	ijff	9
 涅	ijfg	767
@@ -10526,12 +10499,38 @@ encoder:
 晙	jcwt	9
 紧	jcx	4681
 紧	jcxi	4681
-晨	jd	1506
+非	jd	17475
 䘈	jdae	9
 曞	jday	9
 蠣	jday	9
 蚅	jdbn	9
 蛂	jdcy	9
+辈	jdd	421
+輩	jdd	11
+非	jddd	17475
+奜	jddd	9
+裴	jdde	717
+餥	jdde	9
+韭	jddg	56
+㹃	jddg	9
+蜚	jddj	18
+剕	jddj	11
+辈	jddl	421
+輩	jddl	11
+䪤	jddl	9
+䩀	jddm	9
+䫍	jddm	9
+悲	jddn	983
+翡	jddn	121
+靟	jddn	9
+㐟	jddn	9
+䨽	jddn	9
+䩁	jddn	9
+棐	jdds	9
+婓	jddv	9
+斐	jddy	334
+猆	jddy	9
+㻗	jddy	9
 蝴	jde	25
 蝴	jdeg	25
 蛕	jdeg	9
@@ -10643,11 +10642,11 @@ encoder:
 旪	jfh	9
 虷	jfh	9
 㪋	jfhc	9
-䘂	jfhy	9
 昧	jfi	220
 昧	jfiy	220
 早	jfj	25302
 旱	jfj	363
+䘂	jfjy	9
 蟛	jfke	11
 蛣	jfkg	9
 暿	jfkk	9
@@ -10767,8 +10766,6 @@ encoder:
 曥	jhal	8
 䗂	jhaw	9
 蚾	jhcy	9
-暃	jhdd	9
-㫵	jhdd	9
 勖	jhet	33
 冒	jhf	3290
 蝆	jhgf	9
@@ -10815,6 +10812,8 @@ encoder:
 日	jj	70124
 曝	jja	263
 曝	jjai	263
+暃	jjdd	9
+㫵	jjdd	9
 昌	jjf	1729
 晘	jjfh	9
 暘	jjg	9
@@ -10934,7 +10933,7 @@ encoder:
 禺	jmhy	39
 㼴	jmhy	9
 旵	jmj	9
-蜖	jmjd	9
+蜖	jmjg	9
 㬞	jmjn	9
 蝸	jmk	10
 蝸	jmkg	10
@@ -11862,7 +11861,6 @@ encoder:
 㕜	khcu	9
 䟕	khcy	9	kcy
 跨	khd	2090	kdn
-啡	khdd	70
 蹖	khde	9	kde
 䟴	khde	9	kde
 䠒	khde	9	kde
@@ -11947,7 +11945,6 @@ encoder:
 跛	khhc	59	khc
 踧	khhc	9	khc
 躩	khhc	9	khc
-䠊	khhd	9	khd
 躆	khhe	9	khe
 踔	khhf	11	khf
 趾	khhg	171	khg
@@ -11971,6 +11968,7 @@ encoder:
 䠀	khik	9	kik
 䟞	khit	9	kit
 踢	khj	3745	kjr
+䠊	khjd	9	kjd
 啅	khjf	9
 蹕	khjf	9	kjf
 踶	khjh	11	kjh
@@ -12225,6 +12223,7 @@ encoder:
 嗶	kjaf	10
 嚗	kjai	9
 嘬	kjbc	67
+啡	kjdd	70
 哩	kjf	1723
 哩	kjfg	1723
 㖏	kjfg	9
@@ -13195,9 +13194,6 @@ encoder:
 轤	lhal	9
 䡾	lhay	9
 軙	lhcy	9
-罪	lhd	2567
-罪	lhdd	2567
-輫	lhdd	9
 罩	lhj	783
 罩	lhjf	783
 㐃	lhk	9
@@ -13224,6 +13220,9 @@ encoder:
 䳴	liwo	9
 辊	lj	213
 罼	ljaf	9
+罪	ljd	2567
+罪	ljdd	2567
+輫	ljdd	9
 輰	ljgr	9
 畼	ljgr	8
 䡬	ljlc	9
@@ -14204,13 +14203,13 @@ encoder:
 巀	miwa	9
 嵴	miwe	26
 则	mj	28270
-囬	mjdd	9
-廽	mjdp	9
-逥	mjdp	9
 㞱	mjf	9
 嵵	mjff	9
+囬	mjgd	9
 䍏	mjgd	9
 崼	mjgh	9
+廽	mjgp	9
+逥	mjgp	9
 崵	mjgr	9
 则	mjh	28270
 則	mjh	62
@@ -14263,8 +14262,8 @@ encoder:
 㟪	mlge	9
 㟵	mlgh	9
 岬	mlh	24
-嶵	mlhd	9
-㠑	mlhd	9
+嶵	mljd	9
+㠑	mljd	9
 㠥	mllf	9
 崽	mln	286
 崽	mlnu	286
@@ -14774,13 +14773,13 @@ encoder:
 㦊	nagf	9
 恇	nagg	9
 戼	nagn	9
-㥱	nahd	9
 慳	nahf	9
 懢	nahl	9
 㤉	naht	9
 异	naj	1249
 羿	naj	73
 敯	najc	9
+㥱	najd	9
 慔	najd	9
 愺	najf	9
 昬	najf	9
@@ -14981,7 +14980,6 @@ encoder:
 忓	nfh	9
 㥀	nfhg	9
 慎	nfhw	400
-懴	nfhy	9
 慰	nfi	306
 屚	nfi	9
 叞	nfic	9
@@ -14993,6 +14991,7 @@ encoder:
 熨	nfio	52
 怽	nfiy	9
 蝨	nfjj	9
+懴	nfjy	9
 卂	nfk	9
 憉	nfke	9
 懛	nfkf	9
@@ -15102,9 +15101,7 @@ encoder:
 㢡	nhda	9
 㸜	nhda	9
 奘	nhdd	11
-悱	nhdd	11
 奬	nhdd	9
-屝	nhdd	9
 裝	nhde	46
 爿	nhde	29
 將	nhdf	119
@@ -15184,6 +15181,8 @@ encoder:
 慢	nj	14352
 懪	njai	9
 悭	njcf	34
+悱	njdd	11
+屝	njdd	9
 悍	njf	139
 悝	njfg	11
 悍	njfh	139
@@ -16124,7 +16123,6 @@ encoder:
 爐	ohal	10
 廬	ohal	9
 爈	ohan	9
-䨾	ohdd	9
 爠	ohhy	9
 焯	ohjf	69
 粘	ohk	816
@@ -16156,6 +16154,7 @@ encoder:
 爗	ojaf	9
 爆	ojai	4354
 熶	ojbc	9
+䨾	ojdd	9
 焨	ojeg	9
 焊	ojf	651
 鄽	ojfb	9
@@ -16227,7 +16226,7 @@ encoder:
 糫	olge	9
 糰	olgf	9
 炠	olh	9
-䊫	olhd	9
+䊫	oljd	9
 库	olk	5650
 庫	olk	10
 庘	olk	9
@@ -17343,7 +17342,6 @@ encoder:
 裲	pugy	9	pgy
 被	puh	138128	phc
 被	puhc	138128	phc
-裶	puhd	9	phd
 褃	puhe	9	phe
 裃	puhh	9	phh
 袩	puhk	9	phk
@@ -17357,6 +17355,7 @@ encoder:
 裆	puiv	114	piv
 裸	puj	795	pjs
 襊	pujc	9	pjc
+裶	pujd	9	pjd
 䙨	puje	9	pje
 裡	pujf	109	pjf
 襅	pujf	9	pjf
@@ -18454,7 +18453,6 @@ encoder:
 钙	qgh	1165
 鈣	qgh	9
 鲏	qghc	15	qhc
-鲱	qghd	11	qhd
 钲	qghg	12
 鉦	qghg	9
 鲇	qghk	19	qhk
@@ -18466,6 +18464,7 @@ encoder:
 銶	qgiy	9
 鲁	qgj	2347	qjf
 鳗	qgjc	60	qjc
+鲱	qgjd	11	qjd
 䦄	qgje	9
 鲁	qgjf	2347	qjf
 鲤	qgjf	109	qjf
@@ -18590,7 +18589,6 @@ encoder:
 鈙	qhcy	9
 鈹	qhcy	9
 䀏	qhd	9
-䤵	qhdd	9
 鐬	qhdy	9
 錹	qheg	9
 钼	qhg	163
@@ -18675,6 +18673,7 @@ encoder:
 铿	qjc	65
 铿	qjcf	65
 旬	qjd	351
+䤵	qjdd	9
 锂	qjf	127
 锂	qjfg	127
 鋰	qjfg	9
@@ -19119,7 +19118,6 @@ encoder:
 鱸	qoh	9	qhl
 鮍	qohc	8	qhc
 䱙	qohc	8	qhc
-鯡	qohd	9	qhd
 䲐	qohe	9	qhe
 鱋	qohg	9	qhg
 鮛	qohi	9	qhi
@@ -19136,6 +19134,7 @@ encoder:
 鯋	qoit	9	qit
 魯	qoj	10	qjf
 鰻	qojc	9	qjc
+鯡	qojd	9	qjd
 魯	qojf	10	qjf
 鯉	qojf	9	qjf
 鰣	qojf	9	qjf
@@ -19751,7 +19750,6 @@ encoder:
 㺣	qtha	9	qha
 狓	qthc	9	qhc
 玃	qthc	9	qhc
-猅	qthd	9	qhd
 鈼	qthf	9
 㹿	qthf	9	qhf
 䥷	qthj	9
@@ -19769,6 +19767,7 @@ encoder:
 猀	qtit	9	qit
 独	qtj	2124	qjy
 獌	qtjc	9	qjc
+猅	qtjd	9	qjd
 狸	qtjf	117	qjf
 猂	qtjf	9	qjf
 猩	qtjg	40	qjg
@@ -20623,12 +20622,12 @@ encoder:
 遁	rfhp	211
 搷	rfhw	9
 瞂	rfhy	9
-㩥	rfhy	9
 抺	rfiy	9
 皁	rfj	9
 撠	rfja	9
 擀	rfjf	76
 㨴	rfjn	9
+㩥	rfjy	9
 拮	rfk	13
 㨬	rfke	9
 擡	rfkf	8
@@ -20793,8 +20792,6 @@ encoder:
 䣃	rhbh	9
 披	rhc	504
 披	rhcy	504
-排	rhd	5969
-排	rhdd	5969
 掯	rheg	9
 看	rhf	245039
 年	rhfk	105268
@@ -20865,6 +20862,8 @@ encoder:
 㩧	rjai	9
 撮	rjb	1029
 撮	rjbc	1029
+排	rjd	5969
+排	rjdd	5969
 擝	rjel	9
 㩎	rjey	9
 捏	rjf	4237
@@ -21086,7 +21085,7 @@ encoder:
 㨝	rnie	9
 㲵	rnie	9	rie
 摨	rnig	9
-氜	rnjd	9	rjd
+氜	rnjf	9	rjf
 刏	rnjh	9	rjh
 氠	rnjh	9	rjh
 氘	rnjj	20	rjj
@@ -21117,9 +21116,9 @@ encoder:
 所	rnr	44055
 摺	rnrg	31
 所	rnrh	44055
-気	rnri	9	rri
 乺	rnrn	9
 扬	rnrt	1930
+気	rnru	9	rru
 氥	rnsf	9	rsf
 拨	rnt	1684
 捤	rntn	9	rtn
@@ -21838,7 +21837,6 @@ encoder:
 橫	sagw	10
 檻	sah	9
 㭨	sahb	9
-榧	sahd	11
 樫	sahf	8
 栕	sahh	9
 檻	sahl	9
@@ -21851,6 +21849,7 @@ encoder:
 栋	saiy	1682
 模	saj	1689
 模	sajd	1689
+榧	sajd	11
 橗	saje	9
 棤	sajg	9
 椻	sajv	9
@@ -22124,7 +22123,6 @@ encoder:
 䚈	sfhq	9
 槙	sfhw	9
 樾	sfhy	35
-㰇	sfhy	9
 票	sfi	8191
 勡	sfie	9
 彯	sfie	9
@@ -22147,6 +22145,7 @@ encoder:
 榸	sfjf	9
 檊	sfjf	9
 枾	sfjg	9
+㰇	sfjy	9
 桔	sfk	215
 榬	sfke	9
 樹	sfkf	16
@@ -22287,7 +22286,6 @@ encoder:
 覀	sghg	9
 酟	sghk	9
 㯊	sgho	9
-䤏	sghr	9
 朩	sghy	9
 梂	sgiy	9
 醒	sgj	3506
@@ -22302,6 +22300,7 @@ encoder:
 桺	sgjn	9
 橞	sgjn	9
 梗	sgjr	415
+䤏	sgjr	9
 醌	sgjx	42
 梧	sgk	125
 欜	sgke	9
@@ -22457,8 +22456,6 @@ encoder:
 榩	shay	9
 櫇	shcm	9
 柀	shcy	9
-棑	shdd	9
-㯇	shdf	9
 檅	shdy	9
 相	shg	123740
 杫	shg	9
@@ -22509,6 +22506,8 @@ encoder:
 㮿	sjaf	9
 樶	sjbc	9
 㭴	sjcf	15
+棑	sjdd	9
+㯇	sjdf	9
 杳	sjf	71
 榯	sjff	9
 梩	sjfg	9
@@ -22595,7 +22594,7 @@ encoder:
 檲	slgf	9
 椢	slgy	15
 柙	slh	11
-檌	slhd	9
+檌	sljd	9
 欙	slli	9
 櫑	slll	9
 楒	slny	9
@@ -23438,7 +23437,6 @@ encoder:
 䅿	tagf	9
 筺	tagy	9
 籃	tah	11
-篚	tahd	12
 䇫	tahh	9
 夅	tahj	9
 籃	tahl	11
@@ -23448,6 +23446,7 @@ encoder:
 逄	tahp	25
 笌	taht	9
 䄰	taht	9
+篚	tajd	12
 徣	tajg	9
 稓	tajg	9
 升	tak	6266
@@ -23923,11 +23922,11 @@ encoder:
 稹	tfhw	11
 䈯	tfhw	9
 徒	tfhy	614
-籖	tfhy	9
 午	tfj	820
 竿	tfj	216
 簳	tfjf	9
 㰱	tfjw	9
+籖	tfjy	9
 千	tfk	5217
 郜	tfkb	56
 靠	tfkd	30617
@@ -24073,7 +24072,6 @@ encoder:
 䇥	tghf	9
 征	tghg	1502
 徰	tghh	9
-㔐	tghj	9
 惩	tghn	117
 篶	tgho	9
 䈣	tght	9
@@ -24081,6 +24079,7 @@ encoder:
 動	tgje	148
 重	tgjf	6392
 篿	tgjf	9
+㔐	tgjj	9
 濌	tgjj	9
 穗	tgjn	736
 憅	tgjn	9
@@ -24167,7 +24166,6 @@ encoder:
 鄓	thdb	9
 篡	thdc	70
 簒	thdc	9
-徘	thdd	26
 籑	thde	9
 䉵	thde	9
 纂	thdi	80
@@ -24324,6 +24322,7 @@ encoder:
 穝	tjbc	9
 忁	tjbi	9
 䭯	tjbm	9
+徘	tjdd	26
 䭰	tjdg	9
 䭲	tjdk	9
 䫝	tjdm	9
@@ -24344,7 +24343,7 @@ encoder:
 䅠	tjgh	9
 䈕	tjgh	9
 利	tjh	4951
-馡	tjhd	9
+馡	tjjd	9
 䅛	tjjg	9
 馧	tjjl	9
 馤	tjjn	9
@@ -25957,7 +25956,6 @@ encoder:
 疲	uhc	175
 疲	uhci	175
 㾇	uhd	9
-痱	uhdd	24
 阒	uhdy	20
 闃	uhdy	9
 㾥	uhgc	9
@@ -26006,6 +26004,7 @@ encoder:
 䪧	ujbn	9
 间	ujd	10668
 間	ujd	128
+痱	ujdd	24
 音	ujf	3290
 鄣	ujfb	16
 䪬	ujfb	9
@@ -27020,7 +27019,6 @@ encoder:
 㜘	vhag	9
 婋	vhaw	9
 虓	vhaw	9
-婔	vhdd	9
 盡	vhg	34
 婌	vhgc	9
 ⺻	vhgd	9
@@ -27059,6 +27057,7 @@ encoder:
 媣	vivs	9
 旭	vj	1145
 旭	vjd	1145
+婔	vjdd	9
 旮	vjf	29
 娌	vjfg	17
 娨	vjfh	9
@@ -28037,7 +28036,6 @@ encoder:
 俿	whaw	9
 佊	whcy	9
 凪	whd	9
-俳	whdd	16
 企	whf	1179
 俶	whgc	14
 仩	whgg	9
@@ -28113,6 +28111,7 @@ encoder:
 介	wj	1122
 儤	wjai	9
 㑠	wjcf	9
+俳	wjdd	16
 俚	wjf	35
 俚	wjfg	35
 但	wjg	115581
@@ -29418,9 +29417,9 @@ encoder:
 缜	xfhw	27
 縝	xfhw	9
 㣀	xfhw	9
-纎	xfhy	9
 颕	xfim	15
 頴	xfim	8
+纎	xfjy	9
 结	xfk	3484
 結	xfk	75
 毌	xfk	9
@@ -29564,10 +29563,6 @@ encoder:
 紴	xhcy	9
 㢭	xhcy	9
 㢰	xhcy	9
-绯	xhd	217
-緋	xhd	9
-绯	xhdd	217
-緋	xhdd	9
 䊼	xhg	9
 引	xhh	4195
 彏	xhhc	9
@@ -29611,6 +29606,10 @@ encoder:
 彃	xjaf	9
 縪	xjaf	9
 繓	xjbc	9
+绯	xjd	217
+緋	xjd	9
+绯	xjdd	217
+緋	xjdd	9
 㔗	xjet	9
 旨	xjf	246
 䋥	xjfg	9
@@ -29773,7 +29772,7 @@ encoder:
 䌟	xnkf	8
 緯	xnkh	10
 纪	xnn	1480
-幻	xnn	981
+幻	xnn	1981
 紀	xnn	16
 乣	xnn	9
 糺	xnn	8
@@ -30505,10 +30504,10 @@ encoder:
 贇	yfhm	9
 謓	yfhw	9
 斌	yfhy	1546
-䜟	yfhy	9
 讲	yfj	22589
 謿	yfje	9
 讲	yfjh	22589
+䜟	yfjy	9
 诘	yfk	49
 詰	yfk	10
 诘	yfkg	49
@@ -30603,12 +30602,6 @@ encoder:
 讞	yhay	9
 诐	yhcy	15
 詖	yhcy	9
-诽	yhd	38
-誹	yhd	9
-诽	yhdd	38
-誹	yhdd	9
-裵	yhde	9
-䥆	yhdq	9
 让	yhg	97928
 訨	yhg	8
 諔	yhgc	9
@@ -30631,24 +30624,29 @@ encoder:
 訬	yitt	9
 䚱	yiy	9
 刘	yj	11439
+诽	yjd	38
+誹	yjd	9
+诽	yjdd	38
+誹	yjdd	9
+裵	yjde	9
+䥆	yjdq	9
 斔	yjew	9
 斉	yjf	9
 裏	yjfe	9
 裏	yjfe	8
 䛞	yjfh	9
 斎	yjfi	9
-髙	yjfk	9
 詚	yjgg	9
 諟	yjgh	9
 䜥	yjgp	15
 諹	yjgr	9
 刘	yjh	11439
 䚯	yjh	9
-齑	yjhg	11
 訷	yjhh	9
 亰	yjiu	9
 齐	yjj	4112
 亣	yjj	9
+齑	yjjg	11
 誯	yjjg	9
 剂	yjjh	1693
 剤	yjjh	9
@@ -30659,6 +30657,7 @@ encoder:
 謾	yjl	9
 谩	yjlc	28
 謾	yjlc	9
+髙	yjmk	9
 恴	yjnu	9
 谒	yjq	69
 謁	yjq	9
@@ -30878,7 +30877,6 @@ encoder:
 词	yngk	5362
 詞	yngk	19
 盲	ynh	662
-扉	ynhd	75
 谞	ynhe	15
 諝	ynhe	9
 盲	ynhf	662
@@ -30889,6 +30887,7 @@ encoder:
 䜄	ynig	9
 永	ynii	2712
 昶	ynij	80
+扉	ynjd	75
 朚	ynje	9
 蝱	ynjj	9
 䖟	ynju	9
