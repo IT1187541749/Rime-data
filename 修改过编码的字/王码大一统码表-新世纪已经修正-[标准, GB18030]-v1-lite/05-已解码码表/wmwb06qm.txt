@@ -10109,7 +10109,7 @@
 \u633b	rthp	挻	sh+an y+an	r-13 t-01 h-17 p-12	1 2 1 3 4	0x0000
 \u633c	revg	挼	s+ui	r-13 e-02 v-10 g-00	1 2 1 3 1	0x0000
 \u633e	rdww	挾	x+ie j+ia	r-13 d-10 w-10 w-10	1 2 1 1 4	0x0000
-\u633f	rtgh	挿	ch+a zh+a	r-13 t-01 g-01 h-01	1 2 1 3 2	0x0000	rtfj
+\u633f	rtfj	挿	ch+a zh+a	r-13 t-01 f-13 j-11	1 2 1 3 2	0x0000	rtfj
 \u6340	rtdh	捀	f+eng	r-13 t-16 d-01 h-01	1 2 1 3 2	0x0000
 \u6341	rtfk	捁	j+iao k+u	r-13 t-01 f-10 k-10	1 2 1 3 6	0x0000
 \u6344	rgiy	捄	j+iu j+u q+iu	r-13 g-01 i-11 y-01	1 2 1 1 4	0x0000
@@ -10216,7 +10216,7 @@
 \u63f1	iejr	揱	x+ian x+iao	i-18 e-12 j-02 r-11	2 4 3 2 2	0x0000
 \u63f3	rdhd	揳	j+ia x+ie	r-13 d-01 h-01 d-10	1 2 1 1 4	0x0000
 \u63f5	rvgp	揵	j+ian q+ian	r-13 v-15 g-13 p-12	1 2 1 5 4	0x0000
-\u63f7	rtgh	揷	ch+a zh+a	r-13 t-01 g-01 h-01	1 2 1 3 1	0x0000
+\u63f7	rtfe	揷	ch+a zh+a	r-13 t-01 f-13 e-30	1 2 1 3 1	0x0000
 \u63f9	ruxe	揹	b+ei	r-13 u-13 x-17 e-12	1 2 1 2 1	0x0000
 \u63fa	refb	揺	y+ao	r-13 e-02 f-12 b-18	1 2 1 3 2	0x0000
 \u63fb	rdgy	揻	w+ei	r-13 d-15 g-01 y-01	1 2 1 1 4	0x0000

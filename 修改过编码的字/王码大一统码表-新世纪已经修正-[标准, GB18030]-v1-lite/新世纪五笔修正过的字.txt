@@ -286,3 +286,5 @@
 \u9025	逥	mjdp	mjgp	286
 \u9762	面	dmjd	dmjg	287
 \u9ad9	髙	yjfk	yjmk	288
+\u63f7	揷	rtgh	rtfe	289
+\u633f	挿	rtgh	rtfj	290
