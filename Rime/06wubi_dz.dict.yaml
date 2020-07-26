@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-07-23
+# 2020-07-26
 ---
 name: 06wubi_dz
 version: "2.0"
@@ -21483,8 +21483,8 @@ encoder:
 手	rtg	16196
 揰	rtgf	9
 手	rtgh	16196
-挿	rtgh	9
-揷	rtgh	9
+挿	rtfj	9
+揷	rtfe	9
 㨀	rtgi	9
 㩍	rtgi	9
 㩶	rtgr	9

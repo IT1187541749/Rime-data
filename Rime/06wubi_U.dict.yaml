@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-07-23
+# 2020-07-26
 ---
 name: 06wubi_U
 version: "2.0"
@@ -21483,8 +21483,8 @@ encoder:
 手	rtg	16196
 揰	rtgf	9
 手	rtgh	16196
-挿	rtgh	9
-揷	rtgh	9
+挿	rtfj	9
+揷	rtfe	9
 㨀	rtgi	9
 㩍	rtgi	9
 㩶	rtgr	9
@@ -37550,6 +37550,7 @@ encoder:
 𦔽	btfg	1
 𦖋	btfg	1
 𨺼	btfh	1
+𬯝	btfn	1
 𡥊	btfn	1
 𦗨	btfn	1
 𡴛	btfx	1
@@ -37564,7 +37565,6 @@ encoder:
 𨻦	btgj	1
 蚩	btgj	1
 𨺪	btgm	1
-𬯝	btgn	1
 𨖀	btgp	1
 𨺘	btgp	1
 𮥏	bthc	1
@@ -42943,6 +42943,7 @@ encoder:
 𦝥	etfe	1
 𦦈	etfe	1
 𦞒	etff	1
+𦥻	etfg	1
 𬁻	etfi	1
 𣎯	etfj	1
 𦛩	etfk	1
@@ -50871,6 +50872,8 @@ encoder:
 𣦃	htev	1
 𥅒	htfb	1
 𥈊	htfe	1
+𬑩	htff	1
+𪾶	htff	1
 𬆋	htff	1
 𥄮	htfg	1
 𥄭	htfh	1
@@ -50880,8 +50883,6 @@ encoder:
 𥌩	htfn	1
 𥆑	htfp	1
 𫞓	htfy	1
-𪾶	htgf	1
-𬑩	htgf	1
 𭿍	htgf	1
 𥅸	htgh	1
 𭾵	htgk	1
@@ -52932,6 +52933,7 @@ encoder:
 𡮑	iten	1
 𭰄	itet	1
 𠢣	itew	1
+𣺡	itff	1
 𣹘	itff	1
 𤅕	itff	1
 𬪵	itfg	1
@@ -52951,7 +52953,6 @@ encoder:
 𣺨	itfu	1
 𭎇	itfy	1
 𬈭	itge	1
-𣺡	itgf	1
 洴	itgf	1
 𣳴	itgh	1
 𣹴	itgh	1
@@ -63913,6 +63914,7 @@ encoder:
 𭕧	ntfe	1
 𭕳	ntfe	1
 𭯢	ntfe	1
+𪬗	ntff	1
 𡊭	ntff	1
 𡱭	ntff	1
 𡳝	ntff	1
@@ -63975,7 +63977,6 @@ encoder:
 𦅴	ntfy	1
 𫵣	ntfy	1
 𢝆	ntgf	1
-𪬗	ntgf	1
 𫵩	ntgf	1
 𢜼	ntgi	1
 𧍦	ntgj	1
@@ -71718,6 +71719,7 @@ encoder:
 𪻊	qtfe	1
 𫞤	qtfe	1
 𬍎	qtfe	1
+𨪰	qtff	1
 𠤄	qtff	1
 𤞇	qtff	1
 𤞯	qtff	1
@@ -71766,7 +71768,6 @@ encoder:
 𤞂	qtgf	1
 𤞕	qtgf	1
 𤣐	qtgf	1
-𨪰	qtgf	1
 𤜵	qtgf	1
 鉼	qtgf	1
 𫛭	qtgg	15
@@ -74604,8 +74605,10 @@ encoder:
 𡦆	rtfb	1
 𢯃	rtfb	1
 𭅤	rtfb	1
+𢻩	rtfc	1
 𢫻	rtfc	1
 𤿾	rtfc	1
+𪮜	rtff	1
 𢱜	rtff	1
 𫾡	rtff	1
 𬼑	rtff	1
@@ -74626,10 +74629,8 @@ encoder:
 𪏒	rtfw	1
 𢮿	rtfx	1
 𨿵	rtfy	1
-𢻩	rtgc	1
 𢳾	rtge	1
 𫾙	rtge	1
-𪮜	rtgf	1
 拼	rtgf	1
 𢵜	rtgg	1
 𢪧	rtgh	1
@@ -78581,20 +78582,23 @@ encoder:
 𥰹	teyr	1
 𦪔	teyt	1
 𮎄	teyw	1
-𭆵	tfac	1
+𡐱	tfaa	1
 𭏀	tfad	1
 𬼓	tfae	1
 𮅉	tfaf	1
+𠝶	tfaj	1
 𥢊	tfam	1
 𥳡	tfam	1
 𦈼	tfam	1
 𬓱	tfam	1
+𡑈	tfan	1
 𢛲	tfan	1
 𩣷	tfao	1
 𨔠	tfap	1
 𨙔	tfap	1
 𣂩	tfar	1
 𥡭	tfav	1
+𡙇	tfaw	1
 𨿠	tfay	1
 𭂻	tfbb	1
 𨙼	tfbh	1
@@ -78695,8 +78699,11 @@ encoder:
 𬚑	tfiy	1
 𥝝	tfj	1
 𮂯	tfj	1
+𤿪	tfjc	1
+𢆍	tfjd	1
 𣅌	tfjf	1
 𥝷	tfjh	1
+𠜕	tfjj	1
 𥫶	tfjj	1
 𥬆	tfjj	1
 𥶭	tfjs	1
@@ -79063,11 +79070,13 @@ encoder:
 𨛽	tfub	1
 𣪜	tfuc	1
 𥴆	tfuc	1
+𭏮	tfud	1
 𡏕	tfuf	1
 𢔛	tfuf	1
 𩍸	tfuf	1
 𨳱	tfug	1
 𫡙	tfug	1
+𪟏	tfuj	1
 𠝍	tfuj	1
 𥃏	tful	1
 𡹁	tfum	1
@@ -79104,24 +79113,21 @@ encoder:
 𢆏	tfyf	1
 𫧬	tfyj	1
 𫂰	tfyy	1
-𡐱	tgaa	1
 𨜚	tgab	1
+𭆵	tgac	1
 𢾦	tgac	1
 𨜲	tgac	1
 𤯺	tgae	1
 𤯻	tgae	1
 𢓄	tgah	1
-𠝶	tgaj	1
 𥝯	tgaj	1
 𡸁	tgam	1
-𡑈	tgan	1
 𡼻	tgan	1
 𢕆	tgan	1
 𢝐	tgan	1
 𨙡	tgap	1
 𢕁	tgas	1
 𧗦	tgas	1
-𡙇	tgaw	1
 𣢴	tgaw	1
 𣣮	tgaw	1
 𢓦	tgbh	1
@@ -79200,7 +79206,6 @@ encoder:
 𡕖	tgj	1
 𫼂	tgja	1
 𬪾	tgjb	1
-𤿪	tgjc	1
 𫒅	tgjc	1
 𪥝	tgjd	1
 𧜻	tgje	1
@@ -79213,14 +79218,12 @@ encoder:
 𪫖	tgjf	1
 𭷰	tgjf	1
 𥲓	tgjg	1
-𢆍	tgjh	1
 𨤴	tgjh	1
 𬪽	tgjh	1
 𮡕	tgjh	1
 𢔅	tgji	1
 𫞸	tgji	1
 徚	tgji	1
-𠜕	tgjj	1
 𠝤	tgjj	1
 𥷢	tgjj	1
 𡮶	tgjk	1
@@ -79345,12 +79348,10 @@ encoder:
 𤯫	tgty	1
 𥟀	tgty	1
 𥞦	tgud	15
-𭏮	tgud	1
 𤘾	tguf	1
 𤯘	tguf	1
 𬔳	tguf	1
 𭺴	tgug	1
-𪟏	tguj	1
 𣒧	tgus	1
 𬎵	tgut	1
 𭚘	tgva	1
@@ -86015,7 +86016,6 @@ encoder:
 𥏰	vtfx	1
 𪥶	vtgb	1
 𡤂	vtge	1
-𦥻	vtgf	1
 姘	vtgf	1
 𫰔	vtgh	1
 𭷔	vtgj	1
