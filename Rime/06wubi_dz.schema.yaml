@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-007-17
+# 2020-08-1
 
 schema:
   schema_id: 06wubi_dz
@@ -210,8 +210,11 @@ history:
 key_binder:
   bindings:
     #↓以下2條爲左右方向鍵選擇候選項.
-    - { when: has_menu, accept: Left, send: Up }
-    - { when: has_menu, accept: Right, send: Down }
+#    - {accept: Left, send: Up, when: has_menu}
+#    - {accept: Right, send: Down, when: has_menu}
+    #↓以下2條爲左右方向鍵翻页,与上面两行只能二选一,不能同时开启.
+    - {accept: Left, send: Page_Up, when: has_menu}
+    - {accept: Right, send: Page_Down, when: has_menu}
     #↓以下2條爲-與=翻頁(退格键左边两个键).
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
@@ -241,6 +244,12 @@ key_binder:
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
+    #↓以下5條爲方案切换快捷键.
+    - {accept: "Control+1", select: 06wubi_ci, when: always}
+    - {accept: "Control+2", select: 06wubi_U, when: always}
+    - {accept: "Control+3", select: 06wubi_tygfzj, when: always}
+    - {accept: "Control+4", select: 06wubi_single, when: always}
+    - {accept: "Control+5", select: 06wubi_dz, when: always}
 
 punctuator:
   import_preset: symbols
