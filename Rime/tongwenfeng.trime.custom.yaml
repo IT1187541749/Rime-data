@@ -5,6 +5,6 @@ patch:
   "style/comment_text_size": 16 #編碼提示字號
   "style/key_text_size": 16 #鍵字號
   "style/comment_height": 18 #編碼提示區高度
-  "style/candidate_font": 中华书局宋体02平面.ttf #候選字型
-  "style/hanb_font": 中华书局宋体02平面.ttf #擴充字型
-  "style/symbol_font": 中华书局宋体02平面.ttf #符號字型
+  "style/candidate_font": TH-Tshyn-P0.ttf #候選字型
+  "style/hanb_font": TH-Tshyn-P0.ttf #擴充字型
+  "style/symbol_font": TH-Tshyn-P0.ttf #符號字型
