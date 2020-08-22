@@ -41,19 +41,19 @@ switches:
     reset: 0
     states: [ 中文, EN ]
   - options: [extended_char, extended_char2, utf-8]
-    #↓1條爲设置默认字符集.
+    #↓以下1條爲设置默认字符集.
     reset: 2
     states: ["8105字符集", "27533字符集", "九萬超大字符集"]
   - name: dz_ci
-    #↓1條爲设置默认词组或者单字.
+    #↓以下1條爲设置默认词组或者单字.
     reset: 1
     states: ["詞組", "單字"]
     
 engine:
   filters:
-    #↓1條爲過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
+    #↓以下1條爲過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
     - lua_filter@core2020
-    #↓1條爲词组LUA开关.
+    #↓以下1條爲词组LUA开关.
     - lua_filter@dz_ci
     - charset_filter@gb2312  
     - simplifier
