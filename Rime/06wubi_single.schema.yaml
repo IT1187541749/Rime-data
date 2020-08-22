@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-08-1
+# 2020-08-22
 
 schema:
   schema_id: 06wubi_single
@@ -17,6 +17,7 @@ schema:
     敲 z 鍵進入拼音反查
   dependencies:
     - py
+    - core2020            #加入此條纔會生成("build/core2020.reverse.bin")這個文件
 
 switches:
   - name: zh_trad
@@ -39,9 +40,21 @@ switches:
     #↓以下1條爲设置默认中英文状态（0为默认中文，1为默认英文）
     reset: 0
     states: [ 中文, EN ]
+  - options: [extended_char, extended_char2, utf-8]
+    #↓1條爲设置默认字符集.
+    reset: 1
+    states: ["8105字符集", "27533字符集", "九萬超大字符集"]
+  - name: dz_ci
+    #↓1條爲设置默认词组或者单字.
+    reset: 0
+    states: ["詞組", "單字"]
     
 engine:
   filters:
+    #↓1條爲過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
+    - lua_filter@core2020
+    #↓1條爲词组LUA开关.
+    - lua_filter@dz_ci
     - charset_filter@gb2312  
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
@@ -90,7 +103,7 @@ speller:
   
 translator:
   #↓以下1條爲方案单字码表.
-  dictionary: 06wubi_ci
+  dictionary: 06wubi_U
   disable_user_dict_for_patterns:
     - "^z.*$"
   db_class: tabledb
@@ -245,9 +258,9 @@ key_binder:
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
     #↓以下5條爲方案切换快捷键.
-    - {accept: "Control+1", select: 06wubi_ci, when: always}
-    - {accept: "Control+2", select: 06wubi_U, when: always}
-    - {accept: "Control+3", select: 06wubi_tygfzj, when: always}
+    - {accept: "Control+1", select: 06wubi_tygfzj, when: always}
+    - {accept: "Control+2", select: 06wubi_ci, when: always}
+    - {accept: "Control+3", select: 06wubi_U, when: always}
     - {accept: "Control+4", select: 06wubi_single, when: always}
     - {accept: "Control+5", select: 06wubi_dz, when: always}
 
