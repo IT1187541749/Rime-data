@@ -70,3 +70,6 @@ function week_translator(input, seg)
       yield(Candidate("qsj", seg.start, seg._end, os.date("%Y年%m月%d日").." ".."星期"..weekstr.." "..os.date("%H:%M:%S"), "〔星期〕"))
    end
 end   
+
+core2020 = require("core2020_filter")
+dz_ci = require("dz_ci_filter")
