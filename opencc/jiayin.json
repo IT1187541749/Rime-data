@@ -3,14 +3,14 @@
   "segmentation": {
     "type": "mmseg",
     "dict": {
-      "type": "ocd",
-      "file": "jiayin.ocd"
+      "type": "text",
+      "file": "jiayin.txt"
     }
   },
   "conversion_chain": [{
     "dict": {
-      "type": "ocd",
-      "file": "jiayin.ocd"
+      "type": "text",
+      "file": "jiayin.txt"
     }
   }]
 }
