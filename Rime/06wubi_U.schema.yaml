@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-08-22
+# 2020-08-27
 
 schema:
   schema_id: 06wubi_U
@@ -36,10 +36,6 @@ switches:
     #↓以下1條爲设置默认中英文标点状态（0为默认中标，1为默认英标）,默认英标某些功能会失效.
     reset: 1
     states: [ 中标, 英标 ]
-  - name: ascii_mode
-    #↓以下1條爲设置默认中英文状态（0为默认中文，1为默认英文）
-    reset: 0
-    states: [ 中文, EN ]
   - options: [extended_char, extended_char2, utf-8]
     #↓以下1條爲设置默认字符集.
     reset: 2
@@ -48,7 +44,11 @@ switches:
     #↓以下1條爲设置默认词组或者单字.
     reset: 1
     states: ["詞組", "單字"]
-    
+  - name: ascii_mode
+    #↓以下1條爲设置默认中英文状态（0为默认中文，1为默认英文）
+    reset: 0
+    states: [ 中文, EN ]
+
 engine:
   filters:
     #↓以下1條爲過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
