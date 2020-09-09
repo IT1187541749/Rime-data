@@ -7460,7 +7460,7 @@ encoder:
 晋	gogj	1032
 恶	gogn	7036
 璞	gogw	135
-来	goi	233997
+#来	goi	233997
 灭	goi	3026
 赉	gomu	33
 琰	goo	126
@@ -21717,7 +21717,7 @@ encoder:
 攭	rxgj	9
 㩩	rxim	9
 指	rxj	8783
-指	rxjg	8783
+#指	rxjg	8783
 拂	rxjh	455
 㩌	rxjm	9
 摾	rxkj	9
