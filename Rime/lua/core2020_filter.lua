@@ -40,10 +40,10 @@ local function should_yield(text, tag, coredb)
 end
 
 local function filter(input, env)
-  extended_char = env.engine.context:get_option("extended_char")
+  extended_char1 = env.engine.context:get_option("extended_char1")
   extended_char2 = env.engine.context:get_option("extended_char2")
   for cand in input:iter() do
-    if extended_char then
+    if extended_char1 then
       if should_yield(cand.text, '[8]', env.coredb) then  --通用规范汉字表 8105字
         yield(cand)
       end
