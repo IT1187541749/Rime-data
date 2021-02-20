@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-09-01
+# 2020-11-30
 
 schema:
   schema_id: 06wubi_U
@@ -92,7 +92,7 @@ engine:
     - "lua_translator@time_date"
 speller:
   #↓以下1條爲四码唯一自动上屏.
-  auto_select: true
+  auto_select: false
   #↓以下1條爲四碼空碼，繼續輸入取消前四碼.
   auto_clear: max_length
   #↓以下1條爲自动清除空码，不满四码也清除(开启后会造成三码空码四码有字词,无法打四码字词的情况).
@@ -208,7 +208,8 @@ recognizer:
     rvlk1: "^z[a-z]*'?$"
     rvlk2: "^z[a-z]*'?$"
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+    #↓以下1條会导致某些编码的字无法用句号顶屏,比如www无法用句号顶屏,为了让它能正常顶屏,所以注释掉,如果有需要输入网址www.的需求去掉行首符号#便可.
+#    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     zhuyin_fix: "~[a-y]*?$"
 	
 charset_filter:
