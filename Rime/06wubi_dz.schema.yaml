@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2020-09-01
+# 2020-11-30
 
 schema:
   schema_id: 06wubi_dz
@@ -208,7 +208,8 @@ recognizer:
     rvlk1: "^z[a-z]*'?$"
     rvlk2: "^z[a-z]*'?$"
     uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
-    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+    #↓以下1條会导致某些编码的字无法用句号顶屏,比如www无法用句号顶屏,为了让它能正常顶屏,所以注释掉,如果有需要输入网址www.的需求去掉行首符号#便可.
+#    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
     zhuyin_fix: "~[a-y]*?$"
 	
 charset_filter:
