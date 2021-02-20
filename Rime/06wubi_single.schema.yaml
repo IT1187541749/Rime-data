@@ -43,7 +43,7 @@ switches:
   - name: dz_ci
     #↓以下1條爲设置默认词组或者单字.
     reset: 0
-    states: ["詞組", "單字"]
+    states: ["词组", "单字"]
   - name: ascii_mode
     #↓以下1條爲设置默认中英文状态（0为默认中文，1为默认英文）
     reset: 0
