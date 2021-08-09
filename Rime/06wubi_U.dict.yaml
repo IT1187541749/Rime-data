@@ -7208,7 +7208,7 @@ encoder:
 㰆	gkhs	9
 栆	gkhu	9
 珿	gkhy	9
-整	gki	7151
+速	gki	1820
 㩽	gkic	9
 勅	gkie	9
 辢	gkif	9
@@ -21146,7 +21146,7 @@ encoder:
 拟	rny	2833
 抋	rny	9
 拟	rnyw	2833
-氦	rnyw	75	ryw
+氦	rnyw	7500	ryw
 択	rnyy	9
 扩	ro	659
 擴	roa	10
@@ -21266,7 +21266,7 @@ encoder:
 䰠	rqch	9
 䰨	rqch	9
 䰯	rqch	9
-鬼	rqci	6652
+#鬼	rqci	6652
 魅	rqci	313
 魒	rqci	9
 魀	rqcj	9
