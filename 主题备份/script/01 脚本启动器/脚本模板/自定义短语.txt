@@ -1,0 +1,17 @@
+
+
+中文输入法的rime格式安装包安装方法,将下载的文件复制到默认路径为 /存储空间/android/rime/Download 里面,打开中文输入法app设置界面,在【下载】->【已下载】里面就可以看到rime安装包了,点击安装即可
+中文输入法的脚本就是学会忘记老大移植Androlua到同文里面的,大部分命令和Androlua通用
+中文输入法的脚本就像外挂,可以外接很多内容
+默认路径为 /存储空间/android/rime
+脚本默认路径为 /存储空间/android/rime/script
+在文件管理器里面点击rime看一下有反应没,不行的话改后缀名为zip
+
+http://jieshuo666.com/download/rime/schema/
+http://jieshuo666.com/download/rime/plugin/
+http://jieshuo666.com/download/rime/tool/
+http://jieshuo666.com/download/rime/skin/
+http://jieshuo666.com/download/rime/sound/
+短语7
+短语8
+预审批额度
