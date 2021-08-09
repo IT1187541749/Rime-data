@@ -1,7 +1,0 @@
-#云词库记录文件
-
----
-name: cloud
-version: "0.1"
-sort: by_weight
-...
