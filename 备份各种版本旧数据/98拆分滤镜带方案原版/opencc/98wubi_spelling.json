@@ -1,0 +1,16 @@
+{
+  "name": "98wubi_spelling",
+  "segmentation": {
+    "type": "mmseg",
+    "dict": {
+      "type": "text",
+      "file": "98wubi_spelling.txt"
+    }
+  },
+  "conversion_chain": [{
+    "dict": {
+      "type": "text",
+      "file": "98wubi_spelling.txt"
+    }
+  }]
+}

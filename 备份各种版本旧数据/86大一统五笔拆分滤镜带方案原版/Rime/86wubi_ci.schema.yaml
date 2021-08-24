@@ -1,0 +1,280 @@
+# Rime schema settings
+# encoding: utf-8
+# 20191210
+
+schema:
+  schema_id: 86wubi_ci
+  name: "86五笔*词"
+  version: "1.0"
+  author:
+    - 發明人 王永民
+    - 方案制作 止于至善
+  description: |
+    86五笔
+    碼表源自 王码大一统
+    敲 z 鍵進入拼音反查
+  dependencies:
+    - pinyin
+
+switches:
+  - name: zh_trad
+    reset: 0
+    states: [ 简体,繁体 ]
+  - name: gb2312
+    reset: 0
+    states: [ 扩展,常用 ]
+  - name: 86wubi_spelling
+    reset: 1
+    states: [ 编码,拆分 ]
+  - name: 86wubi_spelling_rk
+    reset: 1 
+  - name: zhuyin
+    reset: 1
+  - name: ascii_punct
+# ↓ 以下1條爲开启默认使用全角状态（0为全角，1为半角）
+    reset: 0
+    states: [ 全角, 半角 ]
+  - name: ascii_mode
+# ↓ 以下1條爲开启默认使用英文状态（0为关闭默认，1为开启默认）
+    reset: 0
+    states: [ 中文, EN ]
+
+engine:
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - affix_segmentor@mkst
+    - affix_segmentor@rvlkwb
+    - affix_segmentor@rvlkzy
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - table_translator
+    - table_translator@rwst
+    - table_translator@mkst
+    - table_translator@rvlkwb
+    - table_translator@rvlkzy
+    - history_translator@history
+  filters:
+    - charset_filter@gb2312
+    - simplifier
+    - reverse_lookup_filter@rvlkft
+    - simplifier@86wubi_spelling
+    - simplifier@zhuyin
+    - uniquifier
+
+speller:
+  auto_select: false
+  # 顶字上屏
+  auto_select_unique_candidate: false
+  # 四码惟一自动上屏
+  auto_clear: max_length
+  # 四碼空碼，繼續輸入取消前四碼
+  #auto_clear: auto           #自动清除空码，不满四码也清除.
+  delimiter: "`"
+  max_code_length: 4
+  # 形碼最大碼長，超過則頂字上屛〔number〕，或四碼後進入下一字.
+
+history:
+  input: z
+  size: 1
+  initial_quality: 10
+
+translator:
+  dictionary: 86wubi_ci.extended
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+    # Z键万能键
+  db_class: tabledb
+  initial_quality: 1000
+  enable_charset_filter: false
+  # 开启字符集过虑
+  enable_sentence: false
+  # 是否开启输入法连打
+  enable_encoder: false
+  # 是否开启自动造词
+  encode_commit_history: false
+  # 是否开启已上屏的词自动加入词库
+  max_phrase_length: 2
+  # 最大自动造词词长
+  enable_completion: true
+  # 逐渐提示
+  enable_user_dict: false
+  # 是否开启用户词典和词频调整
+  # 开=true      关=false
+  
+
+rwst:
+  __include: /translator
+  initial_quality: 100
+  enable_user_dict: true
+  enable_encoder: true
+
+mkst:
+  __include: /translator
+  initial_quality: 10
+  enable_sentence: true
+  prefix: '`'
+  tips: 〔精准造词〕
+  tag: mkst
+
+rvlkzy:
+  __include: /translator
+  dictionary: 86wubi_dz.extended
+  prefix: '~'
+  tips: "〔以字查音〕"
+  tag: rvlkzy
+
+reverse_lookup:
+  __include: /translator
+  dictionary: pinyin
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  tag: rvlk
+
+rvlkwb:
+  __include: /reverse_lookup
+  prefix: "z"
+  tips: 〔拼音反查〕
+  tag: rvlkwb
+  extra_tags:
+    - rvlk
+
+rvlkft:
+  dictionary: 86wubi_ci.extended
+  tags:
+    - rvlk
+
+zhuyin:
+  opencc_config: zhuyin.json
+  option_name: zhuyin
+  show_in_comment: true
+  #开启编码滤镜
+  comment_format:
+    - "xform/<br>/\r/"
+    - "xform/&nbsp/ /"
+  tags:
+    - rvlkzy
+  tips: all
+  #简繁对照
+
+86wubi_spelling:
+  opencc_config: 86wubi_spelling.json
+  option_name: 86wubi_spelling
+  show_in_comment: true
+  #开启编码滤镜
+  comment_format:
+    - "xform/<br>/\r/"
+    - "xform/※※※/ /"
+    - "xform/※/ /"
+  tags:
+    - abc
+    - rvlkwb
+  tips: all
+  #简繁对照
+
+simplifier:
+  opencc_config: s2t.json
+  option_name: zh_trad
+
+charset_filter:
+  option_name: gb2312
+
+recognizer:
+  patterns:
+    rvlkzy: "~[a-y]*?$"
+    rvlkwb: "^z[a-z]*'?$"
+    mkst: '^[a-y]*`[a-y`]*$'
+    punct: '^/([0-9]0?|[A-Za-z]+)$'
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+
+key_binder:
+  bindings:
+    # ↓ 以下2條爲加減號翻頁
+    - { when: has_menu, accept: minus, send: Page_Up }
+    - { when: has_menu, accept: equal, send: Page_Down }
+    # ↓ 以下2條爲  ；’ 選擇2、3候選項
+    - { when: has_menu, accept: semicolon, send: 2 }
+    - { when: has_menu, accept: apostrophe, send: 3 }
+    # ↓ 以下2條爲左右方向鍵選擇候選項
+    - { when: has_menu, accept: Left, send: Up }
+    - { when: has_menu, accept: Right, send: Down }
+    # ↓ 以下2條爲空碼時按空格鍵清空輸入碼（句前加#空码时使用空格将上屏当前编码）
+    - { when: composing, accept: space, send: Escape }
+    - { when: has_menu, accept: space, send: space }
+    # ↓ 以下2條爲回車清空編碼（句前加#将变为回车上屏当前编码）
+    - { when: composing, accept: Return, send: Escape }
+    - { when: has_menu, accept: Return, send: Escape }
+    # ↓ 快捷键设置（gb2312/gbk，需与当前生效的字符集过滤开关名称一致）
+    # ↓ 以下1條爲打简出繁
+    - { when: always, accept: Control+Shift+F, toggle: zh_trad }
+    # ↓ 以下1條爲字符集过滤
+    - { when: always, accept: Control+Shift+G, toggle: gb2312 }
+    # ↓ 以下1條爲拆分开关
+    - { when: always, accept: Control+Shift+H, toggle: 86wubi_spelling }
+
+punctuator:
+  half_shape:
+    "!": {commit: "！"}
+    "\"": {pair: ["“", "”"]}
+    "#": "#"
+    "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+    "%": ["%", "％", "°", "℃"]
+    "&": "&"
+    "'": {pair: ["‘", "’"]}
+    "(": "（"
+    ")": "）"
+    "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+    "+": "+"
+    ",": {commit: "，"}
+    "-": "-"
+    .: {commit: "。"}
+    "/": ["/", "／", "÷", "、"]
+    ":": {commit: "："}
+    ";": {commit: "；"}
+    "<": ["《", "〈", "«", "‹"]
+    "=": "="
+    ">": ["》", "〉", "»", "›"]
+    "?": {commit: "？"}
+    "@": "@"
+    "[": ["「", "【", "〔", "［"]
+    "\\": ["、", "\\", "＼"]
+    "]": ["」", "】", "〕", "］"]
+    "^": {commit: "……"}
+    _: "——"
+    "`": "`"
+    "{": ["『", "〖", "｛"]
+    "|": ["|", "｜", "·", "§", "¦"]
+    "}": ["』", "〗", "｝"]
+    "~": ["~", "～"]
+  import_preset: symbols
+
+ascii_composer:
+  good_old_caps_lock: true
+  switch_key:
+    Shift_L: commit_code
+    Shift_R: commit_code
+    Control_L: noop
+    Control_R: noop
+    Caps_Lock: clear
+    Eisu_toggle: clear
+
+menu:
+  page_size: 9
+  # 候选项数量

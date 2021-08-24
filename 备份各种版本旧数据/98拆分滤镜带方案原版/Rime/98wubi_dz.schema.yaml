@@ -1,0 +1,269 @@
+# by 王码大一统 2019-12-10
+# Rime schema settings
+# encoding: utf-8
+
+schema:
+  schema_id: 98wubi_dz
+  name: "98五笔*单"
+  version: "1.0"
+  author:
+    - 發明人 王永民
+    - 方案制作 止于至善
+  description: |
+    五笔98版
+    碼表源自 王码大一统
+    敲 z 鍵進入拼音反查
+  dependencies:
+    - py
+
+switches:
+  - name: zh_trad
+    reset: 0
+    states: [ 简体,繁体 ]
+  - name: gb2312
+    reset: 0
+    states: [ 扩展,常用 ]
+  - name: 98wubi_spelling
+    reset: 1
+    states: [ 编码,拆分 ]
+  - name: 98wubi_spelling_rk
+    reset: 1 
+  - name: zhuyin
+    reset: 1
+  - name: ascii_punct
+# ↓ 以下1條爲开启默认使用全角状态（0为全角，1为半角）
+    reset: 0
+    states: [ 全角, 半角 ]
+  - name: ascii_mode
+# ↓ 以下1條爲开启默认使用英文状态（0为关闭默认，1为开启默认）
+    reset: 0
+    states: [ 中文, EN ]
+
+engine:
+  filters:
+    - charset_filter@gb2312  
+    - simplifier
+    - "reverse_lookup_filter@ci_reverse_lookup"
+    - "simplifier@98wubi_spelling_rk"
+    - "simplifier@98wubi_spelling"
+    - "simplifier@jiayin"
+    - uniquifier
+  processors:
+    - ascii_composer
+    - recognizer
+    - key_binder
+    - speller
+    - punctuator
+    - selector
+    - navigator
+    - express_editor
+  segmentors:
+    - ascii_segmentor
+    - matcher
+    - "affix_segmentor@mkst"
+    - "affix_segmentor@rvlk1"
+    - "affix_segmentor@zhuyin_fix"
+    - abc_segmentor
+    - punct_segmentor
+    - fallback_segmentor
+  translators:
+    - punct_translator
+    - reverse_lookup_translator
+    - "table_translator@rvlk1"
+    - table_translator
+    - "table_translator@fixed"
+    - "table_translator@mkst"
+    - "table_translator@zhuyin_fix"
+    - "history_translator@history"
+	
+speller:
+  auto_select: false
+  # 顶字上屏
+  auto_select_unique_candidate: false
+  # 四码惟一自动上屏
+  auto_clear: max_length
+  # 四碼空碼，繼續輸入取消前四碼
+  #auto_clear: auto           #自动清除空码，不满四码也清除.
+  delimiter: "`"
+  max_code_length: 4
+  # 形碼最大碼長，超過則頂字上屛〔number〕，或四碼後進入下一字.
+  
+translator:
+  dictionary: 98wubi_dz.extended
+  disable_user_dict_for_patterns:
+    - "^z.*$"
+    # Z键万能键
+  db_class: tabledb
+  initial_quality: 1000
+  enable_charset_filter: false
+  # 开启字符集过虑
+  enable_sentence: false
+  # 是否开启输入法连打
+  enable_encoder: false
+  # 是否开启自动造词
+  encode_commit_history: false
+  # 是否开启已上屏的词自动加入词库
+  max_phrase_length: 2
+  # 最大自动造词词长
+  enable_completion: true
+  # 逐渐提示
+  enable_user_dict: false
+  # 是否开启用户词典和词频调整
+  # 开=true      关=false
+  
+
+fixed:
+  __include: /translator
+  initial_quality: 1000
+  enable_encoder: true
+  enable_user_dict: true
+  
+mkst:
+  __include: /translator
+  initial_quality: 10
+  enable_sentence: true
+  prefix: '`'
+  tips: "〔精准造词〕"
+  tag: mkst
+
+reverse_lookup:
+  __include: /translator
+  dictionary: py
+  tips: "〔拼音反查〕"
+  preedit_format:
+    - xform/([nl])v/$1ü/
+    - xform/([nl])ue/$1üe/
+    - xform/([jqxy])v/$1u/
+  tag: rvlk2
+    
+rvlk1:
+  __include: /reverse_lookup
+  prefix: "z"
+  tag: rvlk1
+  extra_tags:
+    - rvlk2  
+    
+
+ci_reverse_lookup:
+  dictionary: 98wubi_dz.extended
+  tips: "〔五笔滤镜〕"
+  tags:
+    - rvlk2
+    
+zhuyin_fix:
+  __include: /translator
+  prefix: '~'
+  tips: "〔以形查音〕"
+  tag: zhuyin_fix
+
+simplifier:
+  opencc_config: s2t.json
+  option_name: zh_trad
+
+
+98wubi_spelling:
+  opencc_config: 98wubi_spelling.json
+  option_name: 98wubi_spelling
+  show_in_comment: true
+  #开启编码滤镜
+  comment_format:
+    - "xform/☯/ · /"    
+    - "xform/<br>/\r/"
+    - "xform/※※※/ /"
+    - "xform/※※/ /"    
+    - "xform/※/ /"
+  tags:
+    - abc
+#   - rvlk1
+  tips: all
+  #简繁对照
+
+98wubi_spelling_rk:
+  opencc_config: 98wubi_spelling_rk.json
+  option_name: 98wubi_spelling_rk
+  show_in_comment: true
+  #开启编码滤镜
+  comment_format:
+    - "xform/☯/ · /"    
+    - "xform/<br>/\r/"
+    - "xform/※※※/ /"
+    - "xform/※※/ /"    
+    - "xform/※/ /"
+  tags:
+#   - abc
+    - rvlk1
+  tips: all
+  #简繁对照
+
+
+jiayin:
+  opencc_config: jiayin.json
+  option_name: jiayin
+  show_in_comment: true
+  #开启编码滤镜
+  comment_format:
+    - "xform/<br>/\r/"
+    - "xform/&nbsp/ /"
+  tags:
+#   - abc
+    - zhuyin_fix
+  tips: all
+  #简繁对照
+
+recognizer:
+  import_preset: default
+  patterns:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    mkst: "^[a-y]*`[a-y`]*$"
+    punct: "^/([0-9]0?|[A-Za-z]+)$"
+    rvlk1: "^z[a-z]*'?$"
+    rvlk2: "^z[a-z]*'?$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
+    zhuyin_fix: "~[a-y]*?$"
+	
+charset_filter:
+  option_name: gb2312
+  
+history:
+  input: z
+  size: 1
+  initial_quality: 1
+  
+
+key_binder:
+  bindings:
+    # ↓ 以下2條爲左右方向鍵選擇候選項
+    - {accept: Left, send: Up, when: has_menu}
+    - {accept: Right, send: Down, when: has_menu}
+    # ↓ 以下2條爲加減號翻頁
+    - {accept: minus, send: Page_Up, when: has_menu}
+    - {accept: equal, send: Page_Down, when: has_menu}
+    # ↓ 以下2條爲  ；’ 選擇2、3候選項
+    - {accept: semicolon, send: 2, when: has_menu}
+    - {accept: apostrophe, send: 3, when: has_menu}
+    # ↓ 以下2條爲空碼時按空格鍵清空輸入碼（句前加#空码时使用空格将上屏当前编码）
+    - {accept: space, send: Escape, when: composing}
+    - {accept: space, send: space, when: has_menu}
+    # ↓ 以下2條爲回車清空編碼（句前加#将变为回车上屏当前编码）
+    - {accept: Return, send: Escape, when: composing}
+    - {accept: Return, send: Escape, when: has_menu}
+    - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
+    - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
+    # ↓ 以下1條爲打简出繁
+    - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
+    # ↓ 以下1條爲拆分开关
+    - {accept: "Control+Shift+H", toggle: 98wubi_spelling, when: always}
+    - {accept: "Control+Shift+J", toggle: 98wubi_spelling_rk, when: always} 
+    - {accept: "Control+Shift+K", toggle: 98wubi_spelling, when: always}
+    # ↓ 以下1條爲字符集过滤
+    - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
+    - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
+    - {accept: "Control+Shift+O", toggle: gb2312, when: always}
+
+punctuator:
+  import_preset: symbols
+  
+menu:
+  page_size: 9
+  # 候选项数量

@@ -1,0 +1,152 @@
+# Rime custom settings
+# encoding: utf-8
+# 20200129
+
+# 以下行首带#参数未启用，删除参数前的#即可生效该参数
+patch:
+  "style/font_face": "五笔字根字体"
+  #↑候選字型,用来显示拆分字根.
+  #"style/font_point": 16
+  #↑候選字號,候选字体大小.
+  #"style/horizontal": false
+  #↑候选模式,false为垂直模式,true为水平模式.
+  #"style/fullscreen": false
+  #↑全屏输入.
+  #"style/inline_preedit": false
+  #↑TSF嵌入模式,控制编码显示位置(true输入窗口显示编码,编码将显示到光标焦点处,false候选栏显示编码,编码显示到候选栏).
+  #"style/preedit_type": composition
+  #↑编码显示类型.
+  #"style/display_tray_icon": false
+  #↑顯示托盤圖標.
+  #"style/label_format": "%s."
+  #↑候选编号与候选内容间隔形式.
+  #"style/layout/min_width": 160
+  #↑候选窗口的最小宽度.
+  #"style/layout/min_height": 0
+  #↑候选窗口的最小高度.
+  #"style/layout/border_width": 3
+  #↑候选窗口的外层边框宽度.
+  #"style/layout/border_height": 0
+  #↑候选窗口的外层边框高度.
+  #"style/layout/margin_x": 12
+  #↑候选字左右边距.
+  #"style/layout/margin_y": 12
+  #↑候选字上下边距.
+  #"style/layout/spacing": 10
+  #↑当候选窗口是非TSF(编码)嵌入(光标)模式时,编码与候选遮罩色块儿之间的距离.
+  #"style/layout/candidate_spacing": 5
+  #↑候选字间距.
+  #"style/layout/hilite_spacing": 4
+  #↑序号和候选字之间的间距.
+  #"style/layout/hilite_padding": 2
+  #↑候选字背景色色块高度,若想候选字背景色块无边界填充候选框,仅需其高度和候选字上下边距一致即可.
+  #"style/layout/round_corner": 4
+  #↑候选字背景色块圆角幅度.
+
+  # ↓ 开启默认使用英文状态（0为关闭默认，1为开启默认）
+  #"switches/@0/reset": 1
+  # ↓ 开启默认使用繁体输出（0为关闭默认，1为开启默认）
+  #"switches/@1/reset": 1
+  # ↓ 开启默认使用字符集过滤功能（0为关闭默认，1为开启默认）
+  #"switches/@2/reset": 1
+  # ↓ 开启默认使用拆分提示功能（0为关闭默认，1为开启默认）
+  #"switches/@3/reset": 1
+
+  # ↓ 候选项个数设置（取消句前#，并修改数字）
+#menu:
+  #page_size: 9
+  # 候选项数量
+
+  # ↓ 字符集过滤设置为GBK
+  #"switches/@2/name": gbk
+  #"charset_filter/option_name": gbk
+  #"engine/filters/@0": charset_filter@gbk
+  # PS:如修改过滤，需同步修改第71行快捷键名称为gbk
+
+  # ↓ 开启逐键提示功能（提示项按字母排序，意义不大，不建议开启）
+  #"translator/enable_completion": true
+  # ↓ 开启自动调频功能（影响盲打体验，不建议开启）
+  #"translator/enable_user_dict": true
+
+  # 按键功能设置
+  # ↓ 左Shift键功能设置（inline_ascii/commit_code/commit_text/clear/noop)
+  #"ascii_composer/switch_key/Shift_L": commit_code
+  # ↓ 右Shift键功能设置（inline_ascii/commit_code/commit_text/clear/noop)
+  #"ascii_composer/switch_key/Shift_R": commit_code
+  # ↓ 左CTRL键功能设置（inline_ascii/commit_code/commit_text/clear/noop)
+  #"ascii_composer/switch_key/Control_L": noop
+  # ↓ 右CTRL键功能设置（inline_ascii/commit_code/commit_text/clear/noop)
+  #"ascii_composer/switch_key/Control_R": noop
+  # ↓ Caps_Lock键功能设置（inline_ascii/commit_code/commit_text/clear/noop)
+  #"ascii_composer/switch_key/Caps_Lock": clear
+  # PS: 如需使用个性2、3候选键请在key_binder/bindings中修改或添加
+  # 格式：( XXX代表某键）
+  #      - { when: has_menu, accept: XXX, send: 2 }
+  #      - { when: has_menu, accept: XXX, send: 3 }
+
+
+
+
+
+  ############## 以下参数生效中，请谨慎修改！！ ##############
+  key_binder:
+    bindings:
+    # ↓ 以下2条为加减号翻页
+      - { when: has_menu, accept: minus, send: Page_Up }
+      - { when: has_menu, accept: equal, send: Page_Down }
+    # ↓ 以下2条为 ；’选择2、3候选项
+      - { when: has_menu, accept: semicolon, send: 2 }
+      - { when: has_menu, accept: apostrophe, send: 3 }
+    # ↓ 以下2条为左右方向键选择候选项
+      - { when: has_menu, accept: Left, send: Up }
+      - { when: has_menu, accept: Right, send: Down }
+    # ↓ 以下2条为空码时按空格键清空编码（句前加#空码时使用空格将上屏当前编码）
+      - { when: composing, accept: space, send: Escape }
+      - { when: has_menu, accept: space, send: space }
+    # ↓ 以下2条为回车清空当前编码（句前加#将变为回车上屏当前编码）
+      - { when: composing, accept: Return, send: Escape }
+      - { when: has_menu, accept: Return, send: Escape }
+    # ↓ 快捷键设置（gb2312/gbk，需与当前生效的字符集过滤开关名称一致）
+    # ↓ 以下1條爲打简出繁
+      - { when: always, accept: Control+Shift+F, toggle: zh_trad }
+    # ↓ 以下1條爲字符集过滤
+      - { when: always, accept: Control+Shift+G, toggle: gb2312 }
+    # ↓ 以下1條爲拆分开关
+      - { when: always, accept: Control+Shift+H, toggle: 86wubi_spelling }
+
+  # ↓ 按键符号设置
+  punctuator:
+    half_shape:
+      "!": {commit: "！"}
+      "\"": {pair: ["“", "”"]}
+      "#": "#"
+      "$": ["￥", "$", "€", "£", "¥", "¢", "¤"]
+      "%": ["%", "％", "°", "℃"]
+      "&": "&"
+      "'": {pair: ["‘", "’"]}
+      "(": "（"
+      ")": "）"
+      "*": ["*", "＊", "·", "・", "×", "※", "❂"]
+      "+": "+"
+      ",": {commit: "，"}
+      "-": "-"
+      .: {commit: "。"}
+      "/": ["/", "／", "÷", "、"]
+      ":": {commit: "："}
+      ";": {commit: "；"}
+      "<": ["《", "〈", "«", "‹"]
+      "=": "="
+      ">": ["》", "〉", "»", "›"]
+      "?": {commit: "？"}
+      "@": "@"
+      "[": ["「", "【", "〔", "［"]
+      "\\": ["、", "\\", "＼"]
+      "]": ["」", "】", "〕", "］"]
+      "^": {commit: "……"}
+      _: "——"
+      "`": "`"
+      "{": ["『", "〖", "｛"]
+      "|": ["|", "｜", "·", "§", "¦"]
+      "}": ["』", "〗", "｝"]
+      "~": ["~", "～"]
+    import_preset: symbols
