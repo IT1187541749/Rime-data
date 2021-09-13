@@ -133,9 +133,9 @@ local function Bu_R(id) --生成功能键
     end
     ta.OnLongClickListener={onLongClick=function() return true end}
    elseif id==4 then
-    ta.text=Icon(键盘名,"返回")
+    ta.text=Icon("Keyboard_default","返回")
     ta.onClick=function()
-      service.sendEvent(键盘名)
+      service.sendEvent("Keyboard_default")
     end
     ta.OnLongClickListener={onLongClick=function()
         service.sendEvent("undo")
