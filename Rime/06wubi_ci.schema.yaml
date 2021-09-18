@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2021-05-25
+# 2021-09-19
 
 schema:
   schema_id: 06wubi_ci
@@ -30,30 +30,30 @@ switches:
     reset: 0
     states: [ 编码,拆分 ]
   - name: jiayin
-    #↓以下1條爲设置以形查音开关.
+    #↓以下1條為设置以形查音开关.
     reset: 1
   - name: ascii_punct
-    #↓以下1條爲设置默认中英文标点状态（0为默认中标，1为默认英标）,默认英标某些功能会失效.
+    #↓以下1條為设置默认中英文标点状态（0为默认中标，1为默认英标）,默认英标某些功能会失效.
     reset: 1
     states: [ 中标, 英标 ]
   - options: [extended_char1, extended_char2, extended_char3, utf-8]
-    #↓以下1條爲设置默认字符集.
+    #↓以下1條為设置默认字符集.
     reset: 1
     states: ["8105", "27533", "Big-5", "超集"]
   - name: dz_ci
-    #↓以下1條爲设置默认词组或者单字.
+    #↓以下1條為设置默认词组或者单字.
     reset: 0
     states: ["词组", "单字"]
   - name: ascii_mode
-    #↓以下1條爲设置默认中英文状态（0为默认中文，1为默认英文）
+    #↓以下1條為设置默认中英文状态（0为默认中文，1为默认英文）
     reset: 0
     states: [ 中文, EN ]
 
 engine:
   filters:
-    #↓以下1條爲過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
+    #↓以下1條為過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
     - lua_filter@core2020
-    #↓以下1條爲词组LUA开关.
+    #↓以下1條為词组LUA开关.
     - lua_filter@dz_ci
     - charset_filter@gb2312  
     - simplifier
@@ -91,36 +91,36 @@ engine:
     - "history_translator@history"
     - "lua_translator@time_date"
 speller:
-  #↓以下1條爲四码唯一自动上屏.
+  #↓以下1條為四码唯一自动上屏.
   auto_select: true
-  #↓以下1條爲四碼空碼，繼續輸入取消前四碼.
+  #↓以下1條為四碼空碼，繼續輸入取消前四碼.
   auto_clear: max_length
-  #↓以下1條爲自动清除空码，不满四码也清除(开启后会造成三码空码四码有字词,无法打四码字词的情况).
+  #↓以下1條為自动清除空码，不满四码也清除(开启后会造成三码空码四码有字词,无法打四码字词的情况).
   #auto_clear: auto
   delimiter: "`"
-  #↓以下1條爲形碼最大碼長，超過則頂字上屛〔number〕，或四碼後進入下一字.
+  #↓以下1條為形碼最大碼長，超過則頂字上屛〔number〕，或四碼後進入下一字.
   max_code_length: 4
   
 translator:
-  #↓以下1條爲方案单字码表.
+  #↓以下1條為方案单字码表.
   dictionary: 06wubi_U
   disable_user_dict_for_patterns:
     - "^z.*$"
   db_class: tabledb
   initial_quality: 100000
-  #↓以下1條爲是否開啓字符集過濾.
+  #↓以下1條為是否開啓字符集過濾.
   enable_charset_filter: false
-  #↓以下1條爲是否開啓自動造句.
+  #↓以下1條為是否開啓自動造句.
   enable_sentence: false
-  #↓以下1條爲是否開啓自動造詞(自动造词).
+  #↓以下1條為是否開啓自動造詞(自动造词).
   enable_encoder: false
-  #↓以下1條爲是否對已上屛詞自動成詞(是否开启已上屏的词自动加入词库).
+  #↓以下1條為是否對已上屛詞自動成詞(是否开启已上屏的词自动加入词库).
   encode_commit_history: false
-  #↓以下1條爲最大自動成詞詞長.
+  #↓以下1條為最大自動成詞詞長.
   max_phrase_length: 2
-  #↓以下1條爲提前顯示尚未輸入完整碼的字词.
+  #↓以下1條為提前顯示尚未輸入完整碼的字词.
   enable_completion: false
-  #↓以下1條爲是否開啓用戶詞典〔用戶詞典記錄動態字詞頻、用戶詞〕.
+  #↓以下1條為是否開啓用戶詞典〔用戶詞典記錄動態字詞頻、用戶詞〕.
   enable_user_dict: false
   # 开=true      关=false
 
@@ -223,42 +223,44 @@ history:
 
 key_binder:
   bindings:
-    #↓以下2條爲左右方向鍵選擇候選項.
+    #↓以下2條為左右方向鍵選擇候選項.
 #    - {accept: Left, send: Up, when: has_menu}
 #    - {accept: Right, send: Down, when: has_menu}
-    #↓以下2條爲左右方向鍵翻页,与上面两行只能二选一,不能同时开启.
+    #↓以下2條為左右方向鍵翻页,与上面两行只能二选一,不能同时开启.
     - {accept: Left, send: Page_Up, when: has_menu}
     - {accept: Right, send: Page_Down, when: has_menu}
-    #↓以下2條爲-與=翻頁(退格键左边两个键).
+    #↓以下2條為-與=翻頁(退格键左边两个键).
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
-    #↓以下1條爲選擇第2候選項.
+    #↓以下1條為選擇第2候選項.
     - {accept: semicolon, send: 2, when: has_menu}
-    #↓以下1條爲選擇第3候選項.
+    #↓以下1條為選擇第3候選項.
     - {accept: apostrophe, send: 3, when: has_menu}
-    #↓以下2條爲空碼時按空格鍵清空輸入碼(句前加#空码时使用空格将上屏当前编码).
+    #↓以下1條為輸入狀態下空格退出輸入狀態.
     - {accept: space, send: Escape, when: composing}
+    #↓以下1條為空格上屏候選項.（句前加#将变为空格清空当前编码）
     - {accept: space, send: space, when: has_menu}
-    #↓以下2條爲回車清空輸入碼（句前加#将变为回车上屏当前编码）.
+    #↓以下1條為輸入狀態下回車退出輸入狀態.
     - {accept: Return, send: Escape, when: composing}
+    #↓以下1條為回車清空候選項.（句前加#将变为回车上屏当前编码,与上面一项同时注释才能生效）
     - {accept: Return, send: Escape, when: has_menu}
-    #↓以下2條爲打简出繁开关(F3下面那个数字键4).
+    #↓以下2條為打简出繁开关(F3下面那个数字键4).
     - {accept: "Control+Shift+4", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
-    #↓以下1條爲设置中标与英标切换(F4下面那个数字键5).
+    #↓以下1條為设置中标与英标切换(F4下面那个数字键5).
     - {accept: "Control+Shift+5", toggle: ascii_punct, when: always}
     - {accept: "Control+Shift+percent", toggle: ascii_punct, when: always}
-    #↓以下1條爲打简出繁开关.
+    #↓以下1條為打简出繁开关.
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
-    #↓以下3條爲拆分开关.
+    #↓以下3條為拆分开关.
     - {accept: "Control+Shift+H", toggle: 06wubi_spelling, when: always}
     - {accept: "Control+Shift+J", toggle: 06wubi_spelling, when: always} 
     - {accept: "Control+Shift+K", toggle: 06wubi_spelling, when: always}
-    #↓以下3條爲字符集过滤.
+    #↓以下3條為字符集过滤.
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
-    #↓以下5條爲方案切换快捷键.
+    #↓以下5條為方案切换快捷键.
     - {accept: "Control+1", select: 06wubi_tygfzj, when: always}
     - {accept: "Control+2", select: 06wubi_ci, when: always}
     - {accept: "Control+3", select: 06wubi_U, when: always}
@@ -270,5 +272,5 @@ punctuator:
   import_preset: symbols
   
 menu:
-  #↓以下1條爲候选项数量.
+  #↓以下1條為候选项数量.
   page_size: 9
