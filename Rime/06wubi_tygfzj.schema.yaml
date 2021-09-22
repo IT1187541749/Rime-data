@@ -263,13 +263,17 @@ key_binder:
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+O", toggle: gb2312, when: always}
-    #↓以下5條為方案切换快捷键.
+    #↓以下6條為方案切换快捷键(通过方案切换能达到切换指定字集的目的).
     - {accept: "Control+1", select: 06wubi_tygfzj, when: always}
     - {accept: "Control+2", select: 06wubi_ci, when: always}
     - {accept: "Control+3", select: 06wubi_U, when: always}
     - {accept: "Control+4", select: 06wubi_single, when: always}
     - {accept: "Control+5", select: 06wubi_dz, when: always}
     - {accept: "Control+6", select: 06wubi_Big-5, when: always}
+    #↓以下1條為单字词组切换快捷键.
+    - {accept: "Control+7", toggle: dz_ci, when: always}
+    #↓以下1條為中英文标点符号切换快捷键.
+    - {accept: "Control+8", toggle: ascii_punct, when: always}
 
 punctuator:
   import_preset: symbols
