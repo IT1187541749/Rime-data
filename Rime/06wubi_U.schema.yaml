@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2021-09-19
+# 2021-09-22
 
 schema:
   schema_id: 06wubi_U
@@ -56,11 +56,13 @@ engine:
     #↓以下1條為词组LUA开关.
     - lua_filter@dz_ci
     - charset_filter@gb2312  
+    #↓以下1條為過濾器組件,對候選詞的繁簡轉換.
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
     - "simplifier@06wubi_spelling"
 #    - "simplifier@06wubi_spelling_rk"
     - "simplifier@jiayin"
+    #↓以下1條為去重组件.
     - uniquifier
   processors:
     - ascii_composer
