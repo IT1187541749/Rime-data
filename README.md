@@ -76,7 +76,7 @@
   
   * 王码五笔发明人王永民先生
   
-  * CNMan
+  * [CNMan](https://github.com/CNMan)
   
   * 熊怀东先生
   
