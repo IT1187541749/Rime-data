@@ -1,0 +1,60 @@
+# Rime dictionary   
+#《一简》共收一简25个.
+# 个人输入法备份仓库:https://github.com/IT1187541749/Rime-data
+# 新世紀五筆字型資源庫：https://06wb.github.io
+# 新世紀五筆字型QQ群：38021162
+# encoding: utf-8
+# 2020-09-30
+---
+name: 06wubi_yijian
+version: "2.0"
+sort: by_weight
+  #↓以下3條爲词库设置项(去掉行首#启用词库).
+import_tables:
+  - 06wubi_yijian
+  - 06wubi_erjian
+  - 06wubi_sanjian
+#  - 06wubi_ci.extended
+#  - 06wubi_dz.extended
+  - XXX.extended
+columns:
+  - text
+  - code
+  - weight
+  - stem
+encoder:
+  exclude_patterns:
+    - '^z.*$'
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 32]
+      formula: "AaBaCaZa"
+...
+工	a	5450	aaaa
+了	b	1500186	bnh
+以	c	100400	nywy
+在	d	974740	dhfd
+有	e	613906	def
+地	f	101785	fbn
+一	g	134392	ggll
+上	h	284918	hgd
+不	i	590643	dhi
+是	j	1180957	jghu
+中	k	243213	khk
+国	l	10112	lgyi
+同	m	24012	mgkd
+民	n	4896	nav
+为	o	210479	yeyi
+这	p	178109	ypi
+我	q	1192789	trxy
+的	r	4828294	rqyy
+要	s	396900	svf
+和	t	664874	tkg
+产	u	2648	ute
+发	v	69515	ntcy
+人	w	250285	wwww
+经	x	13284	xcag
+主	y	10842	ygd
