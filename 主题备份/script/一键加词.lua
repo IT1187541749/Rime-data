@@ -14,8 +14,8 @@ preset_keys:
   yjjc_lua: {label: 🎙, send: function, command: '一键加词.lua', option: "%4$s"}
 向任意按键加入上述按键既可
 
-第④步 在任意输入框输入“词条+tab符号+编码”，例如 星空两笔	xklb
-然后点击第③步添加的按键即可
+第④步 在任意输入框输入“词条”，例如 星空两笔
+然后点击第③步添加的按键即可(可批量一次性添加多个词,一行一个词)
 ]]
 
 require "import"
@@ -31,32 +31,17 @@ import "script.包.字符串.其它"
 Key.presetKeys.lua_script_1={label= '全选', send= "Control+a"}
 Key.presetKeys.lua_script_2={label= '删除', send="BackSpace"}
 service.sendEvent("lua_script_1")
-local 词组和编码 = service.getCurrentInputConnection().getSelectedText(0)--取编辑框选中内容,部分app内无效
-local 制表符="	"
-local 数据文件=tostring(service.getLuaDir("")).."/storage/emulated/0/Android/rime/06wubi_ci.extended.dict.yaml"--用户码表
+local 词组 = service.getCurrentInputConnection().getSelectedText(0)--取编辑框选中内容,部分app内无效
+local 数据文件=tostring(service.getLuaDir("")).."/06wubi_ci.extended.dict.yaml"--用户码表(修改成你自己的词库文件)
 
-if 词组和编码== nil or 词组和编码=="" then
+if 词组== nil or 词组==""then
 do return end --强制退出
 end
-if string.find(词组和编码,制表符) != nil && #词组和编码>0 && 字符串首尾空(词组和编码)!=""  && #词组和编码<99 then 
 
+io.open(数据文件,"a+"):write(词组):close()
 io.open(数据文件,"a+"):write("\n"):close()
-io.open(数据文件,"a+"):write(词组和编码):close()
 service.sendEvent("lua_script_2")
-Toast.makeText(service," 词组【"..词组和编码.."】 添加成功",2000).show()
+Toast.makeText(service," 词组【"..词组.."】 添加成功",100).show()
 
---刷新方案
-local 方案组=Rime.getSchemaNames() --返回输入法方案组
-if #方案组==1 then
-  print("当前只有1个方案,无法切换,请保证有两个方案")
-  return --退出
-end
-local 方案编号=Rime.getSchemaIndex()
-local 切换编号=0
-if 方案编号==0 then 切换编号=1 end
-local 结果=Rime.selectSchema(切换编号)
-Rime.selectSchema(方案编号)
-if 结果==false then print("方案切换失败,请保证有两个方案") end
-else
-  print("当前词条不符合编码规则")
-end--string.find(词组和编码,制表符)
+--重新部署(需要等待10秒左右才能部署完成,请耐心等待)
+service.sendEvent("Deploy")
