@@ -10,3 +10,5 @@ unicode.userdb.txt
 /opencc/.stignore
 /Rime/06wubi_dz.dict.yaml
 /Rime/06wubi_ci.dict.yaml
+/opencc/06wubi_spelling.ocd
+/opencc/06wubi_spelling_rk.ocd
