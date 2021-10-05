@@ -1,0 +1,211 @@
+require "import"
+import "java.util.*"
+import "android.widget.*"
+import "android.view.*"
+import "java.io.*"
+import "android.content.*"
+import "android.os.*"
+import "android.text.Html"
+
+
+local 目录=tostring(service.getLuaExtDir("script"))
+local 脚本路径=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
+
+local 脚本相对路径=string.sub(脚本路径,#目录+1)
+local 相对脚本路径=string.sub(脚本路径,#目录+1)--相对路径
+local 纯脚本名=File(脚本路径).getName()
+local 脚本目录=string.sub(脚本路径,1,#脚本路径-#纯脚本名)
+
+
+
+
+
+
+
+
+local Clip={}
+
+  列数=1
+  Clip[1]=dofile_信息表.内容
+
+
+import "android.graphics.RectF"
+import "android.graphics.drawable.StateListDrawable"
+local function Back() --生成功能键背景
+  local bka=LuaDrawable(function(c,p,d)
+    local b=d.bounds
+    b=RectF(b.left,b.top,b.right,b.bottom)
+    p.setColor(0x49ffffff)
+    c.drawRoundRect(b,20,20,p) --圆角20
+  end)
+  local bkb=LuaDrawable(function(c,p,d)
+    local b=d.bounds
+    b=RectF(b.left,b.top,b.right,b.bottom)
+    p.setColor(0x49d3d7da)
+    c.drawRoundRect(b,20,20,p)
+  end)
+
+  local stb=StateListDrawable()
+  stb.addState({-android.R.attr.state_pressed},bkb)
+  stb.addState({android.R.attr.state_pressed},bka)
+  return stb
+end
+
+local function Icon(k,s) --获取功能键图标
+  --k=Key.presetKeys[k]
+  return k and k.label or s
+end
+
+local function Bu_R(id) --生成功能键
+  local ta={TextView,
+    gravity=17,
+    Background=Back(),
+    layout_height=-1,
+    layout_width=-1,
+    layout_weight=1,
+    layout_margin="1dp",
+    layout_marginTop="2dp",
+    layout_marginBottom="2dp",
+    textColor=0xff232323,
+    textSize="18dp"}
+
+  if id==1 then
+    ta.text=Icon("BackSpace","⌫")
+    ta.textSize="22dp"
+    ta.onClick=function()
+      service.sendEvent("BackSpace")
+    end
+    ta.OnLongClickListener={onLongClick=function() return true end}
+   elseif id==3 then
+    ta.text=Icon("Return","⏎")
+    ta.onClick=function()
+      service.sendEvent("Return")
+    end
+    ta.OnLongClickListener={onLongClick=function() return true end}
+   elseif id==4 then
+    ta.text=Icon(键盘名,"返回")
+    ta.onClick=function()
+      Key.presetKeys.lua_script_l={label= "脚本", send="function", command=dofile_信息表.上级脚本相对路径, option=""}
+      service.sendEvent("lua_script_l")
+    end
+    ta.OnLongClickListener={onLongClick=function()
+        service.sendEvent("undo")
+        return true
+    end}
+    
+  end
+  return ta
+end
+local 默认高度=service.getLastKeyboardHeight()
+if 默认高度<600 then 默认高度=600 end
+
+
+local ids,layout={},{LinearLayout,
+  orientation=1,
+  --键盘高度
+  layout_height=默认高度,
+  layout_width=-1,
+  --背景颜色
+  --BackgroundColor=0xffd7dddd,
+  {TextView,
+    id="title",
+    layout_height="30dp",
+    layout_width=-1,
+    text=dofile_信息表.纯脚本名.."•帮助说明",
+    gravity="center",
+    paddingLeft="2dp",
+    paddingRight="2dp",
+    BackgroundColor=0x49d3d7da
+    },
+    {LinearLayout,
+    gravity="right",
+    layout_height=-1,
+    {LinearLayout,
+      id="main",
+      orientation=1,
+      --右侧功能键宽度
+      layout_weight=1,
+      layout_height=-1,
+      layout_gravity=8|3,
+      {GridView, --列表控件
+        id="list",
+        numColumns=列数, --6列
+        paddingLeft="2dp",
+        paddingRight="2dp",
+        layout_width=-1,
+        layout_weight=1}},
+
+   {LinearLayout,
+      orientation=1,
+      layout_weight=1,
+      layout_width="100dp",
+      layout_height=-1,
+      --layout_gravity=5|84,
+      
+    Bu_R(1),
+    --Bu_R(2),
+    Bu_R(3),
+    Bu_R(4)
+      },
+}}
+
+layout=loadlayout(layout,ids)
+
+
+
+
+local data,item={},{LinearLayout,
+  layout_width=-1,
+  padding="4dp",
+  gravity=3|17,
+
+  {TextView,
+    id="b",
+    gravity=3|17,
+    paddingLeft="4dp",
+    singleLine=false,
+    --最大显示行数
+    MaxLines=999,
+    --最小高度
+    --textIsSelectable=true,
+    MinHeight="30dp",
+    textColor=0xff232323,
+    textSize="16dp"}
+    
+  }
+local adp=LuaAdapter(service,data,item)
+ids.list.Adapter=adp
+
+
+
+import "android.text.Html"
+local function fresh()
+  table.clear(data)
+  for i=1,#Clip do
+    local 内容=Clip[i]
+    内容=内容:gsub("\n","<br>")
+    table.insert(data,{b=Html.fromHtml(内容)})
+  end--for
+  adp.notifyDataSetChanged()
+end
+
+
+
+ids.list.onItemClick=function(l,v,p)
+  
+  return
+end
+  
+
+
+ids.list.onItemLongClick=function(l,v,p)
+  
+  return true
+end
+
+
+fresh()
+service.setKeyboard(layout)
+
+
+
