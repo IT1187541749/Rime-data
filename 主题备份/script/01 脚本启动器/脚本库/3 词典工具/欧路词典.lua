@@ -26,6 +26,7 @@ import "android.view.*"
 import "java.io.*"
 import "android.content.*" 
 
+import "script.包.其它.主键盘"
 import "script.包.其它.首次启动提示"
 
 
@@ -59,123 +60,226 @@ end--function 大写加空格(内容)
 
 
 local 参数 = (...)
-local 默认宽度=33
-
+local 编号=1
 
 local 脚本目录=tostring(service.getLuaExtDir("script"))
 local 脚本路径=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
---local 目录=string.sub(脚本路径,1,倒找字符串(脚本路径,"/")-1)
-local 纯脚本名=File(脚本路径).getName()
+local 脚本名=File(脚本路径).getName()
+local 纯脚本名=脚本名:sub(1,-5)
 local 脚本相对路径=string.sub(脚本路径,#脚本目录+1)
 local 配置文件=脚本目录.."/脚本配置_勿删.txt"
 
-local 脚本名=File(脚本路径).getName()
+
 local 提示内容=[[
 说明:本脚本需配合欧路词典app
 将自动打开欧路词典(若存在)查词界面，查询指定内容
-若存在多个候选,可通过方向键移动到指定候选再进行查询
+若存在多个候选,点击内容后自动进行查询
 ]]
 首次启动提示(脚本名,提示内容)
 
 
-local 候选=""
+--跳转位置
+if string.find(参数,"<<")!=nil && string.find(参数,">>")!=nil then
+ 编号=tonumber(string.sub(参数,string.find(参数,"<<")+2,string.find(参数,">>")-1))
+ --print(编号)
+end
+--拆分上屏数据
 if string.find(参数,"【【")!=nil && string.find(参数,"】】")!=nil then
- if 参数:sub(-13)=="【【3】】" then 
-  候选=service.getSystemService(Context.CLIPBOARD_SERVICE).getText() --获取剪贴板 
-  候选=tostring(候选)
- end--if 参数=="【【3】】"
- if 参数:sub(-13)=="【【1】】" then 
-  候选=string.sub(参数,1,string.find(参数,"【【")-1)
- end--if 参数=="【【1】】"
- if 参数:sub(-13)=="【【2】】" then 
-  候选=string.sub(参数,1,string.find(参数,"【【")-1)
-  候选=大写字母前加空格(候选)
- end--if 参数=="【【2】】"
-end--if string.find(参数
+ local 内容=string.sub(参数,string.find(参数,"【【")+6,string.find(参数,"】】")-1)
+ 分享文字到欧路(内容)
+ return
+end
 
-
-if 候选!="" then 分享文字到欧路(候选) end
 
 local 已启用=false
 local 定制宽度=默认宽度
 if File(配置文件).exists() then--配置文件存在
   for c in io.lines(配置文件) do--按行读取文件,检测脚本是否己启用
-   if c=="欧路词典定制=已启用" then
+   if c=="测试功能=已启用" then
     已启用=true
     定制宽度=25
    end
   end--for
 end--if 配置文件
 
+import "com.osfans.trime.*" --载入包
+local 候选组=Rime.getCandidates()
+local 编码=Rime.RimeGetInput() --當前編碼
 
+local 显示内容组={}
+local 提示内容组={}
+
+import "android.content.Context"  --导入类
+local 剪贴板=tostring(service.getSystemService(Context.CLIPBOARD_SERVICE).getText()) --获取剪贴板 
+显示内容组[#显示内容组+1]=剪贴板
+提示内容组[#提示内容组+1]="剪贴板"
+
+if 编码==nil || 编码=="" then
+ 分享文字到欧路(剪贴板)
+ print("无候选,自动查询剪切板内容")
+ return 
+end
+
+
+
+
+if string.find(编码,"\'")!=nil then
+  local 句子=string.gsub(编码,"\'"," ")  
+  显示内容组[#显示内容组+1]=句子
+  提示内容组[#提示内容组+1]="句子"
+else
+ 显示内容组[#显示内容组+1]=编码
+ 提示内容组[#提示内容组+1]="编码"
+ 显示内容组[#显示内容组+1]=string.upper(string.sub(编码,1,1))..string.sub(编码,2,#编码)
+ 提示内容组[#提示内容组+1]="首大写"
+ 显示内容组[#显示内容组+1]=string.upper(编码)
+ 提示内容组[#提示内容组+1]="大写"
+end--if
+
+
+
+if #候选组>0 then
+ for i=1,#候选组 do
+  显示内容组[#显示内容组+1]=tostring(候选组[i-1].text)
+  提示内容组[#提示内容组+1]=tostring(候选组[i-1].comment)
+  if 候选组[i-1].comment==nil then 提示内容组[#提示内容组]="" end
+ end--for
+end--if
+
+
+
+--定义键盘
+--------------------
+local 短语数=25--单个键盘的短语数量
+local 默认宽度=20
+local 默认高度=32
+
+import "android.content.pm.PackageManager"
+local 版本号 = service.getPackageManager().getPackageInfo(service.getPackageName(), 0).versionName
+local 版本号1=tonumber(string.sub(版本号,-8))
+
+if 版本号1<20200526 then
+ print("说明: 中文输入法版本号低于20200526,请升级到以上版本,否则无法运行该脚本")
+ return
+end
 
 
 local 按键组={}
- --第1行
+
+local 总序号=math.ceil(#显示内容组/短语数)
  local 按键={}
  按键["width"]=100
--- 按键["height"]=25
+ 按键["height"]=25
  按键["click"]=""
- 按键["label"]=string.sub(纯脚本名,1,#纯脚本名-4)
+ 按键["label"]=纯脚本名.."("..编号.."/"..总序号..")【长按上屏】"
  按键组[#按键组+1]=按键
- --第2行
+
+if 编号==1 then
+ if #显示内容组<短语数 then
+  for i=1,#显示内容组 do
+    local 按键={}
+    local 位置=i
+    按键["hint"]=提示内容组[位置]
+    按键["long_click"]={label="", commit=显示内容组[位置]}
+    按键["click"]={label=显示内容组[位置], send="function",command= 脚本相对路径,option= "【【"..显示内容组[位置].."】】<<"..编号..">>"}
+    按键组[#按键组+1]=按键
+  end--
   local 按键={}
- 按键["width"]=定制宽度
- 按键["click"]={label="查编码", send="function",command= 脚本相对路径,option= "%2$s【【1】】"}
- 按键组[#按键组+1]=按键
- 
+  按键["width"]=默认宽度
+  for i=1,短语数-#显示内容组 do
+   按键组[#按键组+1]=按键
+  end--for
   local 按键={}
- 按键["width"]=定制宽度
- 按键["click"]={label="查候选", send="function",command= 脚本相对路径,option= "%1$s【【1】】"}
- 按键组[#按键组+1]=按键
- 
- local 按键={}
- 按键["width"]=定制宽度
- 按键["click"]={label="查剪切板", send="function",command= 脚本相对路径,option= "【【3】】"}
- 按键组[#按键组+1]=按键
- if 已启用 then
-  local 按键={}
-  按键["width"]=定制宽度
-  按键["click"]={label="查变量名", send="function",command= 脚本相对路径,option= "%1$s【【2】】"}
+  local 按键=主键盘()
+  按键["width"]=100
   按键组[#按键组+1]=按键
- end--if 已启用
-
- --第3行
+ else
+  
+ 按键组[#按键组+1]=按键2
+  for i=1,短语数 do
+   local 子编号=i
+   if #显示内容组>子编号-1 then
+    local 按键={}
+    local 位置=子编号
+    按键["hint"]=提示内容组[位置]
+    按键["long_click"]={label="", commit=显示内容组[位置]}
+    按键["click"]={label=显示内容组[位置], send="function",command= 脚本相对路径,option= "【【"..显示内容组[位置].."】】<<"..编号..">>"}
+    按键组[#按键组+1]=按键
+   end--if
+  end--for
  local 按键={}
- 按键["click"]="Left"
- 按键["has_menu"]="Left"
+ 按键["width"]=50
+ 按键["click"]={label="下一页", send="function",command= 脚本相对路径,option= "<<"..(编号+1)..">>"}
  按键组[#按键组+1]=按键
- 
- local 按键={}
- 按键["click"]="Up"
- 按键["has_menu"]="Up"
+ local 按键=主键盘()
+ 按键["width"]=50
+ 按键组[#按键组+1]=按键
 
- 按键组[#按键组+1]=按键
- local 按键={}
- 按键["click"]="Right"
- 按键["has_menu"]="Right"
 
+ end--if #显示内容组<25
+end--if 编号==1
+
+if 编号>1 then
+if #显示内容组<编号*短语数 then
+  for i=1,#显示内容组-(编号-1)*短语数 do
+    local 按键={}
+    local 位置=i+(编号-1)*短语数
+    按键["hint"]=提示内容组[位置]
+    按键["long_click"]={label="", commit=显示内容组[位置]}
+    按键["click"]={label=显示内容组[位置], send="function",command= 脚本相对路径,option= "【【"..显示内容组[位置].."】】<<"..编号..">>"}
+    按键组[#按键组+1]=按键
+  end--for
+  local 按键={}
+  按键["width"]=默认宽度
+  for i=1,短语数*编号-#显示内容组 do
+   按键组[#按键组+1]=按键
+  end--for
+  local 按键={}
+  按键["width"]=33
+  按键["click"]={label="上一页", send="function",command= 脚本相对路径,option= "<<"..(编号-1)..">>"}
  按键组[#按键组+1]=按键
- 
- --第4行
+ local 按键=主键盘()
+ 按键["width"]=34
+ 按键组[#按键组+1]=按键
+
+else
+  for i=1,短语数 do
+   local 子编号=i
+   if #显示内容组>子编号-1 then
+    local 按键={}
+    local 位置=子编号+(编号-1)*短语数
+    按键["hint"]=提示内容组[位置]
+    按键["long_click"]={label="", commit=显示内容组[位置]}
+    按键["click"]={label=显示内容组[位置], send="function",command= 脚本相对路径,option= "【【"..显示内容组[位置].."】】<<"..编号..">>"}
+    if 提示内容组[位置]=="句子" then 按键["click"]={label=显示内容组[位置], send="function",command= 脚本相对路径,option= "【【"..显示内容组[位置].."】】《《翻译》》<<"..编号..">>"} end
+    按键组[#按键组+1]=按键
+   end--if
+  end--for
+  local 按键={}
+  按键["width"]=33
+ 按键["click"]={label="上一页", send="function",command= 脚本相对路径,option= "<<"..(编号-1)..">>"}
+ 按键组[#按键组+1]=按键
  local 按键={}
  按键["width"]=33
+ 按键["click"]={label="下一页", send="function",command= 脚本相对路径,option= "<<"..(编号+1)..">>"}
  按键组[#按键组+1]=按键
- local 按键={}
- 按键["click"]="Down"
- 按键["has_menu"]="Down"
-
- 按键组[#按键组+1]=按键
- 
- import "script.包.其它.主键盘"
  local 按键=主键盘()
+ 按键["width"]=34
  按键组[#按键组+1]=按键
- 
+end--if #显示内容组>编号*22
+end--if 编号>1 
+
+
+
+
+
+
+
 service.setKeyboard{
   name=string.sub(纯脚本名,1,#纯脚本名-4),
   ascii_mode=0,
   width=默认宽度,
-  height=50,
+  height=默认高度,
   keys=按键组
   }
 

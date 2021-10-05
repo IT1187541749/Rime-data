@@ -45,10 +45,10 @@ Http.get(云输入内容,nil,"gb2312",nil,function(a,b)
   开始位置=string.find(b,"<p><a",开始位置+1)
   开始位置=string.find(b,">",开始位置+1)
   结束位置=string.find(b,"</a><br>",开始位置+1)
-  --内容=内容.."\n"..string.sub(b,开始位置+1,结束位置-1)--日期 星期
+  内容=内容.."\n"..string.sub(b,开始位置+1,结束位置-1)--日期 星期
   开始位置=string.find(b,"<span>",开始位置)
   结束位置=string.find(b,"</span>",开始位置)
-  --内容=内容.."【"..string.sub(b,开始位置+6,结束位置-1).."】"--
+  内容=内容.."【"..string.sub(b,开始位置+6,结束位置-1).."】"--
   
   内容=string.gsub(内容,"<br>","\n")
   内容=string.gsub(内容,"&nbsp;"," ")
