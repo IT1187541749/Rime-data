@@ -1860,7 +1860,7 @@ preset_keyboards:
       #退格键左滑连续删除光标后的字符4个,改Delete序号可加减数量(无数字删除1个,其它数量分别有,2个 4个 8个 16个 32个.
       - {click: BackSpace, swipe_up: Candidate_switch1, swipe_left: Delete4, swipe_down: DDDD, key_text_size: *BackSpace, key_back_color: hsb, key_text_color: hst, hilited_key_text_color: hsth, hilited_key_back_color: gnhs, key_symbol_color: gns, width: 15}
       # 第五行 40
-      - {height: *VJM, click: K_number, composing: CommitRawInput, key_symbol_offset_x: 0, long_click: K_menu, swipe_up: Menu, key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: szh, hilited_key_text_color: szth, hilited_key_symbol_color: szsh} #方案选择
+      - {height: *VJM, click: K_number, composing: CommitRawInput, key_symbol_offset_x: 0, long_click: shouxie, swipe_up: yjjc_lua, key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: szh, hilited_key_text_color: szth, hilited_key_symbol_color: szsh} #方案选择
       - {click: K_symbols, composing: delimiterS3, long_click: K_menu, swipe_up: Menu, width: 10, key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: szh, hilited_key_text_color: szth, hilited_key_symbol_color: szsh}
       - {click: ",", label: " ，", swipe_up: "{delimiterF},", key_symbol_offset_x: 0, long_click: "!", width: 15, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, hilited_key_symbol_color: bdsh}
       - {click: space4, long_click: VOICE_ASSIST, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, key_text_size: *Schema, key_text_offset_x: 0, key_text_offset_y: 3, key_symbol_offset_x: 0, key_symbol_offset_y: 6, key_back_color: kgb, key_text_color: kgt, key_symbol_color: kgs, hilited_key_back_color: kgh, hilited_key_text_color: kght, hilited_key_symbol_color: kghs, width: 30}
@@ -1938,7 +1938,7 @@ preset_keyboards:
       #退格键左滑连续删除光标后的字符4个,改Delete序号可加减数量(无数字删除1个,其它数量分别有,2个 4个 8个 16个 32个.
       - {click: BackSpace, swipe_up: Candidate_switch1, swipe_left: Delete4, swipe_down: DDDD, key_text_size: *BackSpace, key_back_color: hsb, key_text_color: hst, hilited_key_text_color: hsth, hilited_key_back_color: gnhs, key_symbol_color: gns, width: 15}
       # 第四行 30
-      - {height: *VJM, click: K_number, composing: CommitRawInput, key_symbol_offset_x: 0, long_click: K_menu, swipe_up: Menu, key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: szh, hilited_key_text_color: szth, hilited_key_symbol_color: szsh} #方案选择
+      - {height: *VJM, click: K_number, composing: CommitRawInput, key_symbol_offset_x: 0, long_click: shouxie, swipe_up: yjjc_lua, key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: szh, hilited_key_text_color: szth, hilited_key_symbol_color: szsh} #方案选择
       - {click: K_symbols, composing: delimiterS3, long_click: K_menu, swipe_up: Menu, width: 10, key_back_color: szb, key_text_color: szt, key_symbol_color: szs, hilited_key_back_color: szh, hilited_key_text_color: szth, hilited_key_symbol_color: szsh}
       - {click: ",", label: " ，", swipe_up: "{delimiterF},", key_symbol_offset_x: 0, long_click: "!", width: 15, key_back_color: bdb, key_text_color: bdt, key_symbol_color: bds, hilited_key_back_color: bdh, hilited_key_text_color: hbdt, hilited_key_symbol_color: bdsh}
       - {click: space4, long_click: VOICE_ASSIST, swipe_left: Left, swipe_right: Right, swipe_up: Up, swipe_down: Down, key_text_size: *Schema, key_text_offset_x: 0, key_text_offset_y: 3, key_symbol_offset_x: 0, key_symbol_offset_y: 6, key_back_color: kgb, key_text_color: kgt, key_symbol_color: kgs, hilited_key_back_color: kgh, hilited_key_text_color: kght, hilited_key_symbol_color: kghs, width: 30}
@@ -2421,7 +2421,7 @@ preset_keyboards:
       - {click: CloudMusic, long_click: Bilibili, swipe_up: Bilibili, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       - {click: BaiduBaike, long_click: Wikipedia, swipe_up: Wikipedia, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       #第四行
-      - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
+      - {click: YouTube, long_click: NETFLIX, swipe_up: NETFLIX, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
@@ -8800,13 +8800,15 @@ preset_keys:
   #delimiterC: {label: ；, text: ";"} #若方案不支持分号次选，则需要注销本行开启下行
   delimiterC: {label: ;, send: 2} #分号次选
   delimiterC1: {label: 次选, send: 2}
+  delimiterF: {label: "；", send: 2}
 
   #三选
-  delimiterF: {label: "；", send: 2}
+
   delimiterS: {label: "ϟ 3", send: 3}
   delimiterS1: {label: " ", text: "{delimiterS}"}
   delimiterS2: {label: ●, text: "{delimiterS}"}
   delimiterS3: {label: "三选", send: 3}
+  delimiterJ: {label: "'", send: 3}
 
   delimiterCY: {label: "钙", text: "{delimiterC}"}
   EscapeY: {label: "钪", text: "{Escape}"}
@@ -8821,9 +8823,13 @@ preset_keys:
   #LUA脚本
   lua_script_att: {label: 脚本, send: function, command: '01 脚本启动器/脚本启动器.lua', option: "%1$s"}
   jianqie_qie: {label: 剪切板, send: function, command: '剪切板.lua'}
-  jianqie_qie1: {label: 剪切板, send: function, command: '01 脚本启动器/脚本库/剪切板.lua'}
+  jianqie_qie1: {label: 🗒, send: function, command: '剪切板.lua'}
+  jianqie_qie2: {label: 剪切板, send: function, command: '01 脚本启动器/脚本库/剪切板.lua'}
   duan_yu: {label: 短语板, send: function, command: '短语板.lua'}
   duan_yu1: {label: 短语板, send: function, command: '01 脚本启动器/脚本库/短语板.lua'}
+  shouxie: {label: 📝, send: function, command: '载入手写.lua'}
+  shouxie1: {label: 手写, send: function, command: '载入手写.lua'}
+  yjjc_lua: {label: 📑, send: function, command: '加词.lua', option: "%4$s"}
 
   # rime组合键
   F4: {label: 方案菜单, send: F4}
@@ -9244,6 +9250,7 @@ preset_keys:
   CloudMusic: {label: 网易云音乐, send: function, command: run, option: "com.netease.cloudmusic"}
   Bilibili: {label: 哔哩哔哩, send: function, command: run, option: "tv.danmaku.bili"}
   YouTube: {label: YouTube, send: function, command: run, option: "com.google.android.youtube"}
+  NETFLIX: {label: NETFLIX, send: function, command: run, option: "com.netflix.mediaclient"}
   CoolApk: {label: 酷安, send: function, command: run, option: "com.coolapk.market"}
   Zhihu: {label: 知乎, send: function, command: run, option: "com.zhihu.android"}
   Twitter: {label: Twitter, send: function, command: run, option: "com.twitter.android"}
@@ -9274,6 +9281,8 @@ preset_keys:
   AmapSearch: {label: 高德导航, send: function, command: run, option: "androidamap://keywordNavi?sourceApplication=softname&keyword=%4$s&style=2"}
   QQMap: {label: 腾讯导航, send: function, command: run, option: "qqmap://map/search?keyword=%4$s"}
   BaiduMap: {label: 百度导航, send: function, command: run, option: "baidumap://map/direction?destination=%4$s&mode=driving"}
+
+
   #多余
   AD: {label: 广告位}
   CoolApkNewfeed: {label: 酷安发动态, send: function, command: run, option: "coolmarket://com.coolapk.market/new_feed"} #app_manager应用管理#search搜索#qr_scan扫码#【去掉包名/使用：u用户uid，feed动态id，apk跳转应用】
