@@ -8829,7 +8829,7 @@ preset_keys:
   duan_yu1: {label: 短语板, send: function, command: '01 脚本启动器/脚本库/短语板.lua'}
   shouxie: {label: 📝, send: function, command: '载入手写.lua'}
   shouxie1: {label: 手写, send: function, command: '载入手写.lua'}
-  yjjc_lua: {label: 📑, send: function, command: '加词.lua', option: "%4$s"}
+  yjjc_lua: {label: 📑, send: function, command: '一键加词.lua', option: "%4$s"}
 
   # rime组合键
   F4: {label: 方案菜单, send: F4}
