@@ -1,0 +1,41 @@
+patch:
+  #↓候選字型,用来显示拆分字根.
+  "style/font_face": "TH-Tshyn-P0"
+  #↓候選字號,候选字体大小.
+  "style/font_point": 16
+  #↓候选窗配色(主题皮肤).
+  "style/color_scheme": google
+  #↓候选模式,false为垂直模式,true为水平模式.
+  "style/horizontal": false
+  #↓全屏输入.
+  "style/fullscreen": false
+  #↓TSF嵌入模式,控制编码显示位置(true输入窗口显示编码,编码将显示到光标焦点处,false候选栏显示编码,编码显示到候选栏).
+  "style/inline_preedit": false
+  #↓编码显示类型.
+  "style/preedit_type": composition
+  #↓顯示托盤圖標.
+  "style/display_tray_icon": false
+  #↓候选编号与候选内容间隔形式.
+  "style/label_format": "%s."
+  #↓候选窗口的最小宽度.
+  "style/layout/min_width": 160
+  #↓候选窗口的最小高度.
+  "style/layout/min_height": 0
+  #↓候选窗口的外层边框宽度.
+  "style/layout/border_width": 3
+  #↓候选窗口的外层边框高度.
+  "style/layout/border_height": 0
+  #↓候选字左右边距.
+  "style/layout/margin_x": 12
+  #↓候选字上下边距.
+  "style/layout/margin_y": 12
+  #↓当候选窗口是非TSF(编码)嵌入(光标)模式时,编码与候选遮罩色块儿之间的距离.
+  "style/layout/spacing": 10
+  #↓候选字间距.
+  "style/layout/candidate_spacing": 5
+  #↓序号和候选字之间的间距.
+  "style/layout/hilite_spacing": 4
+  #↓候选字背景色色块高度,若想候选字背景色块无边界填充候选框,仅需其高度和候选字上下边距一致即可.
+  "style/layout/hilite_padding": 2
+  #↓候选字背景色块圆角幅度.
+  "style/layout/round_corner": 4
