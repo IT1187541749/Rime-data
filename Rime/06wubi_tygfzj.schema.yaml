@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2021-09-22
+# 2021-10-06
 
 schema:
   schema_id: 06wubi_tygfzj
@@ -229,9 +229,12 @@ key_binder:
     #↓以下2條為左右方向鍵選擇候選項.
 #    - {accept: Left, send: Up, when: has_menu}
 #    - {accept: Right, send: Down, when: has_menu}
-    #↓以下2條為左右方向鍵翻页,与上面两行只能二选一,不能同时开启.
-    - {accept: Left, send: Page_Up, when: has_menu}
-    - {accept: Right, send: Page_Down, when: has_menu}
+    #↓以下2條為左右方向鍵翻页,与上面两行只能二选一,不能同时开启(注释左右方向键翻页,不然会导致左右键无法移动光标,因为左右键变成了翻页键).)
+#    - {accept: Left, send: Page_Up, when: has_menu}
+#    - {accept: Right, send: Page_Down, when: has_menu}
+    #↓以下2條為上下方向键翻页(注释后上下方向键将变为选择候选项)
+    - {accept: Up, send: Page_Up, when: has_menu}
+    - {accept: Down, send: Page_Down, when: has_menu}
     #↓以下2條為-與=翻頁(退格键左边两个键).
     - {accept: minus, send: Page_Up, when: has_menu}
     - {accept: equal, send: Page_Down, when: has_menu}
