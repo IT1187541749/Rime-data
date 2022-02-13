@@ -1,5 +1,5 @@
 # Rime dictionary   
-#《超集》共收录汉字94208个,(此码表为单字全码表,不含简码,其中有6个字注释掉了,如需启动请自行去掉行首符号#)
+#《超集》共收录汉字94208个,(此码表为单字全码表,不含简码,其中有6个字注释掉了,如需启用请自行去掉行首符号#)
 # 个人输入法备份仓库:https://github.com/IT1187541749/Rime-data
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
@@ -4668,7 +4668,7 @@ encoder:
 磩	ddhy	9
 奭	ddjj	11
 硽	ddjn	9
-奤	ddmd	9
+奤	ddmg	9
 碝	ddmd	9
 硕	ddmy	555
 碩	ddmy	12
@@ -4681,7 +4681,7 @@ encoder:
 硤	ddww	9
 厐	ddxy	15
 魇	ddyc	41
-靥	ddyd	35
+靥	ddyg	35
 餍	ddye	11
 厌	ddyi	325
 厣	ddyl	20
@@ -4962,7 +4962,7 @@ encoder:
 厞	djdd	9
 皕	djdj	9
 魘	djec	9
-靨	djed	9
+靨	djeg	9
 饜	djee	9
 壓	djef	26
 奛	djef	9
@@ -5544,7 +5544,7 @@ encoder:
 肧	edhy	9
 貊	edjg	13
 腌	edjn	274
-腼	edmd	13
+腼	edmg	13
 腝	edmd	9
 澃	edmi	9
 胹	edmj	9
@@ -8147,7 +8147,7 @@ encoder:
 㺷	gsyy	9
 㻑	gtbg	9
 琇	gtbt	45
-麺	gtdd	15
+麺	gtdg	15
 琒	gtdh	9
 㻱	gtdp	9
 珘	gtey	9
@@ -9133,7 +9133,7 @@ encoder:
 洦	idjg	9
 淹	idjn	292
 㳓	idkg	9
-湎	idmd	11
+湎	idmg	11
 渜	idmd	9
 㳍	idmh	9
 洏	idmj	9
@@ -10457,7 +10457,7 @@ encoder:
 蛨	jdjg	9
 昦	jdjj	9
 晻	jdjn	9
-蝒	jdmd	9
+蝒	jdmg	9
 蝡	jdmd	9
 㬉	jdmd	9
 暊	jdmy	9
@@ -11302,7 +11302,7 @@ encoder:
 咟	kdjg	9
 唵	kdjn	9
 嚈	kdjy	9
-喕	kdmd	9
+喕	kdmg	9
 咘	kdmh	9
 㖇	kdmj	9
 顺	kdmy	3004
@@ -12840,7 +12840,7 @@ encoder:
 撃	lwcr	9
 軗	lwcy	9
 䡆	lwcy	9
-圙	lwdd	9
+圙	lwdg	9
 轸	lwet	39
 畛	lwet	11
 軫	lwet	9
@@ -13941,7 +13941,7 @@ encoder:
 㤿	ndjn	9
 懨	ndjy	9
 㤑	ndkg	9
-愐	ndmd	9
+愐	ndmg	9
 愞	ndmd	9
 怖	ndmh	72
 頨	ndmy	9
@@ -14780,7 +14780,7 @@ encoder:
 庵	odjn	347
 㷈	odjn	9
 煗	odmd	9
-糆	odmd	9
+糆	odmg	9
 粫	odmj	9
 糥	odmj	9
 烦	odmy	6871
@@ -19766,7 +19766,7 @@ encoder:
 栢	sdjg	9
 㭺	sdjn	9
 槗	sdkk	9
-㮌	sdmd	9
+㮌	sdmg	9
 㮕	sdmd	9
 柨	sdmh	9
 栭	sdmj	9
@@ -19941,7 +19941,7 @@ encoder:
 酸	sgct	2875
 㮹	sgct	9
 㰉	sgct	9
-䤄	sgdd	9
+䤄	sgdg	9
 醐	sgde	11
 酭	sgde	9
 酤	sgdg	11
@@ -20793,7 +20793,7 @@ encoder:
 麮	swwc	9
 麶	swwc	9
 麬	swwc	8
-麵	swwd	10
+麵	swwg	10
 䵂	swwd	9
 䴿	swwe	9
 䵆	swwe	9
@@ -23782,7 +23782,7 @@ encoder:
 妚	vdhy	9
 㛪	vdjn	9
 媆	vdmd	9
-媔	vdmd	9
+媔	vdmg	9
 㐡	vdmd	9
 㚴	vdmh	9
 䎟	vdmj	9
@@ -24469,7 +24469,7 @@ encoder:
 佑	wdkg	608
 㐛	wdkn	9
 偄	wdmd	9
-偭	wdmd	9
+偭	wdmg	9
 佈	wdmh	10
 侕	wdmj	9
 㑔	wdmy	15
@@ -25801,9 +25801,9 @@ encoder:
 絔	xdjg	9
 㢶	xdjg	9
 弼	xdjx	113
-缅	xdmd	167
+缅	xdmg	167
 緛	xdmd	9
-緬	xdmd	9
+緬	xdmg	9
 顷	xdmy	108
 頃	xdmy	10
 䋶	xdmy	9
@@ -30906,7 +30906,7 @@ encoder:
 𧃦	adky	1
 𧁶	adlf	1
 𫈹	adlj	1
-𦵀	admd	1
+𦵀	admg	1
 𦵘	admv	1
 𦾳	admy	1
 𩑪	admy	1
@@ -31595,7 +31595,7 @@ encoder:
 𦣯	ahnc	1
 𭆳	ahnc	1
 𦣷	ahnd	1
-𩈵	ahnd	1
+𩈵	ahng	1
 𬛥	ahnd	1
 𠡗	ahne	1
 𦣴	ahne	1
@@ -32176,7 +32176,7 @@ encoder:
 𩊉	akfd	1
 𩋂	akfd	1
 𩋜	akfd	1
-𩋠	akfd	1
+𩋠	akfg	1
 𩋴	akfd	1
 𩋼	akfd	1
 𩌖	akfd	1
@@ -35096,7 +35096,7 @@ encoder:
 𨹻	bmaw	1
 𮥘	bmct	1
 𦕋	bmcy	1
-𮧋	bmdd	1
+𮧋	bmdg	1
 𠩃	bmdr	1
 𢽅	bmec	1
 𨻱	bmee	1
@@ -36327,7 +36327,7 @@ encoder:
 𫘅	cocy	1
 𩣺	coda	8
 𩧍	codd	1
-𫘏	codd	1
+𫘏	codg	1
 𩣋	code	1
 𩥫	code	1
 𮪉	code	1
@@ -38144,7 +38144,7 @@ encoder:
 𨚞	dkbh	1
 𥖙	dkby	1
 𥒵	dkcn	1
-𥖊	dkdd	1
+𥖊	dkdg	1
 𩑲	dkdm	1
 𫯮	dkdm	1
 𪿠	dkeg	1
@@ -39091,7 +39091,7 @@ encoder:
 𢩟	dwwa	1
 𪘘	dwwb	1
 𭆜	dwwc	1
-𩈧	dwwd	1
+𩈧	dwwg	1
 𠩜	dwwf	1
 𡘫	dwwf	1
 𡙹	dwwf	1
@@ -40010,7 +40010,7 @@ encoder:
 𦝩	eleg	1
 𧳪	eleg	1
 𦥶	elet	1
-𩉃	elfd	1
+𩉃	elfg	1
 𦢓	elff	1
 𩕖	elfm	1
 𣎚	elfo	1
@@ -41282,7 +41282,7 @@ encoder:
 𡍿	fdjv	1
 𠧍	fdma	1
 𥀫	fdmc	1
-𭎹	fdmd	1
+𭎹	fdmg	1
 𠣉	fdme	1
 𪣳	fdmf	1
 𫭱	fdmg	1
@@ -41657,7 +41657,7 @@ encoder:
 𪢺	fhcy	1
 𧽁	fhda	1
 𧼪	fhdd	1
-𧼸	fhdd	1
+𧼸	fhdg	1
 𬦉	fhdd	1
 𫎱	fhde	15
 𧻀	fhdf	1
@@ -43894,7 +43894,7 @@ encoder:
 𡍰	fwwc	1
 𢿿	fwwc	1
 𡘖	fwwd	1
-𮧌	fwwd	1
+𮧌	fwwg	1
 𠢳	fwwe	1
 𡌚	fwwf	1
 𡓨	fwwf	1
@@ -44309,7 +44309,7 @@ encoder:
 𬻜	gdlg	1
 𬍭	gdlk	1
 𤨀	gdls	1
-𬍵	gdmd	1
+𬍵	gdmg	1
 𤤰	gdmh	1
 𭹄	gdmj	1
 𨘀	gdmp	1
@@ -44400,7 +44400,7 @@ encoder:
 𧱣	gehc	1
 𪵐	gehc	1
 𬎝	gehc	1
-𩈨	gehd	1
+𩈨	gehg	1
 𧲋	gehe	1
 𠧃	gehf	1
 𭺼	gehf	1
@@ -46086,8 +46086,8 @@ encoder:
 𢦋	gryn	1
 𣄋	gryr	1
 𤤐	gryy	1
-𩈘	gsdd	1
-𬰠	gsdd	1
+𩈘	gsdg	1
+𬰠	gsdg	1
 𩑷	gsdm	1
 𬎚	gsdp	1
 𣚺	gsdx	1
@@ -46327,7 +46327,7 @@ encoder:
 𤥼	gwcn	1
 𤤄	gwcy	1
 𭹐	gwdk	1
-𮧎	gwed	1
+𮧎	gweg	1
 𣍡	gwef	1
 𮞘	gwep	1
 𮢝	gweq	1
@@ -47116,7 +47116,7 @@ encoder:
 𢧡	hdiy	1
 𥅦	hdiy	1
 𠜹	hdjh	1
-𥈅	hdmd	1
+𥈅	hdmg	1
 𥈇	hdmd	1
 𥅡	hdmj	1
 𥋃	hdmj	1
@@ -47529,7 +47529,7 @@ encoder:
 𭂷	hhwb	1
 𭤒	hhwc	1
 𭿪	hhwc	1
-𩉘	hhwd	1
+𩉘	hhwg	1
 𬑪	hhwd	1
 𬸱	hhwg	1
 𫫈	hhwk	1
@@ -49637,8 +49637,8 @@ encoder:
 𣼴	ilqw	1
 𪶒	ilqy	15
 𫆏	ilrb	15
-𩉍	ilrd	1
-𬰣	ilrd	1
+𩉍	ilrg	1
+𬰣	ilrg	1
 𫗚	ilre	15
 𩟗	ilre	8
 𥜙	ilri	1
@@ -49855,8 +49855,8 @@ encoder:
 𣿕	iono	1
 𤃱	iono	1
 𪷸	iont	1
-𤃨	iood	1
-𩉀	iood	1
+𤃨	ioog	1
+𩉀	ioog	1
 𣿩	ioof	1
 𤁽	iooh	1
 𣶷	ioou	1
@@ -51117,7 +51117,7 @@ encoder:
 𩇴	jddv	1
 𬰙	jddv	1
 𧎞	jddy	1
-𩉎	jded	1
+𩉎	jdeg	1
 𡒦	jdef	1
 𭥯	jdef	1
 𧎔	jdfa	1
@@ -51199,7 +51199,7 @@ encoder:
 𣈃	jebn	1
 𧌳	jecn	1
 𩣶	jeco	1
-𩉂	jedd	1
+𩉂	jedg	1
 𩞹	jede	1
 𡑅	jedf	1
 𢢤	jedn	1
@@ -53066,7 +53066,7 @@ encoder:
 𫪓	kdlk	1
 𡂩	kdmb	1
 𠷀	kdmd	1
-𠷰	kdmd	1
+𠷰	kdmg	1
 𭊩	kdmf	1
 𠳍	kdmg	1
 𭋢	kdmg	1
@@ -55496,7 +55496,7 @@ encoder:
 𠱕	kwcq	1
 𪡟	kwct	1
 𭋨	kwdc	1
-𠼟	kwdd	1
+𠼟	kwdg	1
 𫪩	kwde	1
 𫪫	kwde	1
 𠺭	kwdg	1
@@ -56813,7 +56813,7 @@ encoder:
 𫭅	lrci	1
 𦋯	lrcy	1
 𮝴	lrcy	1
-𩈻	lrdd	1
+𩈻	lrdg	1
 𨎀	lrdf	1
 𦌆	lres	1
 𤱰	lrey	1
@@ -58002,7 +58002,7 @@ encoder:
 𡵨	mhcy	1
 𬥶	mhcy	1
 𢂣	mhdb	1
-𢃮	mhdd	1
+𢃮	mhdg	1
 𢃾	mhdd	1
 𢅥	mhdf	1
 𭎽	mhdf	1
@@ -59775,7 +59775,7 @@ encoder:
 𦐧	ngaj	1
 𡱯	ngak	1
 𭆗	ngbb	1
-𫖂	ngbd	1
+𫖂	ngbg	1
 𫭹	ngbf	1
 𬪄	ngbh	1
 𭉒	ngbk	1
@@ -61692,7 +61692,7 @@ encoder:
 𥹓	ofcy	1
 𪸘	ofcy	1
 𭴈	ofcy	1
-𥽯	ofdd	1
+𥽯	ofdg	1
 𩒪	ofdm	1
 𢻘	offc	1
 𭶀	offc	1
@@ -62528,7 +62528,7 @@ encoder:
 𤏶	oonx	1
 𨞇	ooob	1
 𤓔	oood	1
-𩉅	oood	1
+𩉅	ooog	1
 𠢸	oooe	1
 𤏪	oooe	1
 𫃑	oooe	1
@@ -63961,7 +63961,7 @@ encoder:
 𭔝	pnaf	1
 𡬆	pnah	1
 𡪯	pnbt	1
-𡫍	pndd	1
+𡫍	pndg	1
 𡨢	pndf	1
 𡨪	pnef	1
 𩕋	pnem	1
@@ -64038,8 +64038,8 @@ encoder:
 𡨅	pnnk	1
 𡧖	pnsu	1
 𡨑	pntb	1
-𩈰	pntd	1
-𬰢	pntd	1
+𩈰	pntg	1
+𬰢	pntg	1
 𫆴	pnte	1
 𪧠	pntg	1
 𪧟	pnth	1
@@ -64110,7 +64110,7 @@ encoder:
 𮄈	pqaw	1
 𪞏	pqbb	1
 𪞔	pqbc	1
-𩈱	pqbd	1
+𩈱	pqbg	1
 𡫦	pqbf	1
 𭾅	pqbl	1
 𩸪	pqbo	1
@@ -66821,7 +66821,7 @@ encoder:
 𬼨	qkbn	1
 𨦺	qkcn	1
 𮠐	qkdb	1
-𬬉	qkdd	1
+𬬉	qkdg	1
 𬱃	qkdm	1
 𨦚	qkdy	1
 𬂏	qkee	1
@@ -67306,7 +67306,7 @@ encoder:
 𩻆	qodc	1
 𩹀	qodd	1
 𩹓	qodd	1
-𩹠	qodd	1
+𩹠	qodg	1
 𩽊	qodd	1
 𩷩	qode	1
 𩸕	qode	1
@@ -68322,7 +68322,7 @@ encoder:
 𨛊	qtdb	1
 𮡴	qtdc	1
 𤟦	qtdd	1
-𤟯	qtdd	1
+𤟯	qtdg	1
 𤢿	qtdd	1
 𤟔	qtde	1
 𪺼	qtde	1
@@ -70613,7 +70613,7 @@ encoder:
 𢹲	ronk	1
 𪮾	rons	1
 𪮿	ront	1
-𢹙	rood	1
+𢹙	roog	1
 𢶇	roof	1
 𢴵	rooo	1
 𤾃	rooy	1
@@ -70734,7 +70734,7 @@ encoder:
 𩲓	rqcd	1
 𩲱	rqcd	1
 𩲴	rqcd	1
-𩳾	rqcd	1
+𩳾	rqcg	1
 𩴅	rqcd	1
 𩳤	rqce	8
 𩱹	rqce	1
@@ -72680,7 +72680,7 @@ encoder:
 𣜁	shxy	1
 𣑴	siag	1
 𬄨	sias	1
-𫞑	sidd	1
+𫞑	sidg	1
 𣑷	sidy	1
 𭩻	sidy	1
 𪲚	sieg	1
@@ -72765,7 +72765,7 @@ encoder:
 𬚞	skbb	1
 𨚩	skbh	1
 𨛢	skbh	1
-𬄥	skdd	1
+𬄥	skdg	1
 𩑸	skdm	1
 𡘀	skdu	1
 柺	sket	1
@@ -74506,10 +74506,10 @@ encoder:
 𪿐	tdlj	1
 𭛱	tdlk	1
 𬜉	tdln	1
-𤚛	tdmd	1
+𤚛	tdmg	1
 𥎽	tdmd	1
 𥯬	tdmd	1
-𮅥	tdmd	1
+𮅥	tdmg	1
 𤙅	tdmh	1
 𥞎	tdmh	1
 𠛻	tdmj	1
@@ -75256,7 +75256,7 @@ encoder:
 𣭏	tfnd	1
 𣭪	tfnd	1
 𣮺	tfnd	1
-𣮻	tfnd	1
+𣮻	tfng	1
 𣰵	tfnd	1
 𪵜	tfnd	1
 𣯶	tfne	8
@@ -76608,7 +76608,7 @@ encoder:
 𮞑	tkpd	1
 𭀠	tkqb	1
 𭀥	tkqc	1
-𩈠	tkqd	1
+𩈠	tkqg	1
 𨨑	tkqf	1
 𥞏	tkqn	1
 𭀱	tkqq	1
@@ -76862,7 +76862,7 @@ encoder:
 𨈽	tmdd	1
 𨉊	tmdd	1
 𨉛	tmdd	1
-𨉥	tmdd	1
+𨉥	tmdg	1
 𨊚	tmdd	1
 𬧥	tmdd	1
 𨉎	tmde	1
@@ -79050,7 +79050,7 @@ encoder:
 𥁠	udlf	1
 𮤪	udlf	1
 𤸂	udmd	1
-𬏶	udmd	1
+𬏶	udmg	1
 𤵗	udmh	1
 𨵪	udmi	1
 𨴎	udmj	1
@@ -80642,7 +80642,7 @@ encoder:
 𩠠	uthc	15
 𩠮	uthc	1
 𮩣	uthc	1
-𩉕	uthd	1
+𩉕	uthg	1
 𮩠	uthd	1
 𠡼	uthe	1
 𫗻	uthe	1
@@ -83278,7 +83278,7 @@ encoder:
 𮨷	wgva	1
 𮬸	wgva	1
 𮨾	wgvc	1
-𫗖	wgvd	1
+𫗖	wgvg	1
 𫥟	wgvd	1
 𮖛	wgve	1
 𬲝	wgvf	1
@@ -84817,7 +84817,7 @@ encoder:
 𡵹	wwmj	1
 𠕞	wwmm	1
 𠋫	wwnd	1
-𫖄	wwnd	1
+𫖄	wwng	1
 𠐽	wwnh	1
 𪝜	wwnh	1
 𠈆	wwnn	1
@@ -86617,7 +86617,7 @@ encoder:
 𦄭	xtbp	1
 𥿈	xtdc	1
 𩴷	xtdc	1
-𮧒	xtdd	1
+𮧒	xtdg	1
 𢒸	xtde	1
 𦢇	xtde	1
 𦂜	xtdf	1
@@ -87315,7 +87315,7 @@ encoder:
 𪙯	ydjb	1
 𫍫	ydjn	15
 𣃾	ydjn	1
-𧩤	ydmd	1
+𧩤	ydmg	1
 𧦞	ydmh	1
 𧬐	ydmj	1
 𬢽	ydmo	1
