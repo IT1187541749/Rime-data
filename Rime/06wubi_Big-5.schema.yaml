@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2021-10-06
+# 2022-09-20
 
 schema:
   schema_id: 06wubi_Big-5
@@ -48,10 +48,13 @@ switches:
     #↓以下1條為设置默认中英文状态（0为默认中文，1为默认英文）
     reset: 0
     states: [ 中文, EN ]
+  - name: emoji_cn
+    reset: 0
+    states: [ 〇, 🤣 ]
 
 engine:
   filters:
-    #↓以下1條為過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
+    #↓以下1條為字符集過濾濾鏡，此條放filters組件最上面可以完美解決簡繁轉換出錯的問題
     - lua_filter@core2020
     #↓以下1條為词组LUA开关.
     - lua_filter@dz_ci
@@ -62,7 +65,9 @@ engine:
     - "simplifier@06wubi_spelling"
 #    - "simplifier@06wubi_spelling_rk"
     - "simplifier@jiayin"
-    #↓以下1條為去重组件.
+    #↓以下1條為emoji組件
+    - "simplifier@emoji_cn"
+    #↓以下1條為去重組件(此組件必須排到最後,不然會失效).
     - uniquifier
   processors:
     - ascii_composer
@@ -222,6 +227,10 @@ history:
   size: 1
   initial_quality: 1
   
+emoji_cn:
+  opencc_config: emoji.json
+  option_name: emoji_cn
+  tips: all
 
 key_binder:
   bindings:
@@ -276,6 +285,8 @@ key_binder:
     - {accept: "Control+7", toggle: dz_ci, when: always}
     #↓以下1條為中英文标点符号切换快捷键.
     - {accept: "Control+8", toggle: ascii_punct, when: always}
+    #↓以下1條為emoji快捷键开关.
+    - {accept: "Control+9", toggle: emoji_cn, when: always}
 
 punctuator:
   import_preset: symbols
