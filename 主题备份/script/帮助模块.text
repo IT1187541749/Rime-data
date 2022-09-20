@@ -16,13 +16,6 @@ local 相对脚本路径=string.sub(脚本路径,#目录+1)--相对路径
 local 纯脚本名=File(脚本路径).getName()
 local 脚本目录=string.sub(脚本路径,1,#脚本路径-#纯脚本名)
 
-
-
-
-
-
-
-
 local Clip={}
 
   列数=1
@@ -85,7 +78,7 @@ local function Bu_R(id) --生成功能键
    elseif id==4 then
     ta.text=Icon(键盘名,"返回")
     ta.onClick=function()
-      Key.presetKeys.lua_script_l={label= "脚本", send="function", command=dofile_信息表.上级脚本相对路径, option=""}
+      Key.presetKeys.lua_script_l={label= "脚本", send="function", command=dofile_信息表.上级脚本相对路径, option="帮助"}
       service.sendEvent("lua_script_l")
     end
     ta.OnLongClickListener={onLongClick=function()

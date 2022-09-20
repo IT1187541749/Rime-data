@@ -36,18 +36,21 @@ local 帮助内容=[[
 
 --------------------
 <b>用法二</b>
-第①步 将 脚本文件解压放置 Android/rime/script 文件夹内,
-默认脚本路径为Android/rime/script/自定义剪切板/自定义剪切板.lua
+第①步 将 脚本文件解压放置 Android/rime/script 文件夹内
 
 第②步 向主题方案中加入按键
 以 XXX.trime.yaml主题方案为例
 找到以下节点preset_keys,加入以下内容
 
 preset_keys:
+  jianqie_qie: {label: 剪切板, send: function, command: '剪切板.lua'}
+  jianqie_qie1: {label: 🗒, send: function, command: '剪切板.lua'}
+  jianqie_qie2: {label: 剪切板, send: function, command: '01 脚本启动器/脚本库/剪切板.lua'}
+
   lua_script_cv: {label: 剪切板, functional: false, send: function, command: "01 脚本启动器/脚本库/4 输入工具/剪切板(自定义).lua", option: "default"}
   lua_script_cv1: {label: 剪切板, functional: false, send: function, command: "01 脚本启动器/脚本库/4 输入工具/剪切板(自定义).lua", option: "cjbj"}
   lua_script_cv2: {label: 剪切板, functional: false, send: function, command: "01 脚本启动器/脚本库/4 输入工具/剪切板(自定义).lua", option: "number"}
-向该主题方案任意键盘按键中加入上述按键既可
+向该主题方案任意键盘按键中加入上述按键既可(注意文件放置目录)
 
 ]]
 
@@ -70,13 +73,13 @@ import "android.content.Context"
 
 
 local 参数=(...)
-
 local 输入法目录=tostring(service.getLuaExtDir("")).."/"
 local 脚本目录=tostring(service.getLuaExtDir("script")).."/"
 local 脚本路径=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
 local 纯脚本名=File(脚本路径).getName()
 local 目录=string.sub(脚本路径,1,#脚本路径-#纯脚本名)
 local 脚本相对路径=string.sub(脚本路径,#脚本目录+1)
+local 脚本相对目录=string.sub(脚本相对路径,1,-#纯脚本名-1)
 
 local 键盘名=""
 local 选中内容 = service.getCurrentInputConnection().getSelectedText(0)--取编辑框选中内容,部分app内无效
@@ -92,6 +95,8 @@ else
 end
 
 local 文件=tostring(service.getLuaDir("")).."/clipboard.json"
+local 短语板="../script/短语板.lua"
+local 短语板记录文本=tostring(service.getLuaDir("")).."/script/短语板.txt"
 
 local vibeFont=Typeface.DEFAULT
 local 字体文件 = tostring(service.getLuaDir("")).."/fonts/牛码飞机手机5代超集宋体.ttf"
@@ -251,12 +256,16 @@ local function Bu_R(id) --生成功能键
 	ta.textSize="18dp"
 	ta.onClick=function()
 		功能_复制()
+--下面一条为打开剪切板,作用为:刷新剪切板内容(双击复制刷新)
+		功能_脚本(脚本相对目录.."剪切板.lua","剪切板")
 	end
 	elseif id==9 then
 	ta.text=Icon("剪切","剪切")
 	ta.textSize="18dp"
 	ta.onClick=function()
 		功能_剪切()
+--下面一条为打开剪切板,作用为:刷新剪切板内容(双击剪切刷新)
+		功能_脚本(脚本相对目录.."剪切板.lua","剪切板")
 	end
 	elseif id==10 then
 	ta.text=Icon("搜索","搜索")
@@ -268,6 +277,12 @@ local function Bu_R(id) --生成功能键
         Key.presetKeys.lua_script_l={label= "脚本", send="function", command=脚本相对路径, option=""}
       end
       service.sendEvent("lua_script_l")
+	end
+	elseif id==11 then
+	ta.text=Icon("短语","短语板")
+	ta.textSize="18dp"
+	ta.onClick=function()
+      功能_脚本(短语板,"短语板")
 	end
 	end
   return ta
@@ -321,7 +336,7 @@ local ids,layout={},{LinearLayout,
 	Bu_R(8),
 	Bu_R(9),
 	Bu_R(2),
-	Bu_R(6),
+	Bu_R(3),
 	  },
 
 	{LinearLayout,
@@ -331,10 +346,10 @@ local ids,layout={},{LinearLayout,
 	  layout_height=-1,
 	  --layout_gravity=5|84,
 	Bu_R(4),
-	Bu_R(1),
+	Bu_R(11),
 	Bu_R(5),
 	Bu_R(10),
-	Bu_R(3),
+	Bu_R(1),
 	  },
 }}
 
@@ -347,7 +362,7 @@ local data,item={},{LinearLayout,
   gravity=3|17,
   {TextView,
 	id="a",
-	textColor=0xffff7744,
+	textColor=0xffff7744,--剪切板序号颜色
 	textSize="10dp"},
   {TextView,
 	id="b",
@@ -481,9 +496,12 @@ else--if 搜索内容~
 			Clip.remove(p)
 		  end)
 		  .setButton3("添加到短语",function()
-		  print("添加成功")
 		  local 内容=str:gsub("\n","\\n")
-		  写入内容到文件指定行(输入法目录.."phrase.json",1,"[\n    \""..内容.."\"")
+--下面一行内容为原始内容,好像没写完全,没生效,因此注释掉了.
+--		  写入内容到文件指定行(输入法目录.."phrase.json",1,"[\n    \""..内容.."\"")
+		  io.open(短语板记录文本,"a+"):write("\n"):close()
+		  io.open(短语板记录文本,"a+"):write(内容):close()
+		  print("短语添加成功",内容)
 		  end)
 		  .setOnDismissListener{onDismiss=function()
 			  fresh()

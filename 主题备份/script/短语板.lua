@@ -33,11 +33,12 @@ end
 
 参数=(...)
 --print(参数)
-
+local 输入法目录=tostring(service.getLuaExtDir("")).."/"
 local 脚本目录=tostring(service.getLuaExtDir("script"))
 local 脚本名=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
 
 local 脚本相对路径=string.sub(脚本名,#脚本目录+1)
+
 local 纯脚本名=File(脚本名).getName()
 local 目录=string.sub(脚本名,1,#脚本名-#纯脚本名)
 local 通用脚本=目录.."通用脚本.addlua"
@@ -66,6 +67,7 @@ else
 end
 
 local 文件=tostring(service.getLuaDir("")).."/clipboard.json"
+local 剪切板="../script/剪切板.lua"
 
 --检查文件存在否
 if File(文件).exists()==false then
@@ -114,28 +116,33 @@ local function Bu_R(id) --生成功能键
 
   if id==1 then
     ta.text=Icon("BackSpace","⌫")
-    ta.textSize="22dp"
+    ta.textSize="18dp"
     ta.onClick=function()
       service.sendEvent("BackSpace")
     end
     ta.OnLongClickListener={onLongClick=function() return true end}
    elseif id==2 then
-    ta.text=Icon("space","␣")
-    ta.textSize="25dp"
+    ta.text="空格"
+    ta.textSize="18dp"
     ta.onClick=function()
       service.sendEvent("space")
     end
-    ta.OnLongClickListener={onLongClick=function() return true end}
+    ta.OnLongClickListener={onLongClick=function() 
+        service.sendEvent("Tabuhpk")
+        return true
+    end}
    elseif id==3 then
     ta.text=Icon("Return","⏎")
+    ta.textSize="18dp"
     ta.onClick=function()
       service.sendEvent("Return")
     end
     ta.OnLongClickListener={onLongClick=function() return true end}
    elseif id==4 then
-    ta.text=Icon("Keyboard_default","返回")
+    ta.text=Icon("返回","返回")
     ta.onClick=function()
-      service.sendEvent("Keyboard_default")
+    service.sendEvent("Keyboard_default")
+    ta.text=Icon("Keyboard_default","返回")
     end
     ta.OnLongClickListener={onLongClick=function()
         service.sendEvent("undo")
@@ -148,31 +155,127 @@ local function Bu_R(id) --生成功能键
       return
     end
     ta.OnLongClickListener={onLongClick=function() return true end}
-  end
+    elseif id==6 then
+    ta.text="帮助"
+    ta.onClick=function()
+      显示帮助(帮助内容)
+    end
+    ta.OnLongClickListener={onLongClick=function() return true end}
+    elseif id==7 then
+    ta.text=Icon("全选","全选")
+    ta.textSize="18dp"
+    ta.onClick=function()
+        功能_全选()
+    end
+    elseif id==8 then
+    ta.text=Icon("复制","复制")
+    ta.textSize="18dp"
+    ta.onClick=function()
+        功能_复制()
+    end
+    elseif id==9 then
+    ta.text=Icon("剪切","剪切")
+    ta.textSize="18dp"
+    ta.onClick=function()
+        功能_剪切()
+    end
+    elseif id==10 then
+    ta.text=Icon("搜索","搜索")
+    ta.textSize="18dp"
+    ta.onClick=function()
+      if 预搜索内容 then
+        Key.presetKeys.lua_script_l={label= "脚本", send="function", command=脚本相对路径, option="【【搜索】】"..预搜索内容}
+      else
+        Key.presetKeys.lua_script_l={label= "脚本", send="function", command=脚本相对路径, option=""}
+      end
+      service.sendEvent("lua_script_l")
+    end
+    elseif id==11 then
+    ta.text=Icon("剪切","剪切板")
+    ta.textSize="18dp"
+    ta.onClick=function()
+      功能_脚本(剪切板,"剪切板")
+    end
+    elseif id==12 then
+    ta.text=Icon("添加","添加")
+    ta.textSize="18dp"
+    ta.onClick=function()
+--      service.sendEvent("添加短语")
+--    local 内容=str:gsub("\n","\\n")
+    io.open(短语板,"a+"):write("\n"):close()
+    io.open(短语板,"a+"):write(短语):close()
+    print("短语添加成功",内容)
+    end
+    end
   return ta
 end
 
-local ids,layout={},{FrameLayout,
+local 默认高度=service.getLastKeyboardHeight()
+if 默认高度<300 then 默认高度=300 end
+
+local ids,layout={},{LinearLayout,
+  orientation=1,
   --键盘高度
-  layout_height=service.getLastKeyboardHeight(),
+  layout_height=默认高度,
   layout_width=-1,
-  --背景颜色，默认透明
-  BackgroundColor=0x88ffffff,
-  {ListView,
-    id="list",
-    layout_width=-1},
-  {LinearLayout,
-    orientation=1,
-    --右侧功能键宽度
-    layout_width="70dp",
+  --背景颜色
+  --BackgroundColor=0xffd7dddd,
+  {TextView,
+    id="title",
+    layout_height="30dp",
+    layout_width=-1,
+    text="•短语板",
+    gravity="center",
+    paddingLeft="2dp",
+    paddingRight="2dp",
+    BackgroundColor=0x49d3d7da
+    },
+    {LinearLayout,
+    gravity="right",
     layout_height=-1,
-    layout_gravity=5|84,
-    Bu_R(5),
-    Bu_R(1),
+    {LinearLayout,
+      id="main",
+      orientation=1,
+      --右侧功能键宽度
+      layout_weight=1,
+      layout_height=-1,
+      layout_gravity=8|3,
+      {GridView, --列表控件
+        id="list",
+        numColumns=1, --6列
+        paddingLeft="2dp",
+        paddingRight="2dp",
+        layout_width=-1,
+        layout_weight=1}},
+
+   {LinearLayout,
+      orientation=1,
+      layout_weight=1,
+      layout_width="150dp",
+      layout_height=-1,
+      --layout_gravity=5|84,
+    Bu_R(7),
+    Bu_R(8),
+    Bu_R(9),
     Bu_R(2),
     Bu_R(3),
-    Bu_R(4)
-    }}
+      },
+
+    {LinearLayout,
+      orientation=1,
+      layout_weight=1,
+      layout_width="150dp",
+      layout_height=-1,
+      --layout_gravity=5|84,
+    Bu_R(4),
+    Bu_R(11),
+    Bu_R(5),
+    Bu_R(10),
+    Bu_R(1),
+      },
+}}
+
+
 layout=loadlayout(layout,ids)
 
 local data,item={},{LinearLayout,
@@ -181,7 +284,7 @@ local data,item={},{LinearLayout,
   gravity=3|17,
   {TextView,
     id="a",
-    textColor=0xff232323,
+    textColor=0xffff0000,--短语板序号颜色
     textSize="10dp"},
   {TextView,
     id="b",
@@ -191,7 +294,7 @@ local data,item={},{LinearLayout,
     MaxLines=3,
     --最小高度
     MinHeight="30dp",
-    textColor=0xff232323,
+    textColor=0xfffcaf17,--短语板内容文字颜色
     textSize="15dp"}}
 local adp=LuaAdapter(service,data,item)
 ids.list.Adapter=adp

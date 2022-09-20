@@ -228,14 +228,14 @@ local function Bu_R(id) --生成功能键
     end
     Bu.OnLongClickListener={onLongClick=function() return true end}
    elseif id==(#number+1) then
-    label.text=Icon("Keyboard_default","返回")
-    Bu.onClick=function()
-      service.sendEvent("Keyboard_default")
-    end
-   elseif id==(#number+2) then
     label.text=Icon("编辑","编辑")
     Bu.onClick=function()
       service.editFile(脚本路径)--用内置编辑器打开文件
+    end
+   elseif id==(#number+2) then
+    label.text=Icon("Keyboard_default","返回")
+    Bu.onClick=function()
+      service.sendEvent("Keyboard_default")
     end
     Bu.OnLongClickListener={onLongClick=function() return true end}
   end
@@ -334,7 +334,6 @@ if 键盘否 then
 end
 
 service.setKeyboard(layout)
-
 
 
 
