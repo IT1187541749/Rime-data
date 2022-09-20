@@ -1,0 +1,38 @@
+require "import"
+import "android.app.*"
+import "android.os.*"
+import "android.widget.*"
+import "android.view.*"
+import "script/dex/okhttp:okhttp3.Request"
+import "script/dex/okhttp:okhttp3.OkHttpClient"
+import "script/dex/okhttp:okhttp3.Callback"
+import "script/dex/okhttp:okhttp3.MediaType"
+import "script/dex/okhttp:okhttp3.RequestBody"
+import "script/dex/okhttp:okhttp3.FormBody"
+
+
+
+--创建一个表单
+local requestBody = FormBody.Builder()
+.add("t",dofile_信息表.内容)
+.build()
+
+--请求辅助类
+request = Request.Builder()
+.url("https://getnote.cf/xkxkxxkxkxkxkxkxk")
+.post(requestBody)
+.build();
+okhttp = OkHttpClient();
+callx = okhttp.newCall(request);
+callx.enqueue(Callback{
+	onFailure=function(call,e)
+		print("请求失败")
+	end,
+	onResponse=function(call,response)
+		print(response.body().string())
+		--print("推送成功")
+	end
+})
+
+
+

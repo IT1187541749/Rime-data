@@ -1,0 +1,226 @@
+--剪切板使用一键加词模块
+require "import"
+import "java.io.File"
+import "com.osfans.trime.*" --载入包
+import "script.包.字符串.其它"
+import "script.包.键盘操作.主键盘"
+import "script.包.键盘操作.功能键"
+import "android.widget.*"
+import "android.view.*"
+import "android.graphics.RectF"
+import "java.io.*"
+import "android.text.Html"
+import "android.graphics.drawable.StateListDrawable"
+import "yaml"
+
+
+task(10,function()
+local 版本号="2.0"
+local 词库文件名="xklbXY53_lua_sdjc.txt"
+local 单字码表名="xklbXY53.dict.yaml"--单字码表，可以不是单字表，但是建议使用单字表，(PS：码表文件太大会卡死
+local 输入法目录=tostring(service.getLuaExtDir(""))
+local 脚本目录=输入法目录.."/script"
+local 脚本路径=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
+local 纯脚本名=File(脚本路径).getName()
+local 目录=string.sub(脚本路径,1,#脚本路径-#纯脚本名)
+local 脚本相对路径=string.sub(脚本路径,#脚本目录+1)
+
+local 词库文件路径=输入法目录.."/"..词库文件名
+local 单字码表路径=输入法目录.."/"..单字码表名
+
+
+
+local 新增词组内容=dofile_信息表.内容
+if 新增词组内容== nil or 新增词组内容=="" then
+  do return end --强制退出
+end
+
+--刷新方案
+local function 刷新方案()
+	local 方案组=Rime.getSchemaNames() --返回输入法方案组
+	if #方案组==1 then
+		print("当前只有1个方案,无法切换,请保证有两个方案")
+		return --退出
+	end
+	local 方案编号=Rime.getSchemaIndex()
+	local 切换编号=0
+	if 方案编号==0 then 切换编号=1 end
+		local 结果=Rime.selectSchema(切换编号)
+		Rime.selectSchema(方案编号)
+	if 结果==false then print("方案切换失败,请保证有两个方案") end
+end
+
+local function 写入词库(字符串,词库文件)
+  io.open(词库文件,"a+"):write("\n"..字符串):close()
+  Toast.makeText(service," 词组【"..字符串.."】 添加成功",2000).show()
+  刷新方案()
+end
+
+local function 加词位置按照字母表顺序(路径,词条,编码)
+    local d={}
+	for c in io.lines(路径) do
+		if c:find("	")~=nil then
+			d[#d+1]=c:match("	(.+)")
+		end
+	end
+	d[#d+1]=编码
+	table.sort(d)
+	for i=1, #d do
+		if d[i]==编码 then
+			内容=io.open(路径):read("*a")
+			io.open(路径,"w+"):write(tostring(内容:gsub("\t"..d[i-1],"\t"..d[i-1].."\n"..词条.."\t"..编码))):close()
+		end
+	end
+	刷新方案()
+end
+
+local function 数组去重复(数组)
+  local exist = {}
+  --把相同的元素覆盖掉
+  for v, k in pairs(数组) do
+    exist[k] = true
+  end
+  --重新排序表
+  local newTable = {}
+  for v, k in pairs(exist) do
+    table.insert(newTable, v)
+  end
+  return newTable
+end
+local function 获取编码(词条)
+  local 词组=""
+  local 单字码表内容=io.open(单字码表路径):read("*a")
+  for i=1,#词条 do
+    if utf8.find(单字码表内容,"\n"..utf8.sub(词条,i,i).."\t")~= nil then
+      词组=词组..utf8.sub(词条,i,i)
+    end
+  end
+  local n=utf8.len(词组)
+  local 编码组={}
+  local a={}
+  local b={}
+  local q={}
+  local f={}
+  local e={}
+  local i=1
+  local k=1
+  local d=1
+  local p=1
+  local m=1
+  if n==2 then
+    for c in io.lines(单字码表路径) do
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,1,1) then
+        a[i]=utf8.match(c,"\t([a-z][a-z])")
+        i=i+1
+      end
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,2,2)then
+        b[k]=utf8.match(c,"\t([a-z][a-z])")
+        k=k+1
+      end
+    end
+    for i =1,#a do
+      for n =1,#b do
+        e[m]=a[i]..b[n]
+        m=m+1
+      end
+    end
+
+    for i=1,#e do
+      编码组[i]=e[i]
+    end
+
+
+   elseif n==3 then
+    for c in io.lines(单字码表路径) do
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,1,1) then
+        a[i]=string.match(c,"\t([a-z][a-z])")
+        i=i+1
+      end
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,2,2) then
+        b[k]=string.match(c,"\t([a-z][a-z])")
+        k=k+1
+      end
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,3,3) then
+        q[d]=string.match(c,"\t([a-z][a-z])")
+        d=d+1
+      end
+    end
+    for i =1,#a do
+      for n =1,#b do
+        for t =1,#q do
+          e[m]=a[i]..b[n]..q[t]
+          m=m+1
+        end
+      end
+    end
+
+    for i=1,#e do
+      编码组[i]=string.sub(e[i],1,1)..string.sub(e[i],3,3)..string.sub(e[i],5,5)
+      编码组[#e+i]=string.sub(e[i],1,1)..string.sub(e[i],3,3)..string.sub(e[i],5,6)
+    end
+
+   elseif n>=4 then
+    for c in io.lines(单字码表路径) do
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,1,1) then
+        a[i]=string.match(c,"\t([a-z][a-z])")
+        i=i+1
+      end
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,2,2) then
+        b[k]=string.match(c,"\t(..)")
+        k=k+1
+      end
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,3,3) then
+        q[d]=string.match(c,"\t(..)")
+        d=d+1
+      end
+      if utf8.match(c,"(.-)\t.*")== utf8.sub(词组,-1,-1) then
+        f[p]=string.match(c,"\t([a-z][a-z])")
+        p=p+1
+      end
+    end
+    for i =1,#a do
+      for n =1,#b do
+        for t =1,#q do
+          for s =1,#f do
+            e[m]=a[i]..b[n]..q[t]..f[s]
+            m=m+1
+          end
+        end
+      end
+    end
+
+    for i=1,#e do
+      编码组[i]=string.sub(e[i],1,1)..string.sub(e[i],3,3)..string.sub(e[i],5,5)..string.sub(e[i],7,7)
+    end
+
+  end --if n>=4 then
+
+  编码组=数组去重复(编码组)
+  return 编码组
+end
+
+local 编码组=获取编码(新增词组内容)
+
+local function 导入模块(模块,内容)
+  dofile_信息表=nil
+  dofile_信息表={}
+  dofile_信息表.内容=内容
+  dofile_信息表.词库=词库文件路径
+  dofile(目录..模块)--导入模块
+end
+
+if #编码组==1 then
+  主键盘_返回()
+  写入词库(新增词组内容.."\t"..编码组[1],词库文件路径)
+ elseif #编码组>1 then
+  print("有重码")
+  local 词条编码组={}
+  for i =1,#编码组 do
+    词条编码组[i]=新增词组内容.."\t"..编码组[i]
+  end
+  导入模块("一键加词重码选择模块.text",词条编码组)
+end--if#编码组
+
+end)
+
+

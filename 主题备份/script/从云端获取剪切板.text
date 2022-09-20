@@ -1,0 +1,15 @@
+
+import "android.content.Context" 
+local 云输入内容="https://getnote.cf/xkxkxxkxkxkxkxkxk"
+Http.get(云输入内容,nil,"utf8",nil,function(a,b)
+ if a==200 then 
+ local m,n,内容=string.find(b,"content\">(.*)</textarea>")
+ task(100,function()
+  service.addCompositions({内容})
+  service.getSystemService(Context.CLIPBOARD_SERVICE).setText(内容) 
+ end)
+ else
+ print("对不起,你的网络似乎出现了点问题")
+ end
+ end)
+

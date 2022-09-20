@@ -1,0 +1,136 @@
+require "import"
+import "android.widget.*"
+import "android.view.*"
+import "android.graphics.RectF"
+import "android.content.Context"
+import "java.io.*"
+import "java.io.File"
+import "com.osfans.trime.*" --载入包
+import "android.text.Html"
+import "android.graphics.drawable.StateListDrawable"
+
+
+local 项目组=dofile_信息表.内容
+local 词库=dofile_信息表.词库
+
+local function 刷新方案()
+	local 方案组=Rime.getSchemaNames() --返回输入法方案组
+	if #方案组==1 then
+		print("当前只有1个方案,无法切换,请保证有两个方案")
+		return --退出
+	end
+	local 方案编号=Rime.getSchemaIndex()
+	local 切换编号=0
+	if 方案编号==0 then 切换编号=1 end
+		local 结果=Rime.selectSchema(切换编号)
+		Rime.selectSchema(方案编号)
+	if 结果==false then print("方案切换失败,请保证有两个方案") end
+end
+
+local function 写入词库(字符串,词库文件)
+  io.open(词库文件,"a+"):write("\n"..字符串):close()
+  Toast.makeText(service," 词组【"..字符串.."】 添加成功",2000).show()
+  刷新方案()
+end
+
+local ids={}
+local data={}
+local item={LinearLayout,
+    layout_width=-1,
+    layout_height="30dp",
+    padding="2dp",
+    orientation="vertical",
+    gravity=17,
+    {CardView,
+        radius="5dp",
+        layout_height="36dp",
+        CardElevation=0,
+        layout_width=-1,
+        BackgroundColor=0x49d3d7da,
+        --gravity=3|17,
+        {LinearLayout,
+            layout_width=-1,
+            --BackgroundColor=0x49d3d7da,
+            --gravity=3|17,
+            {TextView,
+                id="b",
+                textColor=0xffAA7700,
+                textSize="14dp"},
+            {TextView,
+                id="a",
+                padding="8dp",
+                --gravity=17,
+                layout_width=-1,
+                gravity="center",
+                --BackgroundColor=0x49d3d7da,
+                textColor=0xff232323,
+                textSize="14dp"}
+            }
+        }
+    }
+
+local layout=
+{LinearLayout,
+    gravity="right",
+    layout_height=-1,
+    {LinearLayout,
+        id="main",
+        orientation=1,
+        --右侧功能键宽度
+        layout_weight=1,
+        layout_height=-1,
+        layout_gravity=8|3,
+        {GridView, --列表控件
+            id="list",
+            numColumns=1, --6列
+            paddingLeft="2dp",
+            paddingRight="2dp",
+            layout_width=-1,
+            layout_weight=1}},
+    }
+
+local adp=LuaAdapter(service,data,item)
+local function fresh(t)
+	table.clear(data)
+	for i=1,#t do
+		local v=t[i]
+		local a,b,c=v:match("^%s*([^\n]+)(\n*[^\n]*)(\n*[^\n]*)")
+		a=table.concat{utf8.sub(a or "",1,99),utf8.sub(b or "",1,99),utf8.sub(c or "",1,99)}
+		table.insert(data,{b=tostring(i),a=a})
+	end
+	adp.notifyDataSetChanged()
+end
+
+弹出布局=loadlayout(layout,ids)
+ids.list.Adapter=adp
+
+fresh(项目组)
+
+local height=service.getLastKeyboardHeight()
+local width=service.getWidth()--取键盘宽度
+local 宽度,高度=width*0.35,height*0.38
+local popWnd = PopupWindow(this);
+  popWnd.setContentView(弹出布局);
+  popWnd.setWidth(宽度) --设置显示宽度
+  popWnd.setHeight(高度) --设置显示高度
+  --popWnd.setFocusable(false);设置焦点
+  popWnd.setOutsideTouchable(true)--点击外面区域消失
+  --相对某个控件的位置（正左下方），无偏移
+  --popWnd.showAsDropDown(v)
+  --相对某个控件的位置，有偏移;xoff表示x轴的偏移，正值表示向左，负值表示向右；yoff表示相对y轴的偏移，正值是向下，负值是向上；
+  --popWnd.showAsDropDown(View anchor, int xoff, int yoff)
+  --相对于父控件的位置（例如正中央Gravity.CENTER，下方Gravity.BOTTOM,Gravity.TOP,Gravity.RIGHT等），可以设置偏移或无偏移
+local v=service.getCandidateView()
+popWnd.showAtLocation(v,Gravity.TOP, 0, 0)
+
+ids.list.onItemClick=function(l,v,p)
+	写入词库(项目组[p+1],词库)
+	popWnd.dismiss()
+end
+
+ids.list.onItemLongClick=function(l,v,p)
+	print(项目组[p+1])
+  return true
+end
+
+

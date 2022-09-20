@@ -1,0 +1,210 @@
+
+require "import"
+import "android.widget.*"
+import "android.view.*"
+import "android.app.*"
+import "android.os.*"
+import "java.io.*"
+
+import "android.graphics.BitmapFactory"
+import "com.android.qrcode.*"
+
+
+
+
+
+local 参数 = (...) 
+local 输入法目录=tostring(service.getLuaExtDir(""))
+local 所有脚本目录=输入法目录.."/script"
+local 脚本路径=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
+local 相对脚本路径=string.sub(脚本路径,#所有脚本目录+1)--相对路径
+local 纯脚本名=File(脚本路径).getName()
+local 脚本目录=string.sub(脚本路径,1,#脚本路径-#纯脚本名)
+
+local function 加载dex包类(路径,类名) --包含dex的apk或jar文件
+ import "dalvik.system.DexClassLoader"
+ import"android.content.Context"
+ local optimizedDexOutputPath = service.getDir("dex", Context.MODE_PRIVATE);
+ local classLoader=DexClassLoader(路径,optimizedDexOutputPath.getAbsolutePath(), nil,service.getClassLoader());
+ return classLoader.loadClass(类名) --dex中的类全名
+end
+
+if 全局变量_二维码制作==nil then
+  全局变量_二维码制作=加载dex包类(所有脚本目录.."/dex/vwm.dex","com.yc.qrcode.二维码")--dex中的类全名
+end
+
+
+local 设备型号 = Build.MODEL --设备型号
+local 路径="/storage/emulated/0/Pictures/Screenshots/"
+
+
+
+
+
+local function Back() --生成功能键背景
+  local bka=LuaDrawable(function(c,p,d)
+    local b=d.bounds
+    b=RectF(b.left,b.top,b.right,b.bottom)
+    p.setColor(0xffffffff)
+    c.drawRoundRect(b,20,20,p) --圆角20
+  end)
+  local bkb=LuaDrawable(function(c,p,d)
+    local b=d.bounds
+    b=RectF(b.left,b.top,b.right,b.bottom)
+    p.setColor(0x49d3d7da)
+    c.drawRoundRect(b,20,20,p)
+  end)
+
+  local stb=StateListDrawable()
+  stb.addState({-android.R.attr.state_pressed},bkb)
+  stb.addState({android.R.attr.state_pressed},bka)
+  return stb
+end
+
+
+
+local height="240dp" --键盘高度
+pcall(function()
+  --键盘自适应高度，旧版中文不支持，放pcall里防报错
+  height=service.getLastKeyboardHeight()
+end)
+local width=service.getWidth()--取键盘宽度
+
+local layout={
+  LinearLayout;
+  layout_width=width;
+  orientation="vertical";
+  layout_height=height;
+  {TextView,
+    layout_height="24dp",
+    layout_width=-1,
+    text=纯脚本名:sub(1,-5),
+    gravity="center",
+    --BackgroundColor=0xffdfdfdf
+    },
+    {
+    LinearLayout;
+    layout_width="fill";
+    layout_height=height*0.8;
+    orientation="vertical";
+    gravity="center";
+    {
+      ImageView;
+      layout_width="wrap";
+      layout_height="wrap";
+      id="img";
+      layout_gravity="center";
+    };
+  };
+  {
+    LinearLayout;
+    layout_width="fill";
+    layout_height="wrap";
+    gravity="center";
+    orientation="horizontal";
+    {TextView;
+      layout_width="4%w";
+    };
+    {
+      TextView;
+      layout_width="20%w";
+      layout_height="36dp";
+      Background=Back(),
+      gravity="center",
+      id="but1";
+      text="保存";
+    };
+    {TextView;
+      layout_width="4%w";
+    };
+    {
+      TextView;
+      layout_width="20%w";
+      layout_height="36dp";
+      Background=Back(),
+      gravity="center",
+      id="but2";
+      text="分享";
+    };
+    {TextView;
+      layout_width="4%w";
+    };
+    {
+      TextView;
+      layout_width="20%w";
+      layout_height="36dp";
+      Background=Back(),
+      gravity="center",
+      id="but3";
+      text="刷新";
+    };
+    {TextView;
+      layout_width="4%w";
+    };
+    {
+      TextView;
+      layout_width="20%w";
+      layout_height="36dp";
+      Background=Back(),
+      gravity="center",
+      id="but4";
+      text="退出";
+      onClick=function()  service.sendEvent("Keyboard_default") end
+    };
+    {TextView;
+      layout_width="4%w";
+    };
+  };
+};
+
+
+layout=loadlayout(layout)
+local 二维码数据
+
+local function 更新内容()
+   local 图标 = BitmapFactory.decodeFile(脚本目录.."二维码图标.png")
+   二维码数据= 全局变量_二维码制作.createQRCodeWithLogo(dofile_信息表.内容,400,图标)
+   img.setImageBitmap(二维码数据)
+end
+更新内容()
+
+local function 保存(bitmap,路径)
+  local f=File(路径)
+  local path=BufferedOutputStream(FileOutputStream(f))
+  bitmap.compress(Bitmap.CompressFormat.JPEG,50,path)
+end
+
+but1.onClick=function()
+  路径=路径..os.date("%Y%m%d%H%M%S", os.time())
+  local 随机数=tointeger(os.clock()*100000)
+  路径=路径.."_"..随机数
+  路径=路径..".jpg"
+  保存(二维码数据,路径)
+  print(路径.."\n文件已保存")
+end
+
+but2.onClick=function()
+  local 分享失败= true
+  路径=路径..os.date("%Y%m%d%H%M%S", os.time())
+  local 随机数=tointeger(os.clock()*100000)
+  路径=路径.."_"..随机数
+  路径=路径..".jpg"
+  保存(二维码数据,路径)
+  for i=1,10 do
+    task(300,function() end)--间隔时间
+    if File(路径).exists() then
+     dofile(tostring(service.getLuaExtDir("script")).."/包/其它/发送系统广播.lua")
+     发送广播("com.fooview.android.fooview",{Share=路径}) --Share是Key，可以有多个Key
+     分享失败= false
+     break
+    end
+  end
+  if 分享失败 print("文件生成失败,无法分享") end
+end
+
+but3.onClick=function()
+   更新内容()
+end
+service.setKeyboard(layout)
+
+

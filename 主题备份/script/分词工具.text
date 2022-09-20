@@ -1,0 +1,434 @@
+
+
+require "import"
+import "android.app.*"
+import "android.os.*"
+import "script/dex/flowlayout:com.nex3z.flowlayout.FlowLayout"
+
+import "android.widget.*"
+import "android.view.*"
+import "android.graphics.Typeface"
+import "java.io.File"--导入File类
+
+local 脚本目录=tostring(service.getLuaExtDir("script"))
+local 脚本名=debug.getinfo(1,"S").source:sub(2)--获取Lua脚本的完整路径
+local 脚本相对路径=string.sub(脚本名,#脚本目录+1)
+local 纯脚本名=File(脚本名).getName()
+local p=string.sub(脚本名,1,#脚本名-#纯脚本名).."分词数据库.txt"
+
+local t=dofile(p)
+
+
+local function 数组乱序(tab1)
+    if type(tab1)~="table" then
+        return
+    end
+    
+    local tab,t={},{}
+    for i=1,#tab1  do
+      t[i]=tab1[i]
+    end
+    local index=1
+    while #t~=0 do
+        local n=math.random(0,#t)
+        if t[n]~=nil then
+            tab[index]=t[n]
+            table.remove(t,n)
+            index=index+1
+        end
+    end
+    return tab
+end
+
+local function 随机组合上屏(t)
+ local t1=数组乱序(t)
+ service.commitText(table.concat(t1,"")) 
+end
+
+
+local function check(s,i)
+  for n=5,1,-1
+    local u=utf8.sub(s,i,i+n-1)
+    local a=t[u]
+    if a
+      return a
+    end
+  end
+  return 0
+end
+
+local function check2(s,i,m)
+  for n=m,1,-1
+    local u=utf8.sub(s,i,i+n-1)
+    local a=t[u]
+    if a
+      return a
+    end
+  end
+  return 0
+end
+
+local function split(s)
+  local l=utf8.len(s)
+  local i=1
+  local mm=2
+  local nn=2
+  local r={}
+  while i<l
+    --print(i)
+    for n=5,1,-1
+      if n==1
+        local u=utf8.sub(s,i,i)
+        i=i+1
+        table.insert(r,u)
+        break
+      end
+      local u=utf8.sub(s,i,i+n-1)
+      local a=t[u]
+      if a
+        local b=check(s,i+1)
+        if b>a*nn
+          local c=check(s,i+2)
+          if b>c
+            local u=utf8.sub(s,i,i)
+            i=i+1
+            table.insert(r,u)
+            goto eee
+          end
+        end
+        if check2(s,i,n-1)>a*mm
+          continue
+        end
+        i=i+n
+        table.insert(r,u)
+        break
+      end
+    end
+@eee
+  end
+  return r
+end
+
+--将内容拆分为一个二维数组,前面内容,后面打标记,标记为单词,待拆分
+--示例 内容 fgy我步子hghn24天
+--二维数组一 fgy,我步子,hghn,24天
+--二维数组二 单词,待拆分,单词,待拆分
+local function 单个正则匹配拆分内容(内容,正则)
+   local 拆分组,已匹配组={},{}
+   拆分组[1]={}
+   拆分组[2]={}
+
+   内容=utf8.gsub(内容, 正则, function(匹配内容)
+    if 匹配内容~="" table.insert(已匹配组, 匹配内容) end
+    end)
+   if #已匹配组==0 then
+     table.insert(拆分组[1],内容)
+     table.insert(拆分组[2],"待匹配")
+   end
+   for i=1,#已匹配组 do
+     local m,n=utf8.find(内容,已匹配组[i],1,true)--非正则模式,普通查找
+     if m>1 then
+       table.insert(拆分组[1],utf8.sub(内容,1,m-1))
+       table.insert(拆分组[2],"待匹配")
+     end
+     table.insert(拆分组[1],已匹配组[i])
+     table.insert(拆分组[2],"已匹配")
+     内容=utf8.sub(内容,n+1)
+     if i==#已匹配组 and 内容~="" then 
+       table.insert(拆分组[1],内容)
+       table.insert(拆分组[2],"待匹配")
+     end
+   end
+   return 拆分组
+end
+
+local function 单个正则匹配拆分组(拆分组,正则)
+   local 子拆分组,已匹配组={},{}
+   子拆分组[1]={}
+   子拆分组[2]={}
+   
+   for i=1,#拆分组[1]  do
+     if 拆分组[2][i]=="已匹配" then
+       table.insert(子拆分组[1],拆分组[1][i])
+       table.insert(子拆分组[2],拆分组[2][i])
+    else
+       local 内容=拆分组[1][i]
+       local 内容拆分组=单个正则匹配拆分内容(内容,正则)
+       for i2=1,#内容拆分组[1]  do
+         table.insert(子拆分组[1],内容拆分组[1][i2])
+       table.insert(子拆分组[2],内容拆分组[2][i2])
+       end--for
+    end--if
+   end--for
+   return 子拆分组
+end
+
+local function 正则组匹配(内容)
+--正则匹配,有优先级,为从上到下
+local 正则组= {
+  "http[s]-://[0-9a-zA-Z:=./-]*",--网址匹配
+  "[a-zA-Z]*",--单词
+}
+
+local 拆分组={}
+拆分组[1]={内容}
+拆分组[2]={"待匹配"}
+for i=1,#正则组  do
+   拆分组=单个正则匹配拆分组(拆分组,正则组[i])
+end
+return 拆分组
+end
+
+
+local function 增强拆分(内容)
+   local 分词组,拆分组={},正则组匹配(内容)
+   for i=1,#拆分组[1] do
+     if 拆分组[2][i]=="待匹配" then
+       local 子分词组=split(拆分组[1][i].." ")
+       if 子分词组[#子分词组]==" " table.remove(子分词组) end
+       for i2=1,#子分词组 do
+         table.insert(分词组, 子分词组[i2])
+       end
+     else
+       table.insert(分词组, 拆分组[1][i])
+     end
+   end
+   return 分词组
+end
+
+local 内容组=增强拆分(dofile_信息表.内容)
+
+local function Back() --生成功能键背景
+  local bka=LuaDrawable(function(c,p,d)
+    local b=d.bounds
+    b=RectF(b.left,b.top,b.right,b.bottom)
+    p.setColor(0x49ffffff)
+    c.drawRoundRect(b,20,20,p) --圆角20
+  end)
+  local bkb=LuaDrawable(function(c,p,d)
+    local b=d.bounds
+    b=RectF(b.left,b.top,b.right,b.bottom)
+    p.setColor(0x49d3d7da)
+    c.drawRoundRect(b,20,20,p)
+  end)
+
+  local stb=StateListDrawable()
+  stb.addState({-android.R.attr.state_pressed},bkb)
+  stb.addState({android.R.attr.state_pressed},bka)
+  return stb
+end
+
+local function Icon(k,s) --获取功能键图标
+  k=Key.presetKeys[k]
+  return k and k.label or s
+end
+
+local function Bu_R(id) --生成功能键
+  local ta={TextView,
+    gravity=17,
+    Background=Back(),
+    layout_height=-1,
+    layout_width=-1,
+    layout_weight=1,
+    layout_margin="1dp",
+    layout_marginTop="2dp",
+    layout_marginBottom="2dp",
+    textColor=0xff232323,
+    textSize="18dp"}
+
+  if id==1 then
+    ta.text=Icon("BackSpace","⌫")
+    ta.textSize="18dp"
+    ta.onClick=function()
+      service.sendEvent("BackSpace")
+    end
+    ta.OnLongClickListener={onLongClick=function() return true end}
+   elseif id==2 then
+    ta.text=Icon("space","空格")
+    ta.textSize="18dp"
+    ta.onClick=function()
+      service.sendEvent("space")
+    end
+    ta.OnLongClickListener={onLongClick=function() return true end}
+   elseif id==3 then
+    ta.text=Icon("Return","⏎")
+    ta.onClick=function()
+      service.sendEvent("Return")
+    end
+    ta.OnLongClickListener={onLongClick=function() return true end}
+   elseif id==4 then
+    ta.text=Icon("返回","返回")
+    ta.onClick=function()
+      Key.presetKeys.lua_script_l={label= "脚本", send="function", command=dofile_信息表.上级脚本相对路径, option="分词"}
+      service.sendEvent("lua_script_l")
+    end
+    ta.OnLongClickListener={onLongClick=function()
+        service.sendEvent("undo")
+        return true
+    end}
+   elseif id==5 then
+    ta.text="乱序"
+    ta.onClick=function()
+    随机组合上屏(内容组)
+    end
+    ta.OnLongClickListener={onLongClick=function()
+        service.sendEvent("undo")
+        return true
+    end}
+  end
+  return ta
+end
+
+
+local height=service.getLastKeyboardHeight()
+local width=service.getWidth()--取键盘宽度
+
+local layout={LinearLayout,
+  orientation=1,
+  --键盘高度
+  layout_height=height,
+  layout_width=-1,
+  --背景颜色
+  --BackgroundColor=0xffd7dddd,
+  {TextView,
+    layout_height=120,
+    layout_width=-1,
+    id="long_text",
+    text="",
+    gravity="center",
+    --onClick=function() 打开文件(数据文件) end
+    --BackgroundColor=0xffdfdfdf
+    },
+    {LinearLayout,
+    gravity="right",
+    layout_height=-1,
+    {LinearLayout,
+      id="main",
+      orientation=1,
+      --右侧功能键宽度
+      layout_weight=1,
+      layout_height=-1,
+      layout_gravity=8|3,
+   {
+    ScrollView;
+    layout_height=height-120;
+    layout_width=width-120;
+    id="sco",
+        {
+          FlowLayout,
+          layout_width="fill",
+          layout_height="fill",
+          -- paddingBottom="30dp";
+          --MaxRows="40dp";
+          layout_marginLeft="3dp";
+          layout_marginBottom="10dp";
+          MinChildSpacing="5dp";
+          --自控力间距
+          ChildSpacing="10dp",
+          --行间距
+          RowSpacing="10dp",
+          id="f2",
+        },
+      }, 
+      
+},
+
+   {LinearLayout,
+      orientation=1,
+      layout_weight=1,
+      layout_width=120,
+      layout_height=-1,
+      --layout_gravity=5|84,
+      Bu_R(5),
+      Bu_R(1),
+    Bu_R(2),
+    Bu_R(3),
+    Bu_R(4),
+      },
+}}
+
+layout=loadlayout(layout)
+
+
+local function CircleButton(InsideColor,radiu)
+  import "android.graphics.drawable.GradientDrawable"
+  drawable = GradientDrawable()
+  drawable.setShape(GradientDrawable.RECTANGLE)
+  drawable.setColor(InsideColor)
+  drawable.setCornerRadii({radiu,radiu,radiu,radiu,radiu,radiu,radiu,radiu});
+  return drawable
+  --view.setBackgroundDrawable(drawable)
+end
+
+
+local 数据编号=0
+local function 更新数据布局()  
+   
+   for i=1,50  do
+     if 数据编号==#内容组 break end
+     数据编号=1+数据编号
+     local 当前数据编号=数据编号
+     local v=""
+     v=内容组[当前数据编号]
+     local c={
+       LinearLayout;
+       --layout_width="-2";
+      --layout_height="40dp";
+       id="背景";
+   
+       BackgroundDrawable=CircleButton(0xfff5f5f5,90);
+       {
+         TextView;
+         textColor="0xFF000000";
+         padding="8dp";
+         layout_marginLeft="2dp";
+         layout_marginRight="2dp";
+         layout_width="-1";
+         --gravity="center";
+         layout_height="-2";
+         textSize="12sp";
+         Text=v;
+         OnLongClickListener={onLongClick=function()
+            print("长按")
+           return true 
+         end},
+         onClick=function()
+          service.commitText(v) 
+         end
+       };
+     };
+     
+     f2.addView(loadlayout(c))
+     -- md按钮(md,20,0x7ab946ff,0xDab946ff)
+     if 数据编号==#内容组 break end
+   end--for
+   long_text.setText("分词工具("..数据编号.."/"..#内容组..")")
+end
+
+更新数据布局()
+
+local x1,x2,x3= 0,0,0
+function sco.onTouch(a,esv)
+  x3 = os.clock()
+  local 间隔时间1=(x3-x1)*10000
+  if 间隔时间1>2 x1=x3 end
+  local y=sco.getScrollY()
+  if y == 0 then
+   --print("到首部了")
+  end
+  local childView = sco.getChildAt(0)
+  if y > childView.getHeight()-sco.getHeight()-10 then
+    x2 = os.clock()
+    local 间隔时间=(x2-x1)*10000
+    if 间隔时间>3 then
+      --print("滑动到底部") 
+      更新数据布局()
+    end
+  end
+end
+
+
+
+
+service.setKeyboard(layout)
+
