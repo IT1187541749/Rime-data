@@ -42,6 +42,7 @@ end
 local function filter(input, env)
   extended_char1 = env.engine.context:get_option("extended_char1")
   extended_char2 = env.engine.context:get_option("extended_char2")
+  extended_char3 = env.engine.context:get_option("extended_char3")
   for cand in input:iter() do
     if extended_char1 then
       if should_yield(cand.text, '[8]', env.coredb) then  --通用规范汉字表 8105字
@@ -49,6 +50,10 @@ local function filter(input, env)
       end
     elseif extended_char2 then
       if should_yield(cand.text, '[2]', env.coredb) then  --GB18030-2000 27533字
+        yield(cand)
+      end
+    elseif extended_char3 then
+      if should_yield(cand.text, '[5]', env.coredb) then  --Big-5 13466字
         yield(cand)
       end
     else
