@@ -1972,7 +1972,7 @@ preset_keyboards:
         "keys/@39/key_text_size":
   #以下一行为增加次选按钮,已经在主题中直接加入次选代码,所以不用启用
 #        "keys/@44/composing": delimiterC1
-        "keys/@29/long_click": ;
+        "keys/@29/long_click": ":"
 
   elements:
     __include: /preset_keyboards/default
@@ -8830,6 +8830,7 @@ preset_keys:
   shouxie: {label: 📝, send: function, command: '载入手写.lua'}
   shouxie1: {label: 手写, send: function, command: '载入手写.lua'}
   yjjc_lua: {label: 📑, send: function, command: '一键加词.lua', option: "%4$s"}
+#  yjjc_lua: {label: 快捷加词, send: function, command: '快捷加词自动编码【定长】/快捷加词自动编码【定长】.lua', option: "《《命令行》》【【自动加词.txt】】【【新世纪五笔单字全码表-修改版.txt】】"}
 
   # rime组合键
   F4: {label: 方案菜单, send: F4}
