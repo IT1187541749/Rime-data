@@ -71,5 +71,19 @@ function week_translator(input, seg)
    end
 end   
 
+
+
+--#↓以下1条为字符集过滤
 core2020 = require("core2020_filter")
+
+
+
+--#↓以下1条为字符集提示
+charset_comment_filter = require("charset_comment_filter")
+
+
+
+--#↓以下1条为单字词组开关
 dz_ci = require("dz_ci_filter")
+
+
