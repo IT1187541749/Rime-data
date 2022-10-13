@@ -3,7 +3,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2022-09-20
+# 2022-10-14
 
 schema:
   schema_id: 06wubi_tygfzj
@@ -36,7 +36,6 @@ switches:
     #↓以下1條為设置默认中英文标点状态（0为默认中标，1为默认英标）,默认英标某些功能会失效.
     reset: 1
     states: [ 中标, 英标 ]
-
   - options: [extended_char1, extended_char2, extended_char3, utf-8]
     #↓以下1條為设置默认字符集.
     reset: 0
@@ -52,6 +51,10 @@ switches:
   - name: emoji_cn
     reset: 0
     states: [ 〇, 🤣 ]
+    #↓以下1條為字符集提示（0为默认关，1为默认开）
+  - name: charset_comment_filter
+    reset: 0
+    states: ["关", "️️开️"]
 
 engine:
   filters:
@@ -59,15 +62,17 @@ engine:
     - lua_filter@core2020
     #↓以下1條為词组LUA开关.
     - lua_filter@dz_ci
-    - charset_filter@gb2312  
+    - charset_filter@gb2312
     #↓以下1條為過濾器組件,對候選詞的繁簡轉換.
     - simplifier
     - "reverse_lookup_filter@ci_reverse_lookup"
     - "simplifier@06wubi_spelling"
 #    - "simplifier@06wubi_spelling_rk"
     - "simplifier@jiayin"
-    #↓以下1條為emoji組件
+    #↓以下1條為emoji組件.
     - "simplifier@emoji_cn"
+    #↓以下1條為字符集提示.
+    - lua_filter@charset_comment_filter
     #↓以下1條為去重組件(此組件必須排到最後,不然會失效).
     - uniquifier
   processors:
