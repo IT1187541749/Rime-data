@@ -2423,8 +2423,8 @@ preset_keyboards:
       - {click: BaiduBaike, long_click: Wikipedia, swipe_up: Wikipedia, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       #第四行
       - {click: YouTube, long_click: NETFLIX, swipe_up: NETFLIX, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
-      - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
-      - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
+      - {click: GoogleCalculator, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
+      - {click: Spotify, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       - {click: AD, key_symbol_color: gns, key_text_size: *XZH, symbol_text_size: *XSH}
       #第五行
@@ -8814,7 +8814,7 @@ preset_keys:
   delimiterCY: {label: "钙", text: "{delimiterC}"}
   EscapeY: {label: "钪", text: "{Escape}"}
 
-  #切换方案快捷键变量.
+  #切换方案快捷键按钮.
   fangan1: {label: 方案1, send: Control+1}
   fangan2: {label: 方案2, send: Control+2}
   fangan3: {label: 方案3, send: Control+3}
@@ -9283,6 +9283,10 @@ preset_keys:
   AmapSearch: {label: 高德导航, send: function, command: run, option: "androidamap://keywordNavi?sourceApplication=softname&keyword=%4$s&style=2"}
   QQMap: {label: 腾讯导航, send: function, command: run, option: "qqmap://map/search?keyword=%4$s"}
   BaiduMap: {label: 百度导航, send: function, command: run, option: "baidumap://map/direction?destination=%4$s&mode=driving"}
+# 下面一行代码需要安装谷歌计算器才能生效.
+  GoogleCalculator: {label: 计算器, send: function, command: run, option: "com.google.android.calculator"}
+# 下面一行代码需要安装Spotify才能生效.
+  Spotify: {label: Spotify, send: function, command: run, option: "com.spotify.music"}
 
 
   #多余
