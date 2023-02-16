@@ -3,9 +3,9 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2022-11-02
+# 2023-02-16
 ---
-name: X.extended
+name: X2.extended
 version: "2.0"
 sort: by_weight
 columns:
