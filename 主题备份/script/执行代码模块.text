@@ -1,0 +1,16 @@
+--[[
+
+--配置说明
+
+第①步 将 执行代码模块.text 文件放置 rime/script 文件夹内
+
+第②步 向主题方案中加入按键
+以 XXX.trime.yaml主题方案为例
+preset_keys:
+  huanhang_lua: {label: 换行, functional: false, send: function, command: "rime/script/执行代码模块.text", option: 'service.commitText("\r\n")',}
+
+--]]
+
+
+
+loadstring(...)()
