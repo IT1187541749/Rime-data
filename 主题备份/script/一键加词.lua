@@ -32,7 +32,7 @@ Key.presetKeys.lua_script_1={label= '全选', send= "Control+a"}
 Key.presetKeys.lua_script_2={label= '删除', send="BackSpace"}
 service.sendEvent("lua_script_1")
 local 词组= service.getCurrentInputConnection().getSelectedText(0)--取编辑框选中内容,部分app内无效
-local 数据文件=tostring(service.getLuaDir("")).."/X.extended.dict.yaml"--用户码表
+local 数据文件=tostring(service.getLuaDir("")).."/X1.extended.dict.yaml"--用户码表
 
 if 词组== nil or 词组==""then
 do return end --强制退出
