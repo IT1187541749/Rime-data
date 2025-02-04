@@ -215,7 +215,10 @@ local function Bu_R(id) --生成功能键
 	ta.text=Icon("Return","⏎")
 	ta.textSize="18dp"
 	ta.onClick=function()
-	  service.sendEvent("Return")
+--下面一行为原始代码.
+--	  service.sendEvent("Return")
+--下面一行为新增代码.
+	  service.sendEvent("huanhang_lua")
 	end
 	ta.OnLongClickListener={onLongClick=function() return true end}
    elseif id==4 then
