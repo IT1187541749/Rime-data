@@ -1,4 +1,4 @@
-﻿-- encoding: utf-8
+-- encoding: utf-8
 
 
 --- charset filter
@@ -11,6 +11,8 @@ local charset = {
    ["扩E"] = { first = 0x2b820, last = 0x2cea1 },
    ["扩F"] = { first = 0x2ceb0, last = 0x2ebe0 },
    ["扩G"] = { first = 0x30000, last = 0x3134a },
+   ["扩H"] = { first = 0x31350, last = 0x323AF },
+   ["扩I"] = { first = 0x2ebf0, last = 0x2ee5d },
    ["拉补"] = { first = 0x0080, last = 0x00ff },
    ["拉丁"] = { first = 0x0000, last = 0x007f },
    ["私用"] = { first = 0xe000, last = 0xf8ff },
@@ -326,7 +328,8 @@ local function is_cjk_ext(c)
    return is_charset("扩A")(c) or is_charset("扩B")(c) or
       is_charset("扩C")(c) or is_charset("扩D")(c) or
       is_charset("扩E")(c) or is_charset("扩F")(c) or
-      is_charset("扩G")(c) or is_charset("拉丁补")(c) or
+      is_charset("扩G")(c) or is_charset("扩H")(c) or
+      is_charset("扩I")(c) or is_charset("拉丁补")(c) or
       is_charset("拉丁语")(c) or is_charset("私用区")(c) or
       is_charset("私用补")(c) or is_charset("符号和象形文字扩展-A")(c) or
       is_charset("中日韩兼容表意文字增补")(c) or is_charset("楔形文字数字和标点符号")(c) or
