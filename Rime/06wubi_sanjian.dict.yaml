@@ -2070,23 +2070,23 @@ encoder:
 钢	qmr	2439
 钠	qmw	586
 鈉	qmw	9
-饶	qna	730
-饴	qnc	23
+饶	qna	730	qaq
+饴	qnc	23	qck
 锯	qnd	239
 鋸	qnd	10
-馁	qne	47
-饯	qnf	23
+馁	qne	47	qev
+饯	qnf	23	qfy
 鈕	qnf	10
 乌	qng	1409
-蚀	qnj	286
-馈	qnk	85
-馆	qnp	2318
-饮	qnq	2026
-饭	qnr	11199
-饰	qnt	1525
-饼	qnu	1276
-饥	qnw	197
-饺	qny	75
+蚀	qnj	286	qjy
+馈	qnk	85	qkm
+馆	qnp	2318	qpn
+饮	qnq	2026	qqw
+饭	qnr	11199	qrc
+饰	qnt	1525	qth
+饼	qnu	1276	qua
+饥	qnw	197	qwn
+饺	qny	75	qyr
 镀	qoa	200
 鍍	qoa	9
 鱈	qof	9	qfv
@@ -3400,7 +3400,7 @@ encoder:
 启	ynk	1356
 遍	ynm	3213
 刻	ynt	2370
-雇	ynw	349
+诀	ynw	3470
 房	yny	7386
 孪	yob	20
 变	yoc	13218

@@ -4,7 +4,7 @@
 # 新世紀五筆字型資源庫：https://06wb.github.io
 # 新世紀五筆字型QQ群：38021162
 # encoding: utf-8
-# 2025-02-11
+# 2025-03-09
 ---
 name: 06wubi_U
 version: "2.0"
@@ -1099,7 +1099,7 @@ encoder:
 负	qmu	2850
 鋇	qmy	9
 钡	qmy	86
-饣	qnb	79
+饣	qnb	79	qnb
 䦀	qng	15
 釓	qnn	9
 釔	qnn	9
@@ -17132,90 +17132,90 @@ encoder:
 鈉	qmwy	9
 鏙	qmwy	9
 钠	qmwy	586
-馍	qnad	169
-馑	qnag	11
+馍	qnad	169	qad
+馑	qnag	11	qag
 鍲	qnaj	9
 鈱	qnan	9
-饶	qnaq	730
-馓	qnat	11
-饵	qnbg	167
-饳	qnbm	15
-饴	qnck	23
-馂	qnct	15
+饶	qnaq	730	qaq
+馓	qnat	11	qat
+饵	qnbg	167	qbg
+饳	qnbm	15	qbm
+饴	qnck	23	qck
+馂	qnct	15	qct
 鋸	qndg	10
 锯	qndg	239
-馊	qnec	86
-馁	qnev	47
-饽	qnfb	11
+馊	qnec	86	qec
+馁	qnev	47	qev
+饽	qnfb	11	qfb
 鈕	qnfg	10
 钮	qnfg	297
-馌	qnfl	15
-饯	qnfy	23
+馌	qnfl	15	qfl
+饯	qnfy	23	qfy
 邬	qngb	199
 乌	qngd	1409
-馕	qnge	47
-馎	qngf	15
+馕	qnge	47	qge
+馎	qngf	15	qgf
 鉰	qngk	9
-饨	qngn	11
-饾	qngu	15
+饨	qngn	11	qgn
+饾	qngu	15	qgu
 鍜	qnhc	9
 鏘	qnhf	10
 鎇	qnhg	8
 镅	qnhg	11
 䤛	qnhh	9
 钃	qnij	9
-馒	qnjc	26
-䭪	qnjf	15
+馒	qnjc	26	qjc
+䭪	qnjf	15	qjf
 刨	qnjh	308
-馃	qnjs	15
-馄	qnjx	15
-蚀	qnjy	286
+馃	qnjs	15	qjs
+馄	qnjx	15	qjx
+蚀	qnjy	286	qjy
 鐴	qnkf	9
 鍏	qnkh	9
-馈	qnkm	85
-馉	qnme	15
+馈	qnkm	85	qkm
+馉	qnme	15	qme
 鋦	qnnk	9
 锔	qnnk	18
-饲	qnnk	154
-饧	qnnr	12
+饲	qnnk	154	qnk
+饧	qnnr	12	qnr
 鐉	qnnw	9
-馔	qnnw	38
+馔	qnnw	38	qnw
 炰	qnou	9
-馆	qnpn	2318
-馅	qnqe	450
-馏	qnql	26
-饱	qnqn	1411
-馋	qnqu	362
-饮	qnqw	2026
-饭	qnrc	11199
-饩	qnrn	11
+馆	qnpn	2318	qpn
+馅	qnqe	450	qqe
+馏	qnql	26	qql
+饱	qnqn	1411	qqn
+馋	qnqu	362	qqu
+饮	qnqw	2026	qqw
+饭	qnrc	11199	qrc
+饩	qnrn	11	qrn
 钖	qnrt	15
-馇	qnsg	11
-饤	qnsh	15
-饦	qnta	15
-饫	qntd	11
-饬	qnte	24
-饪	qntf	11
-饰	qnth	1525
-饷	qntk	71
-饹	qntk	15
+馇	qnsg	11	qsg
+饤	qnsh	15	qsh
+饦	qnta	15	qta
+饫	qntd	11	qtd
+饬	qnte	24	qte
+饪	qntf	11	qtf
+饰	qnth	1525	qth
+饷	qntk	71	qtk
+饹	qntk	15	qtk
 鉍	qntt	9
 铋	qntt	43
-饿	qnty	8284
+饿	qnty	8284	qty
 䥽	qnty	15
-饼	qnua	1276
-馐	qnuf	11
+饼	qnua	1276	qua
+馐	qnuf	11	quf
 鏐	qnwe	9
 镠	qnwe	15
-饸	qnwk	15
-饥	qnwn	197
-馀	qnws	209
+饸	qnwk	15	qwk
+饥	qnwn	197	qwn
+馀	qnws	209	qws
 鈌	qnwy	9
 鑃	qnwy	9
 鈮	qnxn	9
 铌	qnxn	44
-饻	qnye	15
-饺	qnyr	75
+饻	qnye	15	qye
+饺	qnyr	75	qyr
 鉯	qnyw	9
 鈬	qnyy	9
 䱠	qoaa	9	qaa
